@@ -2,6 +2,7 @@ import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { TVehicle } from '@shared/types';
 import { BrandColors } from '@/src/theme/BrandColors';
+import { formatCurrency, formatMileage, formatAuctionCountdown } from '@/src/utils/formatters';
 
 type TVehicleListItemVariant = 'default' | 'featured' | 'grid';
 
@@ -101,33 +102,6 @@ export function VehicleListItem({ vehicle, onPress, variant = 'default' }: TVehi
       </View>
     </Pressable>
   );
-}
-
-function formatCurrency(value: number): string {
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 0,
-  }).format(value);
-}
-
-function formatMileage(value: number): string {
-  return `${new Intl.NumberFormat('en-US').format(value)} km`;
-}
-
-function formatAuctionCountdown(auctionDateTime: string): string {
-  const nowMs: number = Date.now();
-  const auctionMs: number = new Date(auctionDateTime).getTime();
-
-  if (Number.isNaN(auctionMs) || auctionMs <= nowMs) {
-    return 'LIVE NOW';
-  }
-
-  const diffMinutes: number = Math.floor((auctionMs - nowMs) / 60_000);
-  const hours: number = Math.floor(diffMinutes / 60);
-  const minutes: number = diffMinutes % 60;
-
-  return `${String(hours).padStart(2, '0')}H ${String(minutes).padStart(2, '0')}M`;
 }
 
 const styles = StyleSheet.create({

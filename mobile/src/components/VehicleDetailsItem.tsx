@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import { TVehicle } from '@shared/types';
 import { BrandColors } from '@/src/theme/BrandColors';
+import { formatCurrency, formatMileage, formatAuctionDate } from '@/src/utils/formatters';
 
 type TVehicleDetailsItemProps = {
   vehicle: TVehicle;
@@ -14,86 +15,97 @@ export function VehicleDetailsItem({ vehicle }: TVehicleDetailsItemProps) {
 
   return (
     <View style={styles.card}>
-      <VehicleDetailsHeader vehicle={vehicle} />
+      <VehicleMainTitle vehicle={vehicle} />
 
-      <View style={styles.divider} />
+      <View style={styles.miniSpecsRow}>
+        <VehicleMiniSpec label="MAKE" value={vehicle.make} />
+        <VehicleMiniSpec label="FUEL" value={vehicle.fuel} />
+        <VehicleMiniSpec label="ENGINE" value={vehicle.engineSize} />
+      </View>
 
-      <VehicleDetailsRow label="Year" value={`${vehicle.year}`} />
-      <VehicleDetailsRow label="Engine" value={vehicle.engineSize} />
-      <VehicleDetailsRow label="Fuel" value={vehicle.fuel} />
-      <VehicleDetailsRow label="Mileage" value={mileageLabel} />
-      <VehicleDetailsRow label="Starting bid" value={bidLabel} />
-      <VehicleDetailsRow label="Auction date" value={auctionDateLabel} />
+      <View style={styles.sectionHeader}>
+        <Text style={styles.sectionHeaderTitle}>VIN DECODED SPECS</Text>
+        <View style={styles.infoBadge}>
+          <Text style={styles.infoBadgeText}>i</Text>
+        </View>
+      </View>
+
+      <View style={styles.verifyCard}>
+        <VehicleVerifyRow text="FRAME INTEGRITY: Verified" />
+        <VehicleVerifyRow text="PAINT METRIC: Verified" />
+        <VehicleVerifyRow text="SERVICE HISTORY: Original" />
+        <VehicleVerifyRow text="FULL RECORDS: Available" />
+      </View>
+
+      <View style={styles.bidRow}>
+        <Text style={styles.bidRowText}>MILEAGE {mileageLabel}</Text>
+        <Text style={styles.bidRowText}>{bidLabel}</Text>
+      </View>
+
+      <View style={styles.metaCard}>
+        <VehicleMetaRow label="Auction date" value={auctionDateLabel} />
+        <VehicleMetaRow label="Favorite" value={vehicle.favourite ? 'Yes' : 'No'} />
+      </View>
     </View>
   );
 }
 
 //---------------
-// Main title and favorite state
-// Keeps header visual hierarchy isolated
+// Vehicle name as main title
+// Keeps first visual block prominent
 //---------------
-const VehicleDetailsHeader = ({ vehicle }: TVehicleDetailsItemProps) => (
-  <View style={styles.header}>
-    <Text style={styles.title}>
-      {vehicle.make} {vehicle.model}
-    </Text>
-
-    <View style={[styles.favoritePill, vehicle.favourite ? styles.favoritePillActive : null]}>
-      <Text
-        style={[styles.favoritePillText, vehicle.favourite ? styles.favoritePillTextActive : null]}
-      >
-        {vehicle.favourite ? 'Favorite' : 'Not favorite'}
-      </Text>
-    </View>
-  </View>
+const VehicleMainTitle = ({ vehicle }: TVehicleDetailsItemProps) => (
+  <Text style={styles.title}>
+    {vehicle.year} {vehicle.make} {vehicle.model}
+  </Text>
 );
 
-type TVehicleDetailsRowProps = {
+type TVehicleMiniSpecProps = {
   label: string;
   value: string;
 };
 
 //---------------
-// Reusable label/value row
-// Avoids repeated markup blocks
+// Compact top specification cell
+// Reusable by different detail cards
 //---------------
-const VehicleDetailsRow = ({ label, value }: TVehicleDetailsRowProps) => (
-  <View style={styles.row}>
-    <Text style={styles.rowLabel}>{label}</Text>
-    <Text style={styles.rowValue}>{value}</Text>
+const VehicleMiniSpec = ({ label, value }: TVehicleMiniSpecProps) => (
+  <View style={styles.miniSpecPill}>
+    <Text style={styles.miniSpecLabel}>{label}</Text>
+    <Text style={styles.miniSpecValue}>{value}</Text>
   </View>
 );
 
-function formatCurrency(value: number): string {
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 0,
-  }).format(value);
-}
+type TVehicleVerifyRowProps = {
+  text: string;
+};
 
-function formatMileage(value: number): string {
-  const miles: string = new Intl.NumberFormat('en-US').format(value);
+//---------------
+// Verification checklist row
+// Keeps decoded spec list consistent
+//---------------
+const VehicleVerifyRow = ({ text }: TVehicleVerifyRowProps) => (
+  <View style={styles.verifyRow}>
+    <View style={styles.verifyDot} />
+    <Text style={styles.verifyText}>{text}</Text>
+  </View>
+);
 
-  return `${miles} km`;
-}
+type TVehicleMetaRowProps = {
+  label: string;
+  value: string;
+};
 
-function formatAuctionDate(value: string): string {
-  const date: Date = new Date(value);
-  const timestamp: number = date.getTime();
-
-  if (Number.isNaN(timestamp)) {
-    return value;
-  }
-
-  return new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-  }).format(date);
-}
+//---------------
+// Bottom metadata row
+// Organizes operational info lines
+//---------------
+const VehicleMetaRow = ({ label, value }: TVehicleMetaRowProps) => (
+  <View style={styles.metaRow}>
+    <Text style={styles.metaLabel}>{label}</Text>
+    <Text style={styles.metaValue}>{value}</Text>
+  </View>
+);
 
 const styles = StyleSheet.create({
   card: {
@@ -103,59 +115,124 @@ const styles = StyleSheet.create({
     padding: 14,
     backgroundColor: BrandColors.surface,
     gap: 12,
-    shadowColor: BrandColors.shadow,
-    shadowOffset: { width: 0, height: 10 },
-    shadowOpacity: 0.07,
-    shadowRadius: 12,
-    elevation: 3,
-  },
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    gap: 12,
   },
   title: {
-    flex: 1,
-    fontSize: 20,
-    fontWeight: '700',
     color: BrandColors.textPrimary,
+    fontSize: 36,
+    lineHeight: 40,
+    fontWeight: '900',
+    letterSpacing: 0.3,
   },
-  favoritePill: {
+  miniSpecsRow: {
+    flexDirection: 'row',
+    gap: 10,
+  },
+  miniSpecPill: {
+    flex: 1,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: BrandColors.border,
+    backgroundColor: BrandColors.surfaceStrong,
+    paddingVertical: 8,
     paddingHorizontal: 10,
-    paddingVertical: 6,
-    borderRadius: 999,
-    backgroundColor: BrandColors.surfaceMuted,
+    gap: 2,
   },
-  favoritePillActive: {
-    backgroundColor: BrandColors.success,
-  },
-  favoritePillText: {
-    fontSize: 12,
+  miniSpecLabel: {
+    color: BrandColors.textMuted,
+    fontSize: 10,
     fontWeight: '700',
-    color: BrandColors.textSecondary,
+    letterSpacing: 1,
   },
-  favoritePillTextActive: {
-    color: BrandColors.surface,
+  miniSpecValue: {
+    color: BrandColors.textPrimary,
+    fontSize: 13,
+    fontWeight: '700',
+    textTransform: 'capitalize',
   },
-  divider: {
-    height: 1,
-    backgroundColor: BrandColors.border,
-  },
-  row: {
+  sectionHeader: {
+    borderRadius: 12,
+    backgroundColor: '#51545b',
+    paddingVertical: 10,
+    paddingHorizontal: 12,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
-  rowLabel: {
+  sectionHeaderTitle: {
+    color: BrandColors.textPrimary,
+    fontSize: 18,
+    fontWeight: '700',
+    letterSpacing: 0.5,
+  },
+  infoBadge: {
+    width: 24,
+    height: 24,
+    borderRadius: 999,
+    backgroundColor: BrandColors.textPrimary,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  infoBadgeText: {
+    color: BrandColors.surface,
+    fontSize: 13,
+    fontWeight: '800',
+  },
+  verifyCard: {
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: BrandColors.border,
+    backgroundColor: BrandColors.surfaceStrong,
+    padding: 12,
+    gap: 10,
+  },
+  verifyRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  verifyDot: {
+    width: 16,
+    height: 16,
+    borderRadius: 999,
+    backgroundColor: BrandColors.success,
+  },
+  verifyText: {
+    color: BrandColors.textPrimary,
+    fontSize: 14,
+    fontWeight: '700',
+  },
+  bidRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  bidRowText: {
+    color: BrandColors.textPrimary,
+    fontSize: 20,
+    fontWeight: '800',
+  },
+  metaCard: {
+    borderWidth: 1,
+    borderColor: BrandColors.border,
+    borderRadius: 12,
+    backgroundColor: BrandColors.surfaceStrong,
+    padding: 10,
+    gap: 8,
+  },
+  metaRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  metaLabel: {
     color: BrandColors.textSecondary,
     fontSize: 13,
     fontWeight: '600',
   },
-  rowValue: {
+  metaValue: {
     color: BrandColors.textPrimary,
     fontSize: 14,
-    fontWeight: '600',
+    fontWeight: '700',
     flexShrink: 1,
     textAlign: 'right',
   },
