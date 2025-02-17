@@ -2,7 +2,7 @@ import { useInfiniteQuery, useQuery } from '@tanstack/react-query';
 
 import { TVehicle } from '@shared/types';
 import { delay } from './mockup-delay';
-import { FAKE_PAGE_DELAY_MS, PAGE_SIZE, API_BASE_URL } from './const';
+import { FAKE_PAGE_DELAY_MS, PAGE_SIZE, API_BASE_URL } from '../const';
 
 type TVehiclesPage = {
   items: TVehicle[];

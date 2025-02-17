@@ -1,6 +1,7 @@
 import { Tabs } from 'expo-router';
 
 import { BrandColors } from '@/src/theme/BrandColors';
+import { AppRoutes } from '@/src/utils/const';
 
 export default function TabsLayout() {
   return (
@@ -24,9 +25,9 @@ export default function TabsLayout() {
         },
       }}
     >
-      <Tabs.Screen name="index" options={{ title: 'Home' }} />
-      <Tabs.Screen name="Favorites" options={{ title: 'Favorites' }} />
-      <Tabs.Screen name="MyBids" options={{ title: 'My Bids' }} />
+      <Tabs.Screen name={AppRoutes.HOME} options={{ title: 'Home' }} />
+      <Tabs.Screen name={AppRoutes.FAVORITES} options={{ title: 'Favorites' }} />
+      <Tabs.Screen name={AppRoutes.MY_BIDS} options={{ title: 'My Bids' }} />
     </Tabs>
   );
 }

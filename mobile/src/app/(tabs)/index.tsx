@@ -9,6 +9,7 @@ import { HomeEmptyState } from '@/src/components/EmptyState';
 import { TVehicle, TVehicleMakeFilter } from '@shared/types';
 import { VehicleListItem } from '@/src/components/VehicleListItem';
 import { HomeScreenNextPageSkeleton, HomeScreenSkeleton } from '@/src/components/HomeSkeleton';
+import { AppRoutes } from '@/src/utils/const';
 import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries';
 import { BrandColors } from '@/src/theme/BrandColors';
 
@@ -18,7 +19,7 @@ export default function HomeScreen() {
     useVehiclesInfiniteQuery();
 
   const openVehicle = (vehicleId: string): void => {
-    router.push({ pathname: '/vehicle/[id]', params: { id: vehicleId } });
+    router.push({ pathname: AppRoutes.DETAIL_PATH, params: { id: vehicleId } });
   };
 
   const flatVehicles: TVehicle[] = [];

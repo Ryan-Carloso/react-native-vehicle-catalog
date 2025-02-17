@@ -1,21 +1,25 @@
-import { useLocalSearchParams } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Skeleton } from 'moti/skeleton';
 
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { useVehicleQuery } from '@/src/utils/api/queries';
+import { AppScreenHeader } from '@/src/components/AppScreenHeader';
+import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { VehicleDetailsItem } from '@/src/components/VehicleDetailsItem';
+import { VehicleHeroImage } from '@/src/components/VehicleHeroImage';
+import { useVehicleQuery } from '@/src/utils/api/queries';
 import { BrandColors } from '@/src/theme/BrandColors';
 
 type TVehicleRouteParams = {
-  id: string;
+  id?: string;
 };
 
 export default function VehicleDetailsScreen() {
-  const { id: vehicleId }: TVehicleRouteParams = useLocalSearchParams<TVehicleRouteParams>();
-
-  const { data, isLoading, isError } = useVehicleQuery(vehicleId);
+  const router = useRouter();
+  const { id }: TVehicleRouteParams = useLocalSearchParams<TVehicleRouteParams>();
+  const vehicleId: string = typeof id === 'string' ? id : '';
+  const { isLoading, isError, data } = useVehicleQuery(vehicleId);
 
   if (!vehicleId) {
     return (
@@ -36,27 +40,37 @@ export default function VehicleDetailsScreen() {
   }
 
   if (isError || !data) {
-    return (
-      <SafeAreaView style={styles.container}>
-        <View style={styles.center}>
-          <Text>Failed to load vehicle details.</Text>
-        </View>
-      </SafeAreaView>
-    );
+    return <ErrorComponent />;
   }
 
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.content}>
-        <Image source={{ uri: data.image }} style={styles.image} resizeMode="cover" />
+        <AppScreenHeader onBackPress={() => router.back()} />
+        <VehicleHeroImage imageUrl={data.image} />
+
         <VehicleDetailsItem vehicle={data} />
+
+        <Pressable style={styles.bidButton}>
+          <Text style={styles.bidButtonText}>PLACE BID</Text>
+        </Pressable>
       </ScrollView>
     </SafeAreaView>
   );
 }
 
+//---------------
+// Loading placeholders for detail page
+// Mirrors final composition without data hooks
+//---------------
 const VehicleDetailsSkeleton = () => (
   <ScrollView contentContainerStyle={styles.skeletonContent}>
+    <View style={styles.skeletonHeader}>
+      <Skeleton colorMode="dark" width={42} height={42} radius={21} />
+      <Skeleton colorMode="dark" width={120} height={44} radius={8} />
+      <Skeleton colorMode="dark" width={42} height={42} radius={21} />
+    </View>
+
     <Skeleton colorMode="dark" width="100%" height={220} radius={10} />
 
     <View style={styles.skeletonCard}>
@@ -81,22 +95,35 @@ const styles = StyleSheet.create({
   },
   content: {
     padding: 16,
-    gap: 12,
+    gap: 14,
   },
   center: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  image: {
-    width: '100%',
-    height: 220,
+  bidButton: {
     borderRadius: 10,
-    backgroundColor: BrandColors.surfaceMuted,
+    paddingVertical: 12,
+    backgroundColor: BrandColors.accent,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  bidButtonText: {
+    color: BrandColors.textPrimary,
+    fontSize: 30,
+    lineHeight: 34,
+    fontWeight: '700',
+    letterSpacing: 0.8,
   },
   skeletonContent: {
     padding: 16,
-    gap: 12,
+    gap: 14,
+  },
+  skeletonHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   skeletonCard: {
     borderWidth: 1,
