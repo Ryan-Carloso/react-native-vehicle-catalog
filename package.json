@@ -1,0 +1,17 @@
+{
+  "name": "react-native-vehicle-catalog",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "mobile",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:mobile\"",
+    "dev:mobile": "npm run start -w mobile",
+    "dev:backend": "npm run start -w backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
