@@ -2,7 +2,15 @@ import { FlashList, ListRenderItemInfo } from '@shopify/flash-list';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { StatusBar } from 'expo-status-bar';
 import { useMemo, useState } from 'react';
-import { ActivityIndicator, Pressable, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import {
+  ActivityIndicator,
+  Image,
+  Pressable,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import { Vehicle, VEHICLE_MAKE_FILTER_OPTIONS, VehicleMakeFilter } from '@shared/types';
 import { useVehiclesInfiniteQuery } from './utils/api/queries';
 
@@ -89,7 +97,7 @@ function HomeScreen() {
             void fetchNextPage();
           }
         }}
-        onEndReachedThreshold={0.4}
+        onEndReachedThreshold={0.6}
         ListFooterComponent={
           isFetchingNextPage ? (
             <View style={styles.nextPageLoading}>
@@ -120,6 +128,7 @@ function keyExtractorMake(item: VehicleMakeFilter): string {
 function renderVehicleItem({ item }: ListRenderItemInfo<Vehicle>) {
   return (
     <View style={styles.card}>
+      <Image source={{ uri: item.image }} style={styles.image} resizeMode="cover" />
       <Text style={styles.title}>
         {item.make} {item.model}
       </Text>
@@ -142,12 +151,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  infoText: {
-    paddingHorizontal: 16,
-    paddingTop: 8,
-    color: '#4b5563',
-    fontSize: 12,
   },
   filterListContent: {
     paddingHorizontal: 16,
@@ -196,6 +199,13 @@ const styles = StyleSheet.create({
     padding: 12,
     marginBottom: 10,
     backgroundColor: '#ffffff',
+  },
+  image: {
+    width: '100%',
+    height: 170,
+    borderRadius: 8,
+    marginBottom: 10,
+    backgroundColor: '#f3f4f6',
   },
   title: {
     fontSize: 16,

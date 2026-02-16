@@ -14,6 +14,7 @@ export type Vehicle = {
   id: string;
   make: VehicleMake;
   model: string;
+  image: string;
   engineSize: string;
   fuel: FuelType;
   year: number;

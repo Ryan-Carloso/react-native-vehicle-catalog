@@ -26,6 +26,10 @@ async function delay(ms: number): Promise<void> {
 }
 
 async function fetchVehiclesPage(page: number): Promise<VehiclesPage> {
+  if (!API_BASE_URL) {
+    throw new Error('Missing EXPO_PUBLIC_API_BASE_URL');
+  }
+
   const response: Response = await fetch(`${API_BASE_URL}/vehicles`);
 
   if (!response.ok) {
