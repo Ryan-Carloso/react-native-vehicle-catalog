@@ -1,7 +1,5 @@
 # Project Setup & Technical Decisions
 
-
-
 ### React Native (Expo - Managed Workflow)
 
 - Fast environment setup

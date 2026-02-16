@@ -13,17 +13,20 @@ Install dependencies:
 pnpm install
 ```
 
-Start both services:
-
-```bash
-pnpm run dev
-```
-
-Or start each one:
+to start run:
 
 ```bash
 pnpm run dev:backend
-pnpm run dev:mobile
+pnpm run dev:web
+```
+
+## Quality
+
+```bash
+pnpm run lint
+pnpm run lint:fix
+pnpm run format:check
+pnpm run format
 ```
 
 ## API
