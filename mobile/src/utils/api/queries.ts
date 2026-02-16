@@ -1,11 +1,8 @@
-import { useInfiniteQuery } from '@tanstack/react-query';
+import { useInfiniteQuery, useQuery } from '@tanstack/react-query';
 
 import { TVehicle } from '@shared/types';
-
-const API_BASE_URL: string = process.env.EXPO_PUBLIC_API_BASE_URL;
-const PAGE_SIZE: number = 10;
-// Simulated delay for demonstration; displays loading indicator and renders UI skeleton
-const FAKE_PAGE_DELAY_MS: number = 700;
+import { delay } from './mockup-delay';
+import { FAKE_PAGE_DELAY_MS, PAGE_SIZE, API_BASE_URL } from './const';
 
 type TVehiclesPage = {
   items: TVehicle[];
@@ -13,17 +10,16 @@ type TVehiclesPage = {
   total: number;
 };
 
+const VEHICLE_QUERY_KEY = (vehicleId: string): readonly ['vehicle', { id: string }] => [
+  'vehicle',
+  { id: vehicleId },
+];
+
 const VEHICLES_INFINITE_QUERY_KEY: readonly ['vehicles', 'infinite', { pageSize: number }] = [
   'vehicles',
   'infinite',
   { pageSize: PAGE_SIZE },
 ];
-
-async function delay(ms: number): Promise<void> {
-  await new Promise<void>((resolve: () => void) => {
-    setTimeout(resolve, ms);
-  });
-}
 
 async function fetchVehiclesPage(page: number): Promise<TVehiclesPage> {
   if (!API_BASE_URL) {
@@ -31,10 +27,6 @@ async function fetchVehiclesPage(page: number): Promise<TVehiclesPage> {
   }
 
   const response: Response = await fetch(`${API_BASE_URL}/vehicles`);
-
-  if (!response.ok) {
-    throw new Error('Failed to fetch vehicles');
-  }
 
   const payload: TVehicle[] = await response.json();
 
@@ -59,6 +51,27 @@ export function useVehiclesInfiniteQuery() {
     initialPageParam: 1,
     getNextPageParam: (lastPage: TVehiclesPage): number | undefined =>
       lastPage.nextPage ?? undefined,
+    staleTime: 60_000,
+  });
+}
+
+async function fetchVehicleById(vehicleId: string): Promise<TVehicle> {
+  if (!API_BASE_URL) {
+    throw new Error('Missing EXPO_PUBLIC_API_BASE_URL');
+  }
+
+  const response: Response = await fetch(`${API_BASE_URL}/vehicles/${vehicleId}`);
+
+  const payload: TVehicle = await response.json();
+
+  return payload;
+}
+
+export function useVehicleQuery(vehicleId: string) {
+  return useQuery({
+    queryKey: VEHICLE_QUERY_KEY(vehicleId),
+    queryFn: () => fetchVehicleById(vehicleId),
+    enabled: vehicleId.length > 0,
     staleTime: 60_000,
   });
 }

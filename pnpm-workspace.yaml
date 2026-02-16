@@ -1,3 +1,19 @@
 packages:
-  - 'mobile'
-  - 'backend'
+  - mobile
+  - backend
+
+onlyBuiltDependencies:
+  - ','
+  - '-'
+  - '3'
+  - b
+  - d
+  - e
+  - i
+  - l
+  - q
+  - r
+  - s
+  - t
+  - u
+  - unrs-resolver
