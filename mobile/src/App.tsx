@@ -2,15 +2,8 @@ import { FlashList, ListRenderItemInfo } from '@shopify/flash-list';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { StatusBar } from 'expo-status-bar';
 import { useMemo, useState } from 'react';
-import {
-  ActivityIndicator,
-  Image,
-  Pressable,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { ActivityIndicator, Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import { TVehicle, TVehicleMakeFilter, VEHICLE_MAKE_FILTER_OPTIONS } from '@shared/types';
 import { useVehiclesInfiniteQuery } from './utils/api/queries';
 
