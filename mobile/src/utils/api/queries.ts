@@ -64,6 +64,8 @@ async function fetchVehicleById(vehicleId: string): Promise<TVehicle> {
 
   const payload: TVehicle = await response.json();
 
+  await delay(FAKE_PAGE_DELAY_MS);
+
   return payload;
 }
 

@@ -1,17 +1,19 @@
 import { useLocalSearchParams } from 'expo-router';
+import { Skeleton } from 'moti/skeleton';
 import { ReactElement } from 'react';
-import { ActivityIndicator, Image, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { useVehicleQuery } from '../../utils/api/queries';
+import { TVehicle } from '@shared/types';
 
 type TVehicleRouteParams = {
-  id?: string | string[];
+  id: string;
 };
 
 export default function VehicleDetailsScreen(): ReactElement {
-  const params: TVehicleRouteParams = useLocalSearchParams<TVehicleRouteParams>();
-  const vehicleId: string = getVehicleIdParam(params.id);
+  const { id: vehicleId }: TVehicleRouteParams = useLocalSearchParams<TVehicleRouteParams>();
+
   const { data, isLoading, isError } = useVehicleQuery(vehicleId);
 
   if (!vehicleId) {
@@ -27,9 +29,7 @@ export default function VehicleDetailsScreen(): ReactElement {
   if (isLoading) {
     return (
       <SafeAreaView style={styles.container}>
-        <View style={styles.center}>
-          <ActivityIndicator size="small" />
-        </View>
+        <VehicleDetailsSkeleton />
       </SafeAreaView>
     );
   }
@@ -48,50 +48,49 @@ export default function VehicleDetailsScreen(): ReactElement {
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.content}>
         <Image source={{ uri: data.image }} style={styles.image} resizeMode="cover" />
-
-        <View style={styles.card}>
-          <Text style={styles.title}>
-            {data.make} {data.model}
-          </Text>
-
-          <DetailRow label="Year" value={`${data.year}`} />
-          <DetailRow label="Engine" value={data.engineSize} />
-          <DetailRow label="Fuel" value={data.fuel} />
-          <DetailRow label="Mileage" value={`${data.mileage} km`} />
-          <DetailRow label="Starting Bid" value={`$${data.startingBid}`} />
-          <DetailRow label="Auction" value={data.auctionDateTime} />
-          <DetailRow label="Favorite" value={data.favourite ? 'Yes' : 'No'} />
-        </View>
+        <DetailRow data={data} />
       </ScrollView>
     </SafeAreaView>
   );
 }
 
-function getVehicleIdParam(idParam: string | string[] | undefined): string {
-  if (typeof idParam === 'string') {
-    return idParam;
-  }
+const DetailRow = ({ data }: { data: TVehicle }): ReactElement => (
+  <View style={styles.card}>
+    <Text style={styles.title}>
+      {data.make} {data.model}
+    </Text>
 
-  if (Array.isArray(idParam) && idParam.length > 0) {
-    return idParam[0];
-  }
+    <Text style={styles.rowValue}>{`${data.year}`}</Text>
+    <Text style={styles.rowValue}>{data.engineSize}</Text>
+    <Text style={styles.rowValue}>{data.fuel}</Text>
+    <Text style={styles.rowValue}>{`${data.mileage} km`}</Text>
+    <Text style={styles.rowValue}>{`$${data.startingBid}`}</Text>
+    <Text style={styles.rowValue}>{data.auctionDateTime}</Text>
+    <Text style={styles.rowValue}>{data.favourite ? 'Yes' : 'No'}</Text>
+  </View>
+);
 
-  return '';
-}
+const VehicleDetailsSkeleton = (): ReactElement => (
+  <ScrollView contentContainerStyle={styles.skeletonContent}>
+    <Skeleton colorMode="light" width="100%" height={220} radius={10} />
 
-type TDetailRowProps = {
-  label: string;
-  value: string;
-};
+    <View style={styles.skeletonCard}>
+      <View style={styles.skeletonTitle}>
+        <Skeleton colorMode="light" width="64%" height={28} radius={6} />
+      </View>
 
-function DetailRow({ label, value }: TDetailRowProps): ReactElement {
-  return (
-    <View style={styles.row}>
-      <Text style={styles.rowLabel}>{label}</Text>
-      <Text style={styles.rowValue}>{value}</Text>
+      {Array.from(
+        { length: 7 },
+        (_value: unknown, index: number): ReactElement => (
+          <View key={`vehicle-details-skeleton-row-${index}`} style={styles.skeletonRow}>
+            <Skeleton colorMode="light" width="25%" height={18} radius={6} />
+            <Skeleton colorMode="light" width="45%" height={18} radius={6} />
+          </View>
+        ),
+      )}
     </View>
-  );
-}
+  </ScrollView>
+);
 
 const styles = StyleSheet.create({
   container: {
@@ -142,5 +141,25 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     flexShrink: 1,
     textAlign: 'right',
+  },
+  skeletonContent: {
+    padding: 16,
+    gap: 12,
+  },
+  skeletonCard: {
+    borderWidth: 1,
+    borderColor: '#e5e7eb',
+    borderRadius: 10,
+    padding: 14,
+    backgroundColor: '#ffffff',
+    gap: 12,
+  },
+  skeletonTitle: {
+    marginBottom: 2,
+  },
+  skeletonRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    gap: 16,
   },
 });
