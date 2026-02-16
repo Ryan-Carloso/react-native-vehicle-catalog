@@ -11,7 +11,7 @@ import {
   Text,
   View,
 } from 'react-native';
-import { Vehicle, VEHICLE_MAKE_FILTER_OPTIONS, VehicleMakeFilter } from '@shared/types';
+import { TVehicle, TVehicleMakeFilter, VEHICLE_MAKE_FILTER_OPTIONS } from '@shared/types';
 import { useVehiclesInfiniteQuery } from './utils/api/queries';
 
 const queryClient: QueryClient = new QueryClient();
@@ -30,22 +30,22 @@ export default function App() {
 function HomeScreen() {
   const { data, isLoading, isError, isFetchingNextPage, fetchNextPage, hasNextPage } =
     useVehiclesInfiniteQuery();
-  const [selectedMake, setSelectedMake] = useState<VehicleMakeFilter>('All');
+  const [selectedMake, setSelectedMake] = useState<TVehicleMakeFilter>('All');
 
-  const allVehicles: Vehicle[] = useMemo((): Vehicle[] => {
+  const allVehicles: TVehicle[] = useMemo((): TVehicle[] => {
     if (!data) {
       return [];
     }
 
-    return data.pages.flatMap((page: { items: Vehicle[] }): Vehicle[] => page.items);
+    return data.pages.flatMap((page: { items: TVehicle[] }): TVehicle[] => page.items);
   }, [data]);
 
-  const filteredVehicles: Vehicle[] = useMemo((): Vehicle[] => {
+  const filteredVehicles: TVehicle[] = useMemo((): TVehicle[] => {
     if (selectedMake === 'All') {
       return allVehicles;
     }
 
-    return allVehicles.filter((vehicle: Vehicle): boolean => vehicle.make === selectedMake);
+    return allVehicles.filter((vehicle: TVehicle): boolean => vehicle.make === selectedMake);
   }, [allVehicles, selectedMake]);
 
   const totalItems: number = data?.pages[0]?.total ?? 0;
@@ -71,8 +71,8 @@ function HomeScreen() {
       <FlashList
         data={VEHICLE_MAKE_FILTER_OPTIONS}
         horizontal
-        keyExtractor={keyExtractorMake}
-        renderItem={({ item }: ListRenderItemInfo<VehicleMakeFilter>) => (
+        keyExtractor={(item: TVehicleMakeFilter): string => item}
+        renderItem={({ item }: ListRenderItemInfo<TVehicleMakeFilter>) => (
           <Pressable
             style={[styles.filterButton, item === selectedMake ? styles.filterButtonActive : null]}
             onPress={() => setSelectedMake(item)}
@@ -90,7 +90,7 @@ function HomeScreen() {
 
       <FlashList
         data={filteredVehicles}
-        keyExtractor={keyExtractor}
+        keyExtractor={(item: TVehicle): string => item.id}
         renderItem={renderVehicleItem}
         onEndReached={() => {
           if (hasNextPage && !isFetchingNextPage) {
@@ -110,34 +110,24 @@ function HomeScreen() {
 
       <View style={styles.bottomInfo}>
         <Text style={styles.bottomInfoText}>
-          {filteredVehicles.length} de {totalItems} veiculos carregados
+          {filteredVehicles.length} cars found of {totalItems} total
         </Text>
       </View>
     </View>
   );
 }
 
-function keyExtractor(item: Vehicle): string {
-  return item.id;
-}
-
-function keyExtractorMake(item: VehicleMakeFilter): string {
-  return item;
-}
-
-function renderVehicleItem({ item }: ListRenderItemInfo<Vehicle>) {
-  return (
-    <View style={styles.card}>
-      <Image source={{ uri: item.image }} style={styles.image} resizeMode="cover" />
-      <Text style={styles.title}>
-        {item.make} {item.model}
-      </Text>
-      <Text style={styles.meta}>
-        {item.year} • {item.engineSize} • {item.fuel} • ${item.startingBid}
-      </Text>
-    </View>
-  );
-}
+const renderVehicleItem = ({ item }: ListRenderItemInfo<TVehicle>) => (
+  <View style={styles.card}>
+    <Image source={{ uri: item.image }} style={styles.image} resizeMode="cover" />
+    <Text style={styles.title}>
+      {item.make} {item.model}
+    </Text>
+    <Text style={styles.meta}>
+      {item.year} • {item.engineSize} • {item.fuel} • ${item.startingBid}
+    </Text>
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {
