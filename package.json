@@ -1,0 +1,25 @@
+{
+  "name": "react-native-vehicle-catalog",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.27.0",
+  "workspaces": [
+    "mobile",
+    "backend"
+  ],
+  "scripts": {
+    "preinstall": "npx -y only-allow pnpm",
+    "dev:ios": "pnpm --filter mobile ios",
+    "dev:android": "pnpm --filter mobile android",
+    "dev:web": "pnpm --filter mobile web",
+    "dev:backend": "pnpm --filter backend start",
+    "lint": "pnpm --filter mobile lint",
+    "lint:fix": "pnpm --filter mobile lint:fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "prettier": "^3.8.1"
+  }
+}
