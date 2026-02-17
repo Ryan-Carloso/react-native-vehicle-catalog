@@ -1,7 +1,7 @@
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
-import { TVehicle } from '@shared/types';
+import type { TVehicle } from '@shared/types';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { formatCurrency, formatMileage, formatAuctionCountdown } from '@/src/utils/formatters';
 

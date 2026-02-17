@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 
-import { TVehicle } from '@shared/types';
+import type { TVehicle } from '@shared/types';
 import { API_BASE_URL, FAKE_PAGE_DELAY_MS } from '@/src/utils/const';
 import { delay } from '@/src/utils/api/mockup-delay';
 

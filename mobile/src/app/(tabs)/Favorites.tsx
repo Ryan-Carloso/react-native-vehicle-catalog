@@ -1,4 +1,5 @@
-import { FlashList, ListRenderItemInfo } from '@shopify/flash-list';
+import { FlashList } from '@shopify/flash-list';
+import type { ListRenderItemInfo } from '@shopify/flash-list';
 import { useRouter } from 'expo-router';
 
 import { StyleSheet, Text } from 'react-native';
@@ -12,7 +13,7 @@ import { BrandColors } from '@/src/theme/BrandColors';
 import { EVehiclesFilterType } from '@/src/utils/api/const';
 import { AppRoutes } from '@/src/utils/const';
 import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries/useVehiclesInfiniteQuery';
-import { TVehicle } from '@shared/types';
+import type { TVehicle } from '@shared/types';
 
 export default function FavoritesScreen() {
   const router = useRouter();

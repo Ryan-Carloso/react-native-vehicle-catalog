@@ -1,4 +1,5 @@
-import { FlashList, ListRenderItemInfo } from '@shopify/flash-list';
+import { FlashList } from '@shopify/flash-list';
+import type { ListRenderItemInfo } from '@shopify/flash-list';
 import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { useRouter } from 'expo-router';
 
@@ -6,7 +7,7 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { HomeEmptyState } from '@/src/components/EmptyState';
-import { TVehicle } from '@shared/types';
+import type { TVehicle } from '@shared/types';
 import { VehicleListItem } from '@/src/components/VehicleListItem';
 import { GridNextPageSkeleton, GridSkeleton } from '@/src/components/HomeSkeleton';
 import { AppRoutes } from '@/src/utils/const';

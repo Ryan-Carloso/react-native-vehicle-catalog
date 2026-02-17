@@ -8,7 +8,10 @@ config.watchFolders = [...config.watchFolders, path.resolve(__dirname, '..')];
 config.resolver.nodeModulesPaths = [
   path.resolve(__dirname, 'node_modules'),
   path.resolve(__dirname, '../node_modules'),
+  path.resolve(__dirname, '../../node_modules'),
 ];
+
+config.resolver.sourceExts = [...config.resolver.sourceExts, 'mjs'];
 
 config.resolver.alias = {
   '@': path.resolve(__dirname, '.'),

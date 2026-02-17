@@ -1,5 +1,5 @@
 import { InfiniteData, useInfiniteQuery } from '@tanstack/react-query';
-import { TVehicle } from '@shared/types';
+import type { TVehicle } from '@shared/types';
 
 import {
   EVehiclesFilterType,

@@ -1,4 +1,4 @@
-import { TVehicle } from '@shared/types';
+import type { TVehicle } from '@shared/types';
 
 import { EVehiclesFilterType } from '@/src/utils/api/const';
 
