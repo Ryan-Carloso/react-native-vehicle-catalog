@@ -11,7 +11,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "1",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -24,7 +25,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "2",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": true
     },
     {
       "make": "Toyota",
@@ -37,7 +39,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "3",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": true
     },
     {
       "make": "Volkswagen",
@@ -50,7 +53,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "4",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -63,7 +67,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "5",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": true
     },
     {
       "make": "Audi",
@@ -76,7 +81,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "6",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -89,7 +95,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "7",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": true
     },
     {
       "make": "Citroen",
@@ -102,7 +109,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "8",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -115,7 +123,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "9",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -128,7 +137,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "10",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": true
     },
     {
       "make": "BMW",
@@ -141,7 +151,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "11",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -154,7 +165,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "12",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -167,7 +179,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "13",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -180,7 +193,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "14",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -193,7 +207,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "15",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -206,7 +221,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "16",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -219,7 +235,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "17",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -232,7 +249,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "18",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -245,7 +263,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "19",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -258,7 +277,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "20",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -271,7 +291,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "21",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -284,7 +305,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "22",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -297,7 +319,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "23",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -310,7 +333,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "24",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -323,7 +347,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "25",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -336,7 +361,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "26",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -349,7 +375,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "27",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -362,7 +389,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "28",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -375,7 +403,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "29",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -388,7 +417,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "30",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -401,7 +431,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "31",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -414,7 +445,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "32",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -427,7 +459,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "33",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -440,7 +473,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "34",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -453,7 +487,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "35",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -466,7 +501,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "36",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -479,7 +515,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "37",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -492,7 +529,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "38",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -505,7 +543,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "39",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -518,7 +557,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "40",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -531,7 +571,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "41",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -544,7 +585,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "42",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -557,7 +599,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "43",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -570,7 +613,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "44",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -583,7 +627,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "45",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -596,7 +641,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "46",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -609,7 +655,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "47",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -622,7 +669,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "48",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -635,7 +683,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "49",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -648,7 +697,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "50",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -661,7 +711,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "51",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -674,7 +725,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "52",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -687,7 +739,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "53",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -700,7 +753,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "54",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -713,7 +767,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "55",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -726,7 +781,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "56",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -739,7 +795,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "57",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -752,7 +809,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "58",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -765,7 +823,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "59",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -778,7 +837,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "60",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -791,7 +851,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "61",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -804,7 +865,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "62",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -817,7 +879,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "63",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -830,7 +893,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "64",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -843,7 +907,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "65",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -856,7 +921,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "66",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -869,7 +935,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "67",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -882,7 +949,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "68",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -895,7 +963,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "69",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -908,7 +977,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "70",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -921,7 +991,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "71",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -934,7 +1005,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "72",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -947,7 +1019,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "73",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -960,7 +1033,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "74",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -973,7 +1047,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "75",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -986,7 +1061,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "76",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -999,7 +1075,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "77",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1012,7 +1089,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "78",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1025,7 +1103,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "79",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1038,7 +1117,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "80",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1051,7 +1131,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "81",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1064,7 +1145,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "82",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1077,7 +1159,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "83",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1090,7 +1173,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "84",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1103,7 +1187,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "85",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1116,7 +1201,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "86",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1129,7 +1215,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "87",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1142,7 +1229,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "88",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1155,7 +1243,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "89",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1168,7 +1257,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "90",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1181,7 +1271,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "91",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1194,7 +1285,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "92",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1207,7 +1299,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "93",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1220,7 +1313,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "94",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1233,7 +1327,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "95",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1246,7 +1341,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "96",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1259,7 +1355,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "97",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1272,7 +1369,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "98",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1285,7 +1383,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "99",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1298,7 +1397,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "100",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1311,7 +1411,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "101",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1324,7 +1425,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "102",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1337,7 +1439,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "103",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1350,7 +1453,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "104",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1363,7 +1467,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "105",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1376,7 +1481,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "106",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1389,7 +1495,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "107",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1402,7 +1509,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "108",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1415,7 +1523,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "109",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1428,7 +1537,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "110",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1441,7 +1551,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "111",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1454,7 +1565,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "112",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1467,7 +1579,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "113",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1480,7 +1593,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "114",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1493,7 +1607,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "115",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1506,7 +1621,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "116",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1519,7 +1635,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "117",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1532,7 +1649,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "118",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1545,7 +1663,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "119",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1558,7 +1677,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "120",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1571,7 +1691,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "121",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1584,7 +1705,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "122",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1597,7 +1719,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "123",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1610,7 +1733,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "124",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1623,7 +1747,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "125",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1636,7 +1761,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "126",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1649,7 +1775,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "127",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1662,7 +1789,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "128",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1675,7 +1803,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "129",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1688,7 +1817,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "130",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1701,7 +1831,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "131",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1714,7 +1845,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "132",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1727,7 +1859,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "133",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1740,7 +1873,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "134",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1753,7 +1887,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "135",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1766,7 +1901,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "136",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1779,7 +1915,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "137",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1792,7 +1929,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "138",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1805,7 +1943,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "139",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1818,7 +1957,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "140",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1831,7 +1971,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "141",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1844,7 +1985,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "142",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1857,7 +1999,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "143",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1870,7 +2013,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "144",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1883,7 +2027,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "145",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1896,7 +2041,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "146",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1909,7 +2055,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "147",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1922,7 +2069,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "148",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1935,7 +2083,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "149",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1948,7 +2097,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "150",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1961,7 +2111,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "151",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1974,7 +2125,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "152",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1987,7 +2139,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "153",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2000,7 +2153,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "154",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2013,7 +2167,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "155",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2026,7 +2181,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "156",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2039,7 +2195,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "157",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2052,7 +2209,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "158",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2065,7 +2223,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "159",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2078,7 +2237,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "160",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2091,7 +2251,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "161",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2104,7 +2265,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "162",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2117,7 +2279,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "163",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2130,7 +2293,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "164",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2143,7 +2307,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "165",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2156,7 +2321,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "166",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2169,7 +2335,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "167",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2182,7 +2349,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "168",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2195,7 +2363,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "169",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2208,7 +2377,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "170",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2221,7 +2391,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "171",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2234,7 +2405,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "172",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2247,7 +2419,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "173",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2260,7 +2433,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "174",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2273,7 +2447,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "175",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2286,7 +2461,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "176",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2299,7 +2475,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "177",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2312,7 +2489,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "178",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2325,7 +2503,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "179",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2338,7 +2517,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "180",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2351,7 +2531,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "181",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2364,7 +2545,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "182",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2377,7 +2559,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "183",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2390,7 +2573,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "184",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2403,7 +2587,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "185",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2416,7 +2601,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "186",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2429,7 +2615,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "187",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2442,7 +2629,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "188",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2455,7 +2643,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "189",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2468,7 +2657,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "190",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2481,7 +2671,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "191",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2494,7 +2685,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "192",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2507,7 +2699,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "193",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2520,7 +2713,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "194",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2533,7 +2727,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "195",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2546,7 +2741,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "196",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2559,7 +2755,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "197",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2572,7 +2769,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "198",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2585,7 +2783,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "199",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2598,7 +2797,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "200",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2611,7 +2811,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "201",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2624,7 +2825,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "202",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2637,7 +2839,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "203",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2650,7 +2853,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "204",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2663,7 +2867,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "205",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2676,7 +2881,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "206",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2689,7 +2895,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "207",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2702,7 +2909,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "208",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2715,7 +2923,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "209",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2728,7 +2937,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "210",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2741,7 +2951,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "211",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2754,7 +2965,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "212",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2767,7 +2979,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "213",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2780,7 +2993,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "214",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2793,7 +3007,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "215",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2806,7 +3021,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "216",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2819,7 +3035,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "217",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2832,7 +3049,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "218",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2845,7 +3063,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "219",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2858,7 +3077,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "220",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2871,7 +3091,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "221",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2884,7 +3105,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "222",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2897,7 +3119,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "223",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2910,7 +3133,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "224",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2923,7 +3147,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "225",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2936,7 +3161,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "226",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2949,7 +3175,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "227",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2962,7 +3189,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "228",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2975,7 +3203,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "229",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2988,7 +3217,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "230",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3001,7 +3231,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "231",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -3014,7 +3245,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "232",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3027,7 +3259,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "233",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3040,7 +3273,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "234",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3053,7 +3287,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "235",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -3066,7 +3301,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "236",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3079,7 +3315,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "237",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3092,7 +3329,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "238",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3105,7 +3343,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "239",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3118,7 +3357,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "240",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3131,7 +3371,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "241",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3144,7 +3385,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "242",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3157,7 +3399,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "243",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3170,7 +3413,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "244",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3183,7 +3427,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "245",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3196,7 +3441,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "246",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3209,7 +3455,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "247",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3222,7 +3469,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "248",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3235,7 +3483,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "249",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3248,7 +3497,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "250",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3261,7 +3511,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "251",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -3274,7 +3525,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "252",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3287,7 +3539,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "253",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3300,7 +3553,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "254",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3313,7 +3567,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "255",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3326,7 +3581,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "256",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3339,7 +3595,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "257",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3352,7 +3609,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "258",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3365,7 +3623,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "259",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3378,7 +3637,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "260",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3391,7 +3651,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "261",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3404,7 +3665,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "262",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -3417,7 +3679,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "263",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3430,7 +3693,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "264",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3443,7 +3707,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "265",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3456,7 +3721,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "266",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3469,7 +3735,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "267",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3482,7 +3749,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "268",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3495,7 +3763,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "269",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3508,7 +3777,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "270",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3521,7 +3791,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "271",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3534,7 +3805,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "272",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3547,7 +3819,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "273",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3560,7 +3833,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "274",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3573,7 +3847,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "275",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3586,7 +3861,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "276",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -3599,7 +3875,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "277",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3612,7 +3889,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "278",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3625,7 +3903,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "279",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3638,7 +3917,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "280",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3651,7 +3931,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "281",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3664,7 +3945,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "282",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3677,7 +3959,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "283",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3690,7 +3973,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "284",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3703,7 +3987,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "285",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3716,7 +4001,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "286",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3729,7 +4015,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "287",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3742,7 +4029,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "288",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3755,7 +4043,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "289",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3768,7 +4057,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "290",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3781,7 +4071,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "291",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3794,7 +4085,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "292",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3807,7 +4099,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "293",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3820,7 +4113,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "294",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3833,7 +4127,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "295",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3846,7 +4141,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "296",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3859,7 +4155,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "297",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3872,7 +4169,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "298",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3885,7 +4183,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "299",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3898,7 +4197,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "300",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3911,7 +4211,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "301",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3924,7 +4225,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "302",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3937,7 +4239,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "303",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3950,7 +4253,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "304",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3963,7 +4267,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "305",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3976,7 +4281,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "306",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3989,7 +4295,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "307",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4002,7 +4309,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "308",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4015,7 +4323,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "309",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4028,7 +4337,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "310",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4041,7 +4351,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "311",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4054,7 +4365,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "312",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4067,7 +4379,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "313",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4080,7 +4393,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "314",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4093,7 +4407,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "315",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4106,7 +4421,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "316",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4119,7 +4435,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "317",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4132,7 +4449,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "318",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4145,7 +4463,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "319",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4158,7 +4477,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "320",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4171,7 +4491,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "321",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4184,7 +4505,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "322",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4197,7 +4519,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "323",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4210,7 +4533,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "324",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4223,7 +4547,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "325",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4236,7 +4561,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "326",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4249,7 +4575,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "327",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4262,7 +4589,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "328",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4275,7 +4603,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "329",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4288,7 +4617,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "330",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4301,7 +4631,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "331",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4314,7 +4645,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "332",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4327,7 +4659,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "333",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4340,7 +4673,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "334",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4353,7 +4687,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "335",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4366,7 +4701,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "336",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4379,7 +4715,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "337",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4392,7 +4729,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "338",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4405,7 +4743,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "339",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4418,7 +4757,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "340",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4431,7 +4771,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "341",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4444,7 +4785,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "342",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4457,7 +4799,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "343",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4470,7 +4813,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "344",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4483,7 +4827,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "345",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4496,7 +4841,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "346",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4509,7 +4855,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "347",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4522,7 +4869,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "348",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4535,7 +4883,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "349",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4548,7 +4897,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "350",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4561,7 +4911,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "351",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4574,7 +4925,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "352",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4587,7 +4939,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "353",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4600,7 +4953,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "354",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4613,7 +4967,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "355",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4626,7 +4981,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "356",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4639,7 +4995,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "357",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4652,7 +5009,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "358",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4665,7 +5023,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "359",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4678,7 +5037,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "360",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4691,7 +5051,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "361",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4704,7 +5065,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "362",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4717,7 +5079,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "363",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4730,7 +5093,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "364",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4743,7 +5107,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "365",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4756,7 +5121,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "366",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4769,7 +5135,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "367",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4782,7 +5149,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "368",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4795,7 +5163,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "369",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4808,7 +5177,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "370",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4821,7 +5191,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "371",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4834,7 +5205,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "372",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4847,7 +5219,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "373",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4860,7 +5233,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "374",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4873,7 +5247,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "375",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4886,7 +5261,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "376",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4899,7 +5275,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "377",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4912,7 +5289,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "378",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4925,7 +5303,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "379",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4938,7 +5317,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "380",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4951,7 +5331,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "381",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4964,7 +5345,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "382",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4977,7 +5359,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "383",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4990,7 +5373,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "384",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5003,7 +5387,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "385",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5016,7 +5401,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "386",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5029,7 +5415,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "387",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5042,7 +5429,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "388",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -5055,7 +5443,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "389",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5068,7 +5457,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "390",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5081,7 +5471,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "391",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5094,7 +5485,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "392",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5107,7 +5499,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "393",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5120,7 +5513,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "394",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5133,7 +5527,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "395",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5146,7 +5541,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "396",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5159,7 +5555,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "397",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5172,7 +5569,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "398",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5185,7 +5583,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "399",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5198,7 +5597,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "400",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5211,7 +5611,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "401",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5224,7 +5625,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "402",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5237,7 +5639,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "403",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -5250,7 +5653,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "404",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5263,7 +5667,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "405",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5276,7 +5681,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "406",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5289,7 +5695,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "407",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5302,7 +5709,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "408",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5315,7 +5723,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "409",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5328,7 +5737,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "410",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5341,7 +5751,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "411",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5354,7 +5765,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "412",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5367,7 +5779,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "413",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5380,7 +5793,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "414",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5393,7 +5807,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "415",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5406,7 +5821,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "416",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5419,7 +5835,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "417",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5432,7 +5849,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "418",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5445,7 +5863,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "419",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5458,7 +5877,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "420",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5471,7 +5891,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "421",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5484,7 +5905,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "422",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5497,7 +5919,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "423",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5510,7 +5933,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "424",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5523,7 +5947,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "425",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5536,7 +5961,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "426",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5549,7 +5975,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "427",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5562,7 +5989,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "428",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5575,7 +6003,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "429",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5588,7 +6017,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "430",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5601,7 +6031,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "431",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5614,7 +6045,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "432",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5627,7 +6059,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "433",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5640,7 +6073,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "434",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5653,7 +6087,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "435",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5666,7 +6101,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "436",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5679,7 +6115,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "437",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5692,7 +6129,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "438",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5705,7 +6143,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "439",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5718,7 +6157,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "440",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5731,7 +6171,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "441",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5744,7 +6185,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "442",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5757,7 +6199,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "443",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5770,7 +6213,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "444",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5783,7 +6227,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "445",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5796,7 +6241,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "446",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5809,7 +6255,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "447",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5822,7 +6269,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "448",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5835,7 +6283,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "449",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5848,7 +6297,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "450",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5861,7 +6311,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "451",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5874,7 +6325,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "452",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5887,7 +6339,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "453",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5900,7 +6353,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "454",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5913,7 +6367,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "455",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5926,7 +6381,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "456",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5939,7 +6395,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "457",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -5952,7 +6409,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "458",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5965,7 +6423,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "459",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5978,7 +6437,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "460",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5991,7 +6451,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "461",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -6004,7 +6465,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "462",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -6017,7 +6479,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "463",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -6030,7 +6493,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "464",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -6043,7 +6507,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "465",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -6056,7 +6521,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "466",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -6069,7 +6535,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "467",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -6082,7 +6549,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "468",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -6095,7 +6563,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "469",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -6108,7 +6577,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "470",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -6121,7 +6591,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "471",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -6134,7 +6605,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "472",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -6147,7 +6619,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "473",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -6160,7 +6633,8 @@
       "startingBid": 14000,
       "favourite": false,
       "id": "474",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -6173,7 +6647,8 @@
       "startingBid": 20000,
       "favourite": false,
       "id": "475",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -6186,7 +6661,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "476",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -6199,7 +6675,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "477",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -6212,7 +6689,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "478",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -6225,7 +6703,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "479",
-      "image": "http://localhost:3001/car-mockups/car-example-3.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -6238,7 +6717,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "480",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -6251,7 +6731,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "481",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -6264,7 +6745,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "482",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -6277,7 +6759,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "483",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -6290,7 +6773,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "484",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -6303,7 +6787,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "485",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -6316,7 +6801,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "486",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -6329,7 +6815,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "487",
-      "image": "http://localhost:3001/car-mockups/car-example-9.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -6342,7 +6829,8 @@
       "startingBid": 15000,
       "favourite": true,
       "id": "488",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -6355,7 +6843,8 @@
       "startingBid": 16000,
       "favourite": true,
       "id": "489",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -6368,7 +6857,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "490",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -6381,7 +6871,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "491",
-      "image": "http://localhost:3001/car-mockups/car-example-6.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -6394,7 +6885,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "492",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -6407,7 +6899,8 @@
       "startingBid": 14000,
       "favourite": true,
       "id": "493",
-      "image": "http://localhost:3001/car-mockups/car-example-8.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -6420,7 +6913,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "494",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -6433,7 +6927,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "495",
-      "image": "http://localhost:3001/car-mockups/car-example-4.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -6446,7 +6941,8 @@
       "startingBid": 15000,
       "favourite": false,
       "id": "496",
-      "image": "http://localhost:3001/car-mockups/car-example-7.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -6459,7 +6955,8 @@
       "startingBid": 17000,
       "favourite": true,
       "id": "497",
-      "image": "http://localhost:3001/car-mockups/car-example-2.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -6472,7 +6969,8 @@
       "startingBid": 17000,
       "favourite": false,
       "id": "498",
-      "image": "http://localhost:3001/car-mockups/car-example-5.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -6485,7 +6983,8 @@
       "startingBid": 20000,
       "favourite": true,
       "id": "499",
-      "image": "http://localhost:3001/car-mockups/car-example-1.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -6498,7 +6997,8 @@
       "startingBid": 16000,
       "favourite": false,
       "id": "500",
-      "image": "http://localhost:3001/car-mockups/car-example-10.webp"
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     }
   ]
 }

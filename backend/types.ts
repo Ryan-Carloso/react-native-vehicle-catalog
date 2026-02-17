@@ -22,4 +22,5 @@ export type TVehicle = {
   auctionDateTime: string;
   startingBid: number;
   favourite: boolean;
+  hasBid: boolean;
 };
