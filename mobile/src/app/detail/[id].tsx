@@ -8,7 +8,7 @@ import { AppScreenHeader } from '@/src/components/AppScreenHeader';
 import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { VehicleDetailsItem } from '@/src/components/VehicleDetailsItem';
 import { VehicleHeroImage } from '@/src/components/VehicleHeroImage';
-import { useVehicleQuery } from '@/src/utils/api/queries';
+import { useVehicleDetailQuery } from '@/src/utils/api/queries/useVehicleDetailQuery';
 import { BrandColors } from '@/src/theme/BrandColors';
 
 type TVehicleRouteParams = {
@@ -19,7 +19,7 @@ export default function VehicleDetailsScreen() {
   const router = useRouter();
   const { id }: TVehicleRouteParams = useLocalSearchParams<TVehicleRouteParams>();
   const vehicleId: string = typeof id === 'string' ? id : '';
-  const { isLoading, isError, data } = useVehicleQuery(vehicleId);
+  const { isLoading, isError, data } = useVehicleDetailQuery(vehicleId);
 
   if (!vehicleId) {
     return (
