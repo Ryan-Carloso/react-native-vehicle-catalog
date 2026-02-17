@@ -1,6 +1,6 @@
-export type FuelType = 'diesel' | 'petrol';
+export type TFuelType = 'diesel' | 'petrol';
 
-export type VehicleMake =
+export type TVehicleMake =
   | 'Audi'
   | 'BMW'
   | 'Citroen'
@@ -10,19 +10,17 @@ export type VehicleMake =
   | 'Volkswagen'
   | 'Volvo';
 
-export type Vehicle = {
+export type TVehicle = {
   id: string;
-  make: VehicleMake;
+  make: TVehicleMake;
   model: string;
+  image: string;
   engineSize: string;
-  fuel: FuelType;
+  fuel: TFuelType;
   year: number;
   mileage: number;
   auctionDateTime: string;
   startingBid: number;
   favourite: boolean;
-};
-
-export type Database = {
-  vehicles: Vehicle[];
+  hasBid: boolean;
 };

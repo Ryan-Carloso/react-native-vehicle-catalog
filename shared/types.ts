@@ -1,10 +1,10 @@
-import type { VehicleMake } from '../backend/types';
+import type { TVehicleMake } from '../backend/types';
 
-export type { Database, FuelType, Vehicle, VehicleMake } from '../backend/types';
+export type { TFuelType, TVehicle, TVehicleMake } from '../backend/types';
 
-export type VehicleMakeFilter = VehicleMake | 'All';
+export type TVehicleMakeFilter = TVehicleMake | 'All';
 
-export const VEHICLE_MAKE_FILTER_OPTIONS: readonly VehicleMakeFilter[] = [
+export const VEHICLE_MAKE_FILTER_OPTIONS: readonly TVehicleMakeFilter[] = [
   'All',
   'Audi',
   'BMW',

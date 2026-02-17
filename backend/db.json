@@ -10,7 +10,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "1"
+      "id": "1",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -22,7 +24,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "2"
+      "id": "2",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": true
     },
     {
       "make": "Toyota",
@@ -34,7 +38,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "3"
+      "id": "3",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": true
     },
     {
       "make": "Volkswagen",
@@ -46,7 +52,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "4"
+      "id": "4",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -58,7 +66,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "5"
+      "id": "5",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": true
     },
     {
       "make": "Audi",
@@ -70,7 +80,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "6"
+      "id": "6",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -82,7 +94,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "7"
+      "id": "7",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": true
     },
     {
       "make": "Citroen",
@@ -94,7 +108,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "8"
+      "id": "8",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -106,7 +122,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "9"
+      "id": "9",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -118,7 +136,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "10"
+      "id": "10",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": true
     },
     {
       "make": "BMW",
@@ -130,7 +150,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "11"
+      "id": "11",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -142,7 +164,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "12"
+      "id": "12",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -154,7 +178,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "13"
+      "id": "13",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -166,7 +192,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "14"
+      "id": "14",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -178,7 +206,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "15"
+      "id": "15",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -190,7 +220,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "16"
+      "id": "16",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -202,7 +234,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "17"
+      "id": "17",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -214,7 +248,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "18"
+      "id": "18",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -226,7 +262,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "19"
+      "id": "19",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -238,7 +276,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "20"
+      "id": "20",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -250,7 +290,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "21"
+      "id": "21",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -262,7 +304,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "22"
+      "id": "22",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -274,7 +318,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "23"
+      "id": "23",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -286,7 +332,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "24"
+      "id": "24",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -298,7 +346,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "25"
+      "id": "25",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -310,7 +360,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "26"
+      "id": "26",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -322,7 +374,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "27"
+      "id": "27",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -334,7 +388,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "28"
+      "id": "28",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -346,7 +402,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "29"
+      "id": "29",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -358,7 +416,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "30"
+      "id": "30",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -370,7 +430,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "31"
+      "id": "31",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -382,7 +444,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "32"
+      "id": "32",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -394,7 +458,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "33"
+      "id": "33",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -406,7 +472,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "34"
+      "id": "34",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -418,7 +486,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "35"
+      "id": "35",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -430,7 +500,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "36"
+      "id": "36",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -442,7 +514,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "37"
+      "id": "37",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -454,7 +528,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "38"
+      "id": "38",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -466,7 +542,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "39"
+      "id": "39",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -478,7 +556,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "40"
+      "id": "40",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -490,7 +570,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "41"
+      "id": "41",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -502,7 +584,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "42"
+      "id": "42",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -514,7 +598,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "43"
+      "id": "43",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -526,7 +612,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "44"
+      "id": "44",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -538,7 +626,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "45"
+      "id": "45",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -550,7 +640,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "46"
+      "id": "46",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -562,7 +654,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "47"
+      "id": "47",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -574,7 +668,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "48"
+      "id": "48",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -586,7 +682,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "49"
+      "id": "49",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -598,7 +696,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "50"
+      "id": "50",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -610,7 +710,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "51"
+      "id": "51",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -622,7 +724,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "52"
+      "id": "52",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -634,7 +738,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "53"
+      "id": "53",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -646,7 +752,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "54"
+      "id": "54",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -658,7 +766,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "55"
+      "id": "55",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -670,7 +780,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "56"
+      "id": "56",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -682,7 +794,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "57"
+      "id": "57",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -694,7 +808,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "58"
+      "id": "58",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -706,7 +822,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "59"
+      "id": "59",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -718,7 +836,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "60"
+      "id": "60",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -730,7 +850,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "61"
+      "id": "61",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -742,7 +864,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "62"
+      "id": "62",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -754,7 +878,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "63"
+      "id": "63",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -766,7 +892,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "64"
+      "id": "64",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -778,7 +906,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "65"
+      "id": "65",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -790,7 +920,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "66"
+      "id": "66",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -802,7 +934,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "67"
+      "id": "67",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -814,7 +948,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "68"
+      "id": "68",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -826,7 +962,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "69"
+      "id": "69",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -838,7 +976,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "70"
+      "id": "70",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -850,7 +990,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "71"
+      "id": "71",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -862,7 +1004,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "72"
+      "id": "72",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -874,7 +1018,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "73"
+      "id": "73",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -886,7 +1032,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "74"
+      "id": "74",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -898,7 +1046,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "75"
+      "id": "75",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -910,7 +1060,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "76"
+      "id": "76",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -922,7 +1074,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "77"
+      "id": "77",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -934,7 +1088,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "78"
+      "id": "78",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -946,7 +1102,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "79"
+      "id": "79",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -958,7 +1116,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "80"
+      "id": "80",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -970,7 +1130,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "81"
+      "id": "81",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -982,7 +1144,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "82"
+      "id": "82",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -994,7 +1158,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "83"
+      "id": "83",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1006,7 +1172,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "84"
+      "id": "84",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1018,7 +1186,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "85"
+      "id": "85",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1030,7 +1200,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "86"
+      "id": "86",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1042,7 +1214,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "87"
+      "id": "87",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1054,7 +1228,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "88"
+      "id": "88",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1066,7 +1242,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "89"
+      "id": "89",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1078,7 +1256,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "90"
+      "id": "90",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1090,7 +1270,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "91"
+      "id": "91",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1102,7 +1284,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "92"
+      "id": "92",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1114,7 +1298,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "93"
+      "id": "93",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1126,7 +1312,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "94"
+      "id": "94",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1138,7 +1326,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "95"
+      "id": "95",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1150,7 +1340,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "96"
+      "id": "96",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1162,7 +1354,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "97"
+      "id": "97",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1174,7 +1368,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "98"
+      "id": "98",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1186,7 +1382,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "99"
+      "id": "99",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1198,7 +1396,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "100"
+      "id": "100",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1210,7 +1410,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "101"
+      "id": "101",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1222,7 +1424,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "102"
+      "id": "102",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1234,7 +1438,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "103"
+      "id": "103",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1246,7 +1452,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "104"
+      "id": "104",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1258,7 +1466,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "105"
+      "id": "105",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1270,7 +1480,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "106"
+      "id": "106",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1282,7 +1494,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "107"
+      "id": "107",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1294,7 +1508,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "108"
+      "id": "108",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1306,7 +1522,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "109"
+      "id": "109",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1318,7 +1536,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "110"
+      "id": "110",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1330,7 +1550,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "111"
+      "id": "111",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1342,7 +1564,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "112"
+      "id": "112",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1354,7 +1578,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "113"
+      "id": "113",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1366,7 +1592,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "114"
+      "id": "114",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1378,7 +1606,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "115"
+      "id": "115",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1390,7 +1620,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "116"
+      "id": "116",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1402,7 +1634,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "117"
+      "id": "117",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1414,7 +1648,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "118"
+      "id": "118",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1426,7 +1662,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "119"
+      "id": "119",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1438,7 +1676,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "120"
+      "id": "120",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1450,7 +1690,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "121"
+      "id": "121",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1462,7 +1704,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "122"
+      "id": "122",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1474,7 +1718,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "123"
+      "id": "123",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1486,7 +1732,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "124"
+      "id": "124",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1498,7 +1746,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "125"
+      "id": "125",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1510,7 +1760,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "126"
+      "id": "126",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1522,7 +1774,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "127"
+      "id": "127",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1534,7 +1788,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "128"
+      "id": "128",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1546,7 +1802,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "129"
+      "id": "129",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1558,7 +1816,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "130"
+      "id": "130",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1570,7 +1830,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "131"
+      "id": "131",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1582,7 +1844,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "132"
+      "id": "132",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1594,7 +1858,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "133"
+      "id": "133",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1606,7 +1872,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "134"
+      "id": "134",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1618,7 +1886,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "135"
+      "id": "135",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1630,7 +1900,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "136"
+      "id": "136",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1642,7 +1914,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "137"
+      "id": "137",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1654,7 +1928,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "138"
+      "id": "138",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1666,7 +1942,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "139"
+      "id": "139",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1678,7 +1956,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "140"
+      "id": "140",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1690,7 +1970,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "141"
+      "id": "141",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1702,7 +1984,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "142"
+      "id": "142",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1714,7 +1998,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "143"
+      "id": "143",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1726,7 +2012,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "144"
+      "id": "144",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -1738,7 +2026,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "145"
+      "id": "145",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1750,7 +2040,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "146"
+      "id": "146",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1762,7 +2054,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "147"
+      "id": "147",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1774,7 +2068,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "148"
+      "id": "148",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1786,7 +2082,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "149"
+      "id": "149",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1798,7 +2096,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "150"
+      "id": "150",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1810,7 +2110,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "151"
+      "id": "151",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -1822,7 +2124,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "152"
+      "id": "152",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1834,7 +2138,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "153"
+      "id": "153",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1846,7 +2152,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "154"
+      "id": "154",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1858,7 +2166,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "155"
+      "id": "155",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1870,7 +2180,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "156"
+      "id": "156",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1882,7 +2194,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "157"
+      "id": "157",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -1894,7 +2208,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "158"
+      "id": "158",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1906,7 +2222,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "159"
+      "id": "159",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1918,7 +2236,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "160"
+      "id": "160",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1930,7 +2250,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "161"
+      "id": "161",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -1942,7 +2264,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "162"
+      "id": "162",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -1954,7 +2278,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "163"
+      "id": "163",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -1966,7 +2292,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "164"
+      "id": "164",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -1978,7 +2306,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "165"
+      "id": "165",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -1990,7 +2320,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "166"
+      "id": "166",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2002,7 +2334,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "167"
+      "id": "167",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2014,7 +2348,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "168"
+      "id": "168",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2026,7 +2362,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "169"
+      "id": "169",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2038,7 +2376,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "170"
+      "id": "170",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2050,7 +2390,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "171"
+      "id": "171",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2062,7 +2404,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "172"
+      "id": "172",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2074,7 +2418,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "173"
+      "id": "173",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2086,7 +2432,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "174"
+      "id": "174",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2098,7 +2446,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "175"
+      "id": "175",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2110,7 +2460,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "176"
+      "id": "176",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2122,7 +2474,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "177"
+      "id": "177",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2134,7 +2488,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "178"
+      "id": "178",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2146,7 +2502,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "179"
+      "id": "179",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2158,7 +2516,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "180"
+      "id": "180",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2170,7 +2530,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "181"
+      "id": "181",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2182,7 +2544,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "182"
+      "id": "182",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2194,7 +2558,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "183"
+      "id": "183",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2206,7 +2572,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "184"
+      "id": "184",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2218,7 +2586,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "185"
+      "id": "185",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2230,7 +2600,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "186"
+      "id": "186",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2242,7 +2614,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "187"
+      "id": "187",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2254,7 +2628,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "188"
+      "id": "188",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2266,7 +2642,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "189"
+      "id": "189",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2278,7 +2656,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "190"
+      "id": "190",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2290,7 +2670,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "191"
+      "id": "191",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2302,7 +2684,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "192"
+      "id": "192",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2314,7 +2698,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "193"
+      "id": "193",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2326,7 +2712,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "194"
+      "id": "194",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2338,7 +2726,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "195"
+      "id": "195",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2350,7 +2740,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "196"
+      "id": "196",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2362,7 +2754,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "197"
+      "id": "197",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2374,7 +2768,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "198"
+      "id": "198",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2386,7 +2782,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "199"
+      "id": "199",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2398,7 +2796,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "200"
+      "id": "200",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2410,7 +2810,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "201"
+      "id": "201",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2422,7 +2824,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "202"
+      "id": "202",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2434,7 +2838,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "203"
+      "id": "203",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2446,7 +2852,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "204"
+      "id": "204",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2458,7 +2866,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "205"
+      "id": "205",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2470,7 +2880,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "206"
+      "id": "206",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2482,7 +2894,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "207"
+      "id": "207",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2494,7 +2908,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "208"
+      "id": "208",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2506,7 +2922,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "209"
+      "id": "209",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2518,7 +2936,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "210"
+      "id": "210",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2530,7 +2950,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "211"
+      "id": "211",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2542,7 +2964,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "212"
+      "id": "212",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2554,7 +2978,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "213"
+      "id": "213",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2566,7 +2992,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "214"
+      "id": "214",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2578,7 +3006,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "215"
+      "id": "215",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2590,7 +3020,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "216"
+      "id": "216",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2602,7 +3034,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "217"
+      "id": "217",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2614,7 +3048,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "218"
+      "id": "218",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2626,7 +3062,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "219"
+      "id": "219",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2638,7 +3076,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "220"
+      "id": "220",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2650,7 +3090,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "221"
+      "id": "221",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2662,7 +3104,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "222"
+      "id": "222",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2674,7 +3118,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "223"
+      "id": "223",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2686,7 +3132,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "224"
+      "id": "224",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2698,7 +3146,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "225"
+      "id": "225",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2710,7 +3160,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "226"
+      "id": "226",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2722,7 +3174,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "227"
+      "id": "227",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2734,7 +3188,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "228"
+      "id": "228",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2746,7 +3202,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "229"
+      "id": "229",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2758,7 +3216,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "230"
+      "id": "230",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2770,7 +3230,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "231"
+      "id": "231",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2782,7 +3244,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "232"
+      "id": "232",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2794,7 +3258,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "233"
+      "id": "233",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2806,7 +3272,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "234"
+      "id": "234",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2818,7 +3286,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "235"
+      "id": "235",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -2830,7 +3300,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "236"
+      "id": "236",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2842,7 +3314,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "237"
+      "id": "237",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -2854,7 +3328,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "238"
+      "id": "238",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2866,7 +3342,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "239"
+      "id": "239",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2878,7 +3356,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "240"
+      "id": "240",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2890,7 +3370,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "241"
+      "id": "241",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2902,7 +3384,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "242"
+      "id": "242",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2914,7 +3398,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "243"
+      "id": "243",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -2926,7 +3412,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "244"
+      "id": "244",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -2938,7 +3426,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "245"
+      "id": "245",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2950,7 +3440,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "246"
+      "id": "246",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -2962,7 +3454,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "247"
+      "id": "247",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -2974,7 +3468,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "248"
+      "id": "248",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -2986,7 +3482,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "249"
+      "id": "249",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -2998,7 +3496,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "250"
+      "id": "250",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3010,7 +3510,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "251"
+      "id": "251",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -3022,7 +3524,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "252"
+      "id": "252",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3034,7 +3538,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "253"
+      "id": "253",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3046,7 +3552,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "254"
+      "id": "254",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3058,7 +3566,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "255"
+      "id": "255",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3070,7 +3580,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "256"
+      "id": "256",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3082,7 +3594,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "257"
+      "id": "257",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3094,7 +3608,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "258"
+      "id": "258",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3106,7 +3622,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "259"
+      "id": "259",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3118,7 +3636,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "260"
+      "id": "260",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3130,7 +3650,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "261"
+      "id": "261",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3142,7 +3664,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "262"
+      "id": "262",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -3154,7 +3678,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "263"
+      "id": "263",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3166,7 +3692,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "264"
+      "id": "264",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3178,7 +3706,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "265"
+      "id": "265",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3190,7 +3720,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "266"
+      "id": "266",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3202,7 +3734,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "267"
+      "id": "267",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3214,7 +3748,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "268"
+      "id": "268",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3226,7 +3762,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "269"
+      "id": "269",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3238,7 +3776,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "270"
+      "id": "270",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3250,7 +3790,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "271"
+      "id": "271",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3262,7 +3804,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "272"
+      "id": "272",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3274,7 +3818,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "273"
+      "id": "273",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3286,7 +3832,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "274"
+      "id": "274",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3298,7 +3846,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "275"
+      "id": "275",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3310,7 +3860,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "276"
+      "id": "276",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -3322,7 +3874,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "277"
+      "id": "277",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3334,7 +3888,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "278"
+      "id": "278",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3346,7 +3902,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "279"
+      "id": "279",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3358,7 +3916,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "280"
+      "id": "280",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3370,7 +3930,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "281"
+      "id": "281",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3382,7 +3944,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "282"
+      "id": "282",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3394,7 +3958,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "283"
+      "id": "283",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3406,7 +3972,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "284"
+      "id": "284",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3418,7 +3986,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "285"
+      "id": "285",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3430,7 +4000,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "286"
+      "id": "286",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3442,7 +4014,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "287"
+      "id": "287",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3454,7 +4028,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "288"
+      "id": "288",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3466,7 +4042,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "289"
+      "id": "289",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3478,7 +4056,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "290"
+      "id": "290",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3490,7 +4070,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "291"
+      "id": "291",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3502,7 +4084,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "292"
+      "id": "292",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3514,7 +4098,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "293"
+      "id": "293",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3526,7 +4112,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "294"
+      "id": "294",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3538,7 +4126,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "295"
+      "id": "295",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3550,7 +4140,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "296"
+      "id": "296",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3562,7 +4154,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "297"
+      "id": "297",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3574,7 +4168,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "298"
+      "id": "298",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3586,7 +4182,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "299"
+      "id": "299",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3598,7 +4196,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "300"
+      "id": "300",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3610,7 +4210,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "301"
+      "id": "301",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3622,7 +4224,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "302"
+      "id": "302",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -3634,7 +4238,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "303"
+      "id": "303",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3646,7 +4252,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "304"
+      "id": "304",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -3658,7 +4266,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "305"
+      "id": "305",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3670,7 +4280,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "306"
+      "id": "306",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3682,7 +4294,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "307"
+      "id": "307",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -3694,7 +4308,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "308"
+      "id": "308",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3706,7 +4322,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "309"
+      "id": "309",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3718,7 +4336,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "310"
+      "id": "310",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3730,7 +4350,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "311"
+      "id": "311",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3742,7 +4364,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "312"
+      "id": "312",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3754,7 +4378,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "313"
+      "id": "313",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3766,7 +4392,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "314"
+      "id": "314",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3778,7 +4406,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "315"
+      "id": "315",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3790,7 +4420,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "316"
+      "id": "316",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3802,7 +4434,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "317"
+      "id": "317",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3814,7 +4448,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "318"
+      "id": "318",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3826,7 +4462,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "319"
+      "id": "319",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3838,7 +4476,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "320"
+      "id": "320",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3850,7 +4490,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "321"
+      "id": "321",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3862,7 +4504,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "322"
+      "id": "322",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -3874,7 +4518,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "323"
+      "id": "323",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3886,7 +4532,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "324"
+      "id": "324",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3898,7 +4546,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "325"
+      "id": "325",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -3910,7 +4560,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "326"
+      "id": "326",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3922,7 +4574,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "327"
+      "id": "327",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -3934,7 +4588,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "328"
+      "id": "328",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -3946,7 +4602,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "329"
+      "id": "329",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3958,7 +4616,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "330"
+      "id": "330",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -3970,7 +4630,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "331"
+      "id": "331",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -3982,7 +4644,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "332"
+      "id": "332",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -3994,7 +4658,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "333"
+      "id": "333",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4006,7 +4672,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "334"
+      "id": "334",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4018,7 +4686,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "335"
+      "id": "335",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4030,7 +4700,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "336"
+      "id": "336",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4042,7 +4714,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "337"
+      "id": "337",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4054,7 +4728,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "338"
+      "id": "338",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4066,7 +4742,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "339"
+      "id": "339",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4078,7 +4756,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "340"
+      "id": "340",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4090,7 +4770,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "341"
+      "id": "341",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4102,7 +4784,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "342"
+      "id": "342",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4114,7 +4798,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "343"
+      "id": "343",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4126,7 +4812,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "344"
+      "id": "344",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4138,7 +4826,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "345"
+      "id": "345",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4150,7 +4840,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "346"
+      "id": "346",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4162,7 +4854,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "347"
+      "id": "347",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4174,7 +4868,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "348"
+      "id": "348",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4186,7 +4882,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "349"
+      "id": "349",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4198,7 +4896,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "350"
+      "id": "350",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4210,7 +4910,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "351"
+      "id": "351",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4222,7 +4924,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "352"
+      "id": "352",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4234,7 +4938,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "353"
+      "id": "353",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4246,7 +4952,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "354"
+      "id": "354",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4258,7 +4966,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "355"
+      "id": "355",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4270,7 +4980,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "356"
+      "id": "356",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4282,7 +4994,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "357"
+      "id": "357",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4294,7 +5008,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "358"
+      "id": "358",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4306,7 +5022,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "359"
+      "id": "359",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4318,7 +5036,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "360"
+      "id": "360",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4330,7 +5050,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "361"
+      "id": "361",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4342,7 +5064,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "362"
+      "id": "362",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4354,7 +5078,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "363"
+      "id": "363",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4366,7 +5092,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "364"
+      "id": "364",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4378,7 +5106,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "365"
+      "id": "365",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4390,7 +5120,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "366"
+      "id": "366",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4402,7 +5134,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "367"
+      "id": "367",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4414,7 +5148,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "368"
+      "id": "368",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4426,7 +5162,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "369"
+      "id": "369",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4438,7 +5176,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "370"
+      "id": "370",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4450,7 +5190,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "371"
+      "id": "371",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4462,7 +5204,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "372"
+      "id": "372",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4474,7 +5218,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "373"
+      "id": "373",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4486,7 +5232,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "374"
+      "id": "374",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4498,7 +5246,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "375"
+      "id": "375",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4510,7 +5260,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "376"
+      "id": "376",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4522,7 +5274,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "377"
+      "id": "377",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4534,7 +5288,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "378"
+      "id": "378",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4546,7 +5302,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "379"
+      "id": "379",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4558,7 +5316,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "380"
+      "id": "380",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4570,7 +5330,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "381"
+      "id": "381",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4582,7 +5344,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "382"
+      "id": "382",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4594,7 +5358,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "383"
+      "id": "383",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4606,7 +5372,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "384"
+      "id": "384",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4618,7 +5386,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "385"
+      "id": "385",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4630,7 +5400,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "386"
+      "id": "386",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4642,7 +5414,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "387"
+      "id": "387",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4654,7 +5428,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "388"
+      "id": "388",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4666,7 +5442,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "389"
+      "id": "389",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4678,7 +5456,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "390"
+      "id": "390",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4690,7 +5470,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "391"
+      "id": "391",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4702,7 +5484,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "392"
+      "id": "392",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4714,7 +5498,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "393"
+      "id": "393",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4726,7 +5512,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "394"
+      "id": "394",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4738,7 +5526,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "395"
+      "id": "395",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4750,7 +5540,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "396"
+      "id": "396",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4762,7 +5554,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "397"
+      "id": "397",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4774,7 +5568,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "398"
+      "id": "398",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -4786,7 +5582,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "399"
+      "id": "399",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4798,7 +5596,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "400"
+      "id": "400",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4810,7 +5610,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "401"
+      "id": "401",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4822,7 +5624,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "402"
+      "id": "402",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4834,7 +5638,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "403"
+      "id": "403",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -4846,7 +5652,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "404"
+      "id": "404",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4858,7 +5666,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "405"
+      "id": "405",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -4870,7 +5680,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "406"
+      "id": "406",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4882,7 +5694,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "407"
+      "id": "407",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4894,7 +5708,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "408"
+      "id": "408",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4906,7 +5722,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "409"
+      "id": "409",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4918,7 +5736,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "410"
+      "id": "410",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4930,7 +5750,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "411"
+      "id": "411",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -4942,7 +5764,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "412"
+      "id": "412",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -4954,7 +5778,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "413"
+      "id": "413",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -4966,7 +5792,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "414"
+      "id": "414",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -4978,7 +5806,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "415"
+      "id": "415",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -4990,7 +5820,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "416"
+      "id": "416",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5002,7 +5834,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "417"
+      "id": "417",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5014,7 +5848,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "418"
+      "id": "418",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5026,7 +5862,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "419"
+      "id": "419",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5038,7 +5876,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "420"
+      "id": "420",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5050,7 +5890,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "421"
+      "id": "421",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5062,7 +5904,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "422"
+      "id": "422",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5074,7 +5918,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "423"
+      "id": "423",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5086,7 +5932,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "424"
+      "id": "424",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5098,7 +5946,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "425"
+      "id": "425",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5110,7 +5960,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "426"
+      "id": "426",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5122,7 +5974,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "427"
+      "id": "427",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5134,7 +5988,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "428"
+      "id": "428",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5146,7 +6002,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "429"
+      "id": "429",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5158,7 +6016,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "430"
+      "id": "430",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5170,7 +6030,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "431"
+      "id": "431",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5182,7 +6044,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "432"
+      "id": "432",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5194,7 +6058,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "433"
+      "id": "433",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5206,7 +6072,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "434"
+      "id": "434",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5218,7 +6086,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "435"
+      "id": "435",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5230,7 +6100,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "436"
+      "id": "436",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5242,7 +6114,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "437"
+      "id": "437",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5254,7 +6128,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "438"
+      "id": "438",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5266,7 +6142,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "439"
+      "id": "439",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5278,7 +6156,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "440"
+      "id": "440",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5290,7 +6170,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "441"
+      "id": "441",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5302,7 +6184,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "442"
+      "id": "442",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5314,7 +6198,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "443"
+      "id": "443",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5326,7 +6212,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "444"
+      "id": "444",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5338,7 +6226,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "445"
+      "id": "445",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5350,7 +6240,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "446"
+      "id": "446",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5362,7 +6254,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "447"
+      "id": "447",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5374,7 +6268,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "448"
+      "id": "448",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5386,7 +6282,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "449"
+      "id": "449",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5398,7 +6296,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "450"
+      "id": "450",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5410,7 +6310,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "451"
+      "id": "451",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5422,7 +6324,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "452"
+      "id": "452",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5434,7 +6338,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "453"
+      "id": "453",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5446,7 +6352,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "454"
+      "id": "454",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5458,7 +6366,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "455"
+      "id": "455",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5470,7 +6380,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "456"
+      "id": "456",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5482,7 +6394,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "457"
+      "id": "457",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -5494,7 +6408,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "458"
+      "id": "458",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5506,7 +6422,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "459"
+      "id": "459",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5518,7 +6436,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "460"
+      "id": "460",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5530,7 +6450,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "461"
+      "id": "461",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5542,7 +6464,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "462"
+      "id": "462",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5554,7 +6478,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "463"
+      "id": "463",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5566,7 +6492,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "464"
+      "id": "464",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5578,7 +6506,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "465"
+      "id": "465",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5590,7 +6520,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "466"
+      "id": "466",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5602,7 +6534,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "467"
+      "id": "467",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5614,7 +6548,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "468"
+      "id": "468",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5626,7 +6562,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "469"
+      "id": "469",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5638,7 +6576,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "470"
+      "id": "470",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5650,7 +6590,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "471"
+      "id": "471",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5662,7 +6604,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "472"
+      "id": "472",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -5674,7 +6618,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "473"
+      "id": "473",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5686,7 +6632,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": false,
-      "id": "474"
+      "id": "474",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5698,7 +6646,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": false,
-      "id": "475"
+      "id": "475",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5710,7 +6660,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "476"
+      "id": "476",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5722,7 +6674,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "477"
+      "id": "477",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5734,7 +6688,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "478"
+      "id": "478",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -5746,7 +6702,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "479"
+      "id": "479",
+      "image": "http://localhost:3001/car-mockups/car-example-3.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5758,7 +6716,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "480"
+      "id": "480",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5770,7 +6730,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "481"
+      "id": "481",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5782,7 +6744,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "482"
+      "id": "482",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5794,7 +6758,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "483"
+      "id": "483",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -5806,7 +6772,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "484"
+      "id": "484",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5818,7 +6786,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "485"
+      "id": "485",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5830,7 +6800,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "486"
+      "id": "486",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5842,7 +6814,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "487"
+      "id": "487",
+      "image": "http://localhost:3001/car-mockups/car-example-9.webp",
+      "hasBid": false
     },
     {
       "make": "Toyota",
@@ -5854,7 +6828,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": true,
-      "id": "488"
+      "id": "488",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5866,7 +6842,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 16000,
       "favourite": true,
-      "id": "489"
+      "id": "489",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5878,7 +6856,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "490"
+      "id": "490",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     },
     {
       "make": "Volvo",
@@ -5890,7 +6870,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "491"
+      "id": "491",
+      "image": "http://localhost:3001/car-mockups/car-example-6.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5902,7 +6884,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "492"
+      "id": "492",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5914,7 +6898,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 14000,
       "favourite": true,
-      "id": "493"
+      "id": "493",
+      "image": "http://localhost:3001/car-mockups/car-example-8.webp",
+      "hasBid": false
     },
     {
       "make": "Citroen",
@@ -5926,7 +6912,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "494"
+      "id": "494",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5938,7 +6926,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "495"
+      "id": "495",
+      "image": "http://localhost:3001/car-mockups/car-example-4.webp",
+      "hasBid": false
     },
     {
       "make": "BMW",
@@ -5950,7 +6940,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 15000,
       "favourite": false,
-      "id": "496"
+      "id": "496",
+      "image": "http://localhost:3001/car-mockups/car-example-7.webp",
+      "hasBid": false
     },
     {
       "make": "Volkswagen",
@@ -5962,7 +6954,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": true,
-      "id": "497"
+      "id": "497",
+      "image": "http://localhost:3001/car-mockups/car-example-2.webp",
+      "hasBid": false
     },
     {
       "make": "Audi",
@@ -5974,7 +6968,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
       "favourite": false,
-      "id": "498"
+      "id": "498",
+      "image": "http://localhost:3001/car-mockups/car-example-5.webp",
+      "hasBid": false
     },
     {
       "make": "Ford",
@@ -5986,7 +6982,9 @@
       "auctionDateTime": "2024/04/15 13:00:00",
       "startingBid": 20000,
       "favourite": true,
-      "id": "499"
+      "id": "499",
+      "image": "http://localhost:3001/car-mockups/car-example-1.webp",
+      "hasBid": false
     },
     {
       "make": "Mercedes-Benz",
@@ -5998,7 +6996,9 @@
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 16000,
       "favourite": false,
-      "id": "500"
+      "id": "500",
+      "image": "http://localhost:3001/car-mockups/car-example-10.webp",
+      "hasBid": false
     }
   ]
 }
