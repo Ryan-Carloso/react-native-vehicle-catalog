@@ -1,28 +1,23 @@
 import { Skeleton } from 'moti/skeleton';
-import type { ReactElement } from 'react';
 
 import { StyleSheet, View } from 'react-native';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { nanoid } from 'nanoid/non-secure';
 
-export const HomeScreenNextPageSkeleton = ({
-  isFetchingNextPage,
-}: {
-  isFetchingNextPage: boolean;
-}) => {
+export const GridNextPageSkeleton = ({ isFetchingNextPage }: { isFetchingNextPage: boolean }) => {
   if (!isFetchingNextPage) return null;
 
   return (
     <View style={styles.nextPageLoading}>
       <View style={styles.gridRow}>
-        <HomeGridCardSkeleton />
-        <HomeGridCardSkeleton />
+        <GridCardSkeleton />
       </View>
     </View>
   );
 };
 
-export const HomeScreenSkeleton = () => (
+export const GridSkeleton = () => (
   <SafeAreaView style={styles.skeletonContainer}>
     <View style={styles.headerContainer}>
       <Skeleton colorMode="dark" width={128} height={128} radius={24} />
@@ -32,18 +27,11 @@ export const HomeScreenSkeleton = () => (
 
     <HomeFeaturedCardSkeleton />
 
-    <View style={styles.gridSection}>{renderHomeGridRows(2)}</View>
+    <View style={styles.gridSection}>
+      <GridCardSkeleton />
+    </View>
   </SafeAreaView>
 );
-
-function renderHomeGridRows(rowCount: number): ReactElement[] {
-  return Array.from({ length: rowCount }, (_, index: number) => (
-    <View key={`home-grid-row-${index}`} style={styles.gridRow}>
-      <HomeGridCardSkeleton />
-      <HomeGridCardSkeleton />
-    </View>
-  ));
-}
 
 const HomeFeaturedCardSkeleton = () => (
   <View style={styles.featuredCard}>
@@ -66,14 +54,22 @@ const HomeFeaturedCardSkeleton = () => (
   </View>
 );
 
-const HomeGridCardSkeleton = () => (
-  <View style={styles.gridCard}>
-    <Skeleton colorMode="dark" width="100%" height={94} radius={10} />
-    <Skeleton colorMode="dark" width="80%" height={8} radius={8} />
-    <Skeleton colorMode="dark" width="54%" height={8} radius={8} />
-    <Skeleton colorMode="dark" width="40%" height={14} radius={4} />
-  </View>
-);
+const GridCardSkeleton = () => {
+  const skeletonKeys = Array.from({ length: 2 }, () => nanoid());
+
+  return (
+    <View style={styles.gridRow}>
+      {skeletonKeys.map((key) => (
+        <View key={key} style={styles.gridCard}>
+          <Skeleton colorMode="dark" width="100%" height={94} radius={10} />
+          <Skeleton colorMode="dark" width="80%" height={8} radius={8} />
+          <Skeleton colorMode="dark" width="54%" height={8} radius={8} />
+          <Skeleton colorMode="dark" width="40%" height={14} radius={4} />
+        </View>
+      ))}
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   skeletonContainer: {

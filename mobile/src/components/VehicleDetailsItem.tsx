@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 import { TVehicle } from '@shared/types';
 import { BrandColors } from '@/src/theme/BrandColors';
@@ -44,7 +45,7 @@ export function VehicleDetailsItem({ vehicle }: TVehicleDetailsItemProps) {
 
       <View style={styles.metaCard}>
         <VehicleMetaRow label="Auction date" value={auctionDateLabel} />
-        <VehicleMetaRow label="Favorite" value={vehicle.favourite ? 'Yes' : 'No'} />
+        <VehicleMetaFavoriteRow favorite={vehicle.favourite} />
       </View>
     </View>
   );
@@ -96,14 +97,35 @@ type TVehicleMetaRowProps = {
   value: string;
 };
 
+type TVehicleMetaFavoriteRowProps = {
+  favorite: boolean;
+};
+
 //---------------
 // Bottom metadata row
 // Organizes operational info lines
 //---------------
-const VehicleMetaRow = ({ label, value }: TVehicleMetaRowProps) => (
+const VehicleMetaRow = ({ label, value }: TVehicleMetaRowProps) => {
+  return (
+    <View style={styles.metaRow}>
+      <Text style={styles.metaLabel}>{label}</Text>
+      <Text style={styles.metaValue}>{value}</Text>
+    </View>
+  );
+};
+
+//---------------
+// Favorite row with icon-only status
+// Keeps state legible without extra text
+//---------------
+const VehicleMetaFavoriteRow = ({ favorite }: TVehicleMetaFavoriteRowProps) => (
   <View style={styles.metaRow}>
-    <Text style={styles.metaLabel}>{label}</Text>
-    <Text style={styles.metaValue}>{value}</Text>
+    <Text style={styles.metaLabel}>Favorite</Text>
+    <Ionicons
+      name={favorite ? 'star' : 'star-outline'}
+      size={16}
+      color={favorite ? BrandColors.warning : BrandColors.textMuted}
+    />
   </View>
 );
 

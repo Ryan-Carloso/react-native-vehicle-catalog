@@ -6,11 +6,11 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { HomeEmptyState } from '@/src/components/EmptyState';
-import { TVehicle, TVehicleMakeFilter } from '@shared/types';
+import { TVehicle } from '@shared/types';
 import { VehicleListItem } from '@/src/components/VehicleListItem';
-import { HomeScreenNextPageSkeleton, HomeScreenSkeleton } from '@/src/components/HomeSkeleton';
+import { GridNextPageSkeleton, GridSkeleton } from '@/src/components/HomeSkeleton';
 import { AppRoutes } from '@/src/utils/const';
-import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries';
+import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries/useVehiclesInfiniteQuery';
 import { BrandColors } from '@/src/theme/BrandColors';
 
 export default function HomeScreen() {
@@ -22,13 +22,8 @@ export default function HomeScreen() {
     router.push({ pathname: AppRoutes.DETAIL_PATH, params: { id: vehicleId } });
   };
 
-  const flatVehicles: TVehicle[] = [];
-  data?.pages.forEach((page) => {
-    flatVehicles.push(...page.items);
-  });
-
   if (isLoading) {
-    return <HomeScreenSkeleton />;
+    return <GridSkeleton />;
   }
 
   if (isError) {
@@ -40,7 +35,7 @@ export default function HomeScreen() {
   // Keeps feed sections consistent
   //---------------
   const HomeFeedHeader = () => {
-    const featuredVehicle = data?.pages[0].items[0];
+    const featuredVehicle = data?.featuredVehicle ?? null;
 
     return (
       <View style={styles.heroContainer}>
@@ -63,7 +58,7 @@ export default function HomeScreen() {
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
         <FlashList
-          data={flatVehicles}
+          data={data?.vehicles ?? []}
           keyExtractor={(item: TVehicle): string => item.id}
           numColumns={2}
           estimatedItemSize={220}
@@ -78,9 +73,7 @@ export default function HomeScreen() {
             }
           }}
           onEndReachedThreshold={0.6}
-          ListFooterComponent={
-            <HomeScreenNextPageSkeleton isFetchingNextPage={isFetchingNextPage} />
-          }
+          ListFooterComponent={<GridNextPageSkeleton isFetchingNextPage={isFetchingNextPage} />}
           contentContainerStyle={styles.listContent}
         />
       </View>

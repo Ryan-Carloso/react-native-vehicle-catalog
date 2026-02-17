@@ -1,4 +1,5 @@
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 import { TVehicle } from '@shared/types';
 import { BrandColors } from '@/src/theme/BrandColors';
@@ -15,6 +16,7 @@ type TVehicleListItemProps = {
 export function VehicleListItem({ vehicle, onPress, variant = 'default' }: TVehicleListItemProps) {
   const bidLabel: string = formatCurrency(vehicle.startingBid);
   const watchLabel: string = vehicle.favourite ? 'Watched' : 'Live';
+  const favoriteIconName: 'star' | 'star-outline' = vehicle.favourite ? 'star' : 'star-outline';
   const mileageLabel: string = formatMileage(vehicle.mileage);
 
   //---------------
@@ -33,6 +35,20 @@ export function VehicleListItem({ vehicle, onPress, variant = 'default' }: TVehi
         <Text style={styles.gridMeta} numberOfLines={1}>
           {vehicle.year} - {vehicle.fuel}
         </Text>
+
+        <View
+          style={[
+            styles.gridFavoriteBadge,
+            vehicle.favourite ? styles.gridFavoriteBadgeActive : styles.gridFavoriteBadgeInactive,
+          ]}
+        >
+          <Ionicons
+            name={favoriteIconName}
+            size={12}
+            style={styles.gridFavoriteIcon}
+            color={vehicle.favourite ? BrandColors.warning : BrandColors.textMuted}
+          />
+        </View>
 
         <Text style={styles.gridPrice}>{bidLabel}</Text>
       </Pressable>
@@ -289,5 +305,26 @@ const styles = StyleSheet.create({
     color: BrandColors.accentGlow,
     fontSize: 15,
     fontWeight: '800',
+  },
+  gridFavoriteBadge: {
+    marginTop: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 28,
+    height: 28,
+    borderRadius: 999,
+    borderWidth: 1,
+    alignSelf: 'flex-start',
+  },
+  gridFavoriteBadgeActive: {
+    backgroundColor: BrandColors.backgroundElevated,
+    borderColor: BrandColors.borderSoft,
+  },
+  gridFavoriteBadgeInactive: {
+    backgroundColor: BrandColors.surfaceMuted,
+    borderColor: BrandColors.border,
+  },
+  gridFavoriteIcon: {
+    marginTop: -1,
   },
 });

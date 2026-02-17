@@ -1,4 +1,4 @@
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, StyleSheet, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 import { BrandColors } from '@/src/theme/BrandColors';
@@ -45,8 +45,8 @@ const styles = StyleSheet.create({
     marginTop: -2,
   },
   logo: {
-    width: 124,
-    height: 44,
+    width: 60,
+    height: 60,
   },
   spacer: {
     width: 42,
