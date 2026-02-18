@@ -1,18 +1,17 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { ReactElement } from 'react';
 
 const queryClient: QueryClient = new QueryClient();
 
-export default function RootLayout(): ReactElement {
+export default function RootLayout() {
   return (
     <QueryClientProvider client={queryClient}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="vehicle/[id]" options={{ title: 'Vehicle Details' }} />
+        <Stack.Screen name="vehicle/[id]" options={{ headerShown: false }} />
       </Stack>
-      <StatusBar style="dark" />
+      <StatusBar style="light" />
     </QueryClientProvider>
   );
 }

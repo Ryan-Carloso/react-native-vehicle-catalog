@@ -1,99 +1,76 @@
 import { FlashList, ListRenderItemInfo } from '@shopify/flash-list';
+import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { useRouter } from 'expo-router';
-import { Skeleton } from 'moti/skeleton';
-import { nanoid } from 'nanoid/non-secure';
-import { ReactElement, useMemo, useState } from 'react';
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+
+import { Image, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { TVehicle, TVehicleMakeFilter, VEHICLE_MAKE_FILTER_OPTIONS } from '@shared/types';
-import { useVehiclesInfiniteQuery } from '../../utils/api/queries';
+import { HomeEmptyState } from '@/src/components/EmptyState';
+import { TVehicle, TVehicleMakeFilter } from '@shared/types';
+import { VehicleListItem } from '@/src/components/VehicleListItem';
+import { HomeScreenNextPageSkeleton, HomeScreenSkeleton } from '@/src/components/HomeSkeleton';
+import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries';
+import { BrandColors } from '@/src/theme/BrandColors';
 
-export default function HomeScreen(): ReactElement {
+export default function HomeScreen() {
   const router = useRouter();
   const { data, isLoading, isError, isFetchingNextPage, fetchNextPage, hasNextPage } =
     useVehiclesInfiniteQuery();
-  const [selectedMake, setSelectedMake] = useState<TVehicleMakeFilter>('All');
 
-  const allVehicles: TVehicle[] = useMemo((): TVehicle[] => {
-    if (!data) {
-      return [];
-    }
+  const openVehicle = (vehicleId: string): void => {
+    router.push({ pathname: '/vehicle/[id]', params: { id: vehicleId } });
+  };
 
-    return data.pages.flatMap((page: { items: TVehicle[] }): TVehicle[] => page.items);
-  }, [data]);
-
-  const filteredVehicles: TVehicle[] = useMemo((): TVehicle[] => {
-    if (selectedMake === 'All') {
-      return allVehicles;
-    }
-
-    return allVehicles.filter((vehicle: TVehicle): boolean => vehicle.make === selectedMake);
-  }, [allVehicles, selectedMake]);
-
-  const totalItems: number = data?.pages[0]?.total ?? 0;
+  const flatVehicles: TVehicle[] = [];
+  data?.pages.forEach((page) => {
+    flatVehicles.push(...page.items);
+  });
 
   if (isLoading) {
-    return (
-      <SafeAreaView style={styles.container}>
-        <HomeScreenSkeleton />
-      </SafeAreaView>
-    );
+    return <HomeScreenSkeleton />;
   }
 
   if (isError) {
-    return (
-      <SafeAreaView style={styles.container}>
-        <View style={styles.center}>
-          <Text>Failed to load vehicles.</Text>
-        </View>
-      </SafeAreaView>
-    );
+    return <ErrorComponent />;
   }
+
+  //---------------
+  // List header composition
+  // Keeps feed sections consistent
+  //---------------
+  const HomeFeedHeader = () => {
+    const featuredVehicle = data?.pages[0].items[0];
+
+    return (
+      <View style={styles.heroContainer}>
+        <Image source={require('@/assets/icon.png')} style={styles.heroIcon} />
+        <View style={styles.heroDivider} />
+        <Text style={styles.heroTitle}>JOIN THE HUNT</Text>
+
+        {featuredVehicle && (
+          <VehicleListItem
+            vehicle={featuredVehicle}
+            variant="featured"
+            onPress={() => openVehicle(featuredVehicle.id)}
+          />
+        )}
+      </View>
+    );
+  };
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
         <FlashList
-          data={VEHICLE_MAKE_FILTER_OPTIONS}
-          horizontal
-          keyExtractor={(item: TVehicleMakeFilter): string => item}
-          renderItem={({ item }: ListRenderItemInfo<TVehicleMakeFilter>) => (
-            <Pressable
-              style={[
-                styles.filterButton,
-                item === selectedMake ? styles.filterButtonActive : null,
-              ]}
-              onPress={() => setSelectedMake(item)}
-            >
-              <Text
-                style={[styles.filterText, item === selectedMake ? styles.filterTextActive : null]}
-              >
-                {item}
-              </Text>
-            </Pressable>
-          )}
-          contentContainerStyle={styles.filterListContent}
-          showsHorizontalScrollIndicator={false}
-        />
-
-        <FlashList
-          data={filteredVehicles}
+          data={flatVehicles}
           keyExtractor={(item: TVehicle): string => item.id}
-          renderItem={({ item }: ListRenderItemInfo<TVehicle>): ReactElement => (
-            <Pressable
-              onPress={() => router.push({ pathname: '/vehicle/[id]', params: { id: item.id } })}
-              style={styles.card}
-            >
-              <Image source={{ uri: item.image }} style={styles.image} resizeMode="cover" />
-              <Text style={styles.title}>
-                {item.make} {item.model}
-              </Text>
-              <Text style={styles.meta}>
-                {item.year} • {item.engineSize} • {item.fuel} • ${item.startingBid}
-              </Text>
-            </Pressable>
+          numColumns={2}
+          estimatedItemSize={220}
+          renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
+            <VehicleListItem vehicle={item} variant="grid" onPress={() => openVehicle(item.id)} />
           )}
+          ListHeaderComponent={HomeFeedHeader}
+          ListEmptyComponent={HomeEmptyState}
           onEndReached={() => {
             if (hasNextPage && !isFetchingNextPage) {
               void fetchNextPage();
@@ -103,66 +80,51 @@ export default function HomeScreen(): ReactElement {
           ListFooterComponent={isFetchingNextPage ? <HomeScreenNextPageSkeleton /> : null}
           contentContainerStyle={styles.listContent}
         />
-
-        <View style={styles.bottomInfo}>
-          <Text style={styles.bottomInfoText}>
-            {filteredVehicles.length} cars found of {totalItems} total
-          </Text>
-        </View>
       </View>
     </SafeAreaView>
-  );
-}
-
-const HomeScreenNextPageSkeleton = (): ReactElement => (
-  <View style={styles.nextPageLoading}>
-    <HomeVehicleCardSkeleton />
-  </View>
-);
-
-const HomeScreenSkeleton = (): ReactElement => (
-  <View style={styles.skeletonContainer}>
-    <View style={styles.skeletonFilterRow}>
-      <Skeleton colorMode="light" width={60} height={36} radius={999} />
-      <Skeleton colorMode="light" width={74} height={36} radius={999} />
-      <Skeleton colorMode="light" width={86} height={36} radius={999} />
-      <Skeleton colorMode="light" width={78} height={36} radius={999} />
-    </View>
-
-    <View style={styles.skeletonList}>{renderHomeVehicleCardSkeletons(3)}</View>
-
-    <View style={styles.skeletonBottom}>
-      <Skeleton colorMode="light" width={180} height={16} radius={6} />
-    </View>
-  </View>
-);
-
-const HomeVehicleCardSkeleton = (): ReactElement => (
-  <View style={styles.nextPageSkeletonCard}>
-    <Skeleton colorMode="light" width="100%" height={170} radius={8} />
-    <View style={styles.skeletonMetaRow}>
-      <Skeleton colorMode="light" width="52%" height={22} radius={6} />
-    </View>
-    <View style={styles.skeletonMetaRow}>
-      <Skeleton colorMode="light" width="78%" height={18} radius={6} />
-    </View>
-  </View>
-);
-
-function renderHomeVehicleCardSkeletons(repetitions: number): ReactElement[] {
-  return Array.from(
-    { length: repetitions },
-    (): ReactElement => <HomeVehicleCardSkeleton key={nanoid()} />,
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
+    backgroundColor: BrandColors.background,
   },
   content: {
     flex: 1,
+  },
+  heroContainer: {
+    alignItems: 'stretch',
+  },
+  heroCard: {
+    borderRadius: 28,
+    borderWidth: 1,
+    borderColor: BrandColors.borderSoft,
+    paddingHorizontal: 24,
+    paddingVertical: 22,
+    alignItems: 'center',
+    gap: 12,
+  },
+  heroIcon: {
+    width: 128,
+    height: 128,
+    alignSelf: 'center',
+  },
+  heroDivider: {
+    width: 96,
+    height: 3,
+    marginBottom: 6,
+    borderRadius: 999,
+    backgroundColor: BrandColors.accent,
+    alignSelf: 'center',
+  },
+  heroTitle: {
+    color: BrandColors.textPrimary,
+    fontSize: 20,
+    fontWeight: '900',
+    letterSpacing: 1.1,
+    textTransform: 'uppercase',
+    alignSelf: 'center',
   },
   center: {
     flex: 1,
@@ -171,98 +133,53 @@ const styles = StyleSheet.create({
   },
   filterListContent: {
     paddingHorizontal: 16,
-    paddingVertical: 8,
-    gap: 8,
+    paddingTop: 14,
+    paddingBottom: 14,
+  },
+  filterSeparator: {
+    width: 10,
   },
   filterButton: {
     borderWidth: 1,
-    borderColor: '#d1d5db',
-    paddingHorizontal: 12,
-    paddingVertical: 8,
+    borderColor: BrandColors.borderSoft,
+    paddingHorizontal: 14,
+    paddingVertical: 9,
     borderRadius: 999,
-    backgroundColor: '#ffffff',
+    backgroundColor: BrandColors.surfaceStrong,
   },
   filterButtonActive: {
-    backgroundColor: '#111827',
-    borderColor: '#111827',
+    backgroundColor: BrandColors.accent,
+    borderColor: BrandColors.accent,
   },
   filterText: {
-    color: '#111827',
-    fontSize: 13,
-    fontWeight: '500',
+    color: BrandColors.textPrimary,
+    fontSize: 14,
+    fontWeight: '600',
   },
   filterTextActive: {
-    color: '#ffffff',
+    color: BrandColors.surface,
+  },
+  spotlightListContent: {
+    paddingHorizontal: 16,
+    paddingTop: 14,
+    paddingBottom: 4,
+  },
+  spotlightSeparator: {
+    width: 10,
   },
   listContent: {
     paddingHorizontal: 16,
-    paddingBottom: 12,
-  },
-  nextPageLoading: {
-    paddingVertical: 14,
-  },
-  nextPageSkeletonCard: {
-    borderWidth: 1,
-    borderColor: '#e5e7eb',
-    borderRadius: 8,
-    padding: 12,
-    backgroundColor: '#ffffff',
+    paddingTop: 10,
+    paddingBottom: 24,
   },
   bottomInfo: {
     paddingHorizontal: 16,
     paddingBottom: 8,
   },
   bottomInfoText: {
-    color: '#4b5563',
+    color: BrandColors.textMuted,
     fontSize: 12,
-  },
-  card: {
-    borderWidth: 1,
-    borderColor: '#e5e7eb',
-    borderRadius: 8,
-    padding: 12,
-    marginBottom: 10,
-    backgroundColor: '#ffffff',
-  },
-  image: {
-    width: '100%',
-    height: 170,
-    borderRadius: 8,
-    marginBottom: 10,
-    backgroundColor: '#f3f4f6',
-  },
-  title: {
-    fontSize: 16,
     fontWeight: '600',
-    color: '#111827',
-  },
-  meta: {
-    marginTop: 4,
-    fontSize: 14,
-    color: '#4b5563',
-  },
-  skeletonContainer: {
-    flex: 1,
-  },
-  skeletonFilterRow: {
-    flexDirection: 'row',
-    gap: 8,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-  },
-  skeletonList: {
-    paddingHorizontal: 16,
-    paddingBottom: 12,
-    gap: 10,
-  },
-  skeletonMetaRow: {
-    marginTop: 8,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  skeletonBottom: {
-    paddingHorizontal: 16,
-    paddingBottom: 8,
-    marginTop: 4,
+    textAlign: 'center',
   },
 });
