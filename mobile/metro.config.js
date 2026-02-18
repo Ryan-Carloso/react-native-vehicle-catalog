@@ -10,4 +10,10 @@ config.resolver.nodeModulesPaths = [
   path.resolve(__dirname, '../node_modules'),
 ];
 
+config.resolver.alias = {
+  '@': path.resolve(__dirname, '.'),
+  '@/assets': path.resolve(__dirname, 'assets'),
+  '@/src': path.resolve(__dirname, 'src'),
+};
+
 module.exports = config;
