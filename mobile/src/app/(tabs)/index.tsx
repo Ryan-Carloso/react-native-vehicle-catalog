@@ -77,7 +77,9 @@ export default function HomeScreen() {
             }
           }}
           onEndReachedThreshold={0.6}
-          ListFooterComponent={isFetchingNextPage ? <HomeScreenNextPageSkeleton /> : null}
+          ListFooterComponent={
+            <HomeScreenNextPageSkeleton isFetchingNextPage={isFetchingNextPage} />
+          }
           contentContainerStyle={styles.listContent}
         />
       </View>
