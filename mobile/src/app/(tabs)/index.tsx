@@ -16,7 +16,7 @@ import { BrandColors } from '@/src/theme/BrandColors';
 
 export default function HomeScreen() {
   const router = useRouter();
-  const { data, isLoading, isError, isFetchingNextPage, fetchNextPage, hasNextPage } =
+  const { data, isLoading, isError, isFetchingNextPage, fetchNextPage, hasNextPage, refetch } =
     useVehiclesInfiniteQuery();
 
   const openVehicle = (vehicleId: string): void => {
@@ -28,7 +28,7 @@ export default function HomeScreen() {
   }
 
   if (isError) {
-    return <ErrorComponent />;
+    return <ErrorComponent onRetry={refetch} />;
   }
 
   //---------------

@@ -17,7 +17,7 @@ import type { TVehicle } from '@shared/types';
 
 export default function MyBidsScreen() {
   const router = useRouter();
-  const { data, isLoading, isError, isFetchingNextPage, fetchNextPage, hasNextPage } =
+  const { data, isLoading, isError, isFetchingNextPage, fetchNextPage, hasNextPage, refetch } =
     useVehiclesInfiniteQuery(EVehiclesFilterType.MY_BIDS);
 
   const openVehicle = (vehicleId: string): void => {
@@ -29,7 +29,7 @@ export default function MyBidsScreen() {
   }
 
   if (isError) {
-    return <ErrorComponent />;
+    return <ErrorComponent onRetry={refetch} />;
   }
 
   return (

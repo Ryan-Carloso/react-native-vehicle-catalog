@@ -19,16 +19,10 @@ export default function VehicleDetailsScreen() {
   const router = useRouter();
   const { id }: TVehicleRouteParams = useLocalSearchParams<TVehicleRouteParams>();
   const vehicleId: string = typeof id === 'string' ? id : '';
-  const { isLoading, isError, data } = useVehicleDetailQuery(vehicleId);
+  const { isLoading, isError, data, refetch } = useVehicleDetailQuery(vehicleId);
 
   if (!vehicleId) {
-    return (
-      <SafeAreaView style={styles.container}>
-        <View style={styles.center}>
-          <Text>Invalid vehicle ID.</Text>
-        </View>
-      </SafeAreaView>
-    );
+    return <ErrorComponent message="Invalid vehicle ID." />;
   }
 
   if (isLoading) {
@@ -40,7 +34,7 @@ export default function VehicleDetailsScreen() {
   }
 
   if (isError || !data) {
-    return <ErrorComponent />;
+    return <ErrorComponent onRetry={refetch} />;
   }
 
   return (
