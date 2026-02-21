@@ -40,7 +40,7 @@ export default function FavoritesScreen() {
         numColumns={2}
         estimatedItemSize={220}
         renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
-          <VehicleListItem vehicle={item} variant="grid" onPress={() => openVehicle(item.id)} />
+          <VehicleListItem vehicle={item} onPress={() => openVehicle(item.id)} />
         )}
         ListHeaderComponent={<Text style={styles.title}>Favorites</Text>}
         ListEmptyComponent={HomeEmptyState}

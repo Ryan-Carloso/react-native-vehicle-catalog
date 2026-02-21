@@ -4,19 +4,10 @@ import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
 
-import {
-  Image,
-  Modal,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { FilterModal } from '@/src/components/FilterModal';
 import { HomeEmptyState } from '@/src/components/EmptyState';
 import type { TVehicle } from '@shared/types';
 import { VehicleListItem } from '@/src/components/VehicleListItem';
@@ -53,7 +44,7 @@ export default function HomeScreen() {
       <View style={styles.heroContainer}>
         <View style={styles.headerTopRow}>
           <View style={styles.logoRow}>
-            <FontAwesome name="gear" size={24} color={BrandColors.accent} />
+            <FontAwesome name="gear" size={24} color={BrandColors.textPrimary} />
             <Text style={styles.heroTitle}>GEAR SHIFT</Text>
           </View>
         </View>
@@ -80,58 +71,7 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Modal
-        animationType="slide"
-        transparent={true}
-        visible={isFilterModalVisible}
-        onRequestClose={() => setIsFilterModalVisible(false)}
-      >
-        <View style={styles.modalOverlay}>
-          <View style={styles.modalContent}>
-            <View style={styles.modalHeader}>
-              <Text style={styles.modalTitle}>Filter Vehicles</Text>
-              <TouchableOpacity onPress={() => setIsFilterModalVisible(false)}>
-                <FontAwesome name="close" size={24} color={BrandColors.textPrimary} />
-              </TouchableOpacity>
-            </View>
-            <ScrollView style={styles.modalBody}>
-              {/* Dummy Filters */}
-              <Text style={styles.filterSectionTitle}>Make</Text>
-              <View style={styles.filterOptionsRow}>
-                {['Toyota', 'BMW', 'Ford', 'Honda'].map((make) => (
-                  <TouchableOpacity key={make} style={styles.filterOptionChip}>
-                    <Text style={styles.filterOptionText}>{make}</Text>
-                  </TouchableOpacity>
-                ))}
-              </View>
-
-              <Text style={styles.filterSectionTitle}>Year</Text>
-              <View style={styles.filterOptionsRow}>
-                {['2024', '2023', '2022', 'Old timers'].map((year) => (
-                  <TouchableOpacity key={year} style={styles.filterOptionChip}>
-                    <Text style={styles.filterOptionText}>{year}</Text>
-                  </TouchableOpacity>
-                ))}
-              </View>
-
-              <Text style={styles.filterSectionTitle}>Price Range</Text>
-              <View style={styles.filterOptionsRow}>
-                {['$0 - $10k', '$10k - $30k', '$30k+'].map((price) => (
-                  <TouchableOpacity key={price} style={styles.filterOptionChip}>
-                    <Text style={styles.filterOptionText}>{price}</Text>
-                  </TouchableOpacity>
-                ))}
-              </View>
-            </ScrollView>
-            <TouchableOpacity
-              style={styles.applyButton}
-              onPress={() => setIsFilterModalVisible(false)}
-            >
-              <Text style={styles.applyButtonText}>Apply Filters</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      </Modal>
+      <FilterModal visible={isFilterModalVisible} onClose={() => setIsFilterModalVisible(false)} />
       <View style={styles.content}>
         <FlashList
           data={data?.vehicles ?? []}
@@ -139,7 +79,7 @@ export default function HomeScreen() {
           numColumns={2}
           estimatedItemSize={220}
           renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
-            <VehicleListItem vehicle={item} variant="grid" onPress={() => openVehicle(item.id)} />
+            <VehicleListItem vehicle={item} onPress={() => openVehicle(item.id)} />
           )}
           ListHeaderComponent={HomeFeedHeader}
           ListEmptyComponent={HomeEmptyState}
@@ -167,128 +107,61 @@ const styles = StyleSheet.create({
   },
   heroContainer: {
     paddingHorizontal: 16,
-    paddingTop: 12,
+    paddingTop: 10,
     paddingBottom: 20,
-    gap: 16,
+    marginBottom: 10,
+    gap: 14,
+    backgroundColor: BrandColors.backgroundElevated,
   },
   headerTopRow: {
     flexDirection: 'row',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
   },
   logoRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: 10,
   },
   heroTitle: {
     color: BrandColors.textPrimary,
-    fontSize: 24,
+    fontSize: 34,
+    lineHeight: 36,
     fontWeight: '900',
-    letterSpacing: 1.1,
+    letterSpacing: 0,
     textTransform: 'uppercase',
+    fontFamily: 'Courier',
   },
   searchContainer: {
     flexDirection: 'row',
-    gap: 12,
+    gap: 10,
   },
   searchBar: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: BrandColors.surfaceMuted,
-    borderRadius: 12,
+    backgroundColor: BrandColors.background,
     paddingHorizontal: 12,
     height: 48,
-    borderWidth: 1,
-    borderColor: BrandColors.borderSoft,
   },
   searchInputField: {
     flex: 1,
     marginLeft: 10,
     color: BrandColors.textPrimary,
     fontSize: 16,
+    fontFamily: 'Courier',
+    fontWeight: '700',
   },
   filterButton: {
     width: 48,
     height: 48,
-    borderRadius: 12,
-    backgroundColor: BrandColors.surfaceMuted,
+    backgroundColor: BrandColors.background,
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 1,
-    borderColor: BrandColors.borderSoft,
   },
   listContent: {
     paddingHorizontal: 16,
     paddingTop: 10,
     paddingBottom: 24,
-  },
-  // Modal Styles
-  modalOverlay: {
-    flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    justifyContent: 'flex-end',
-  },
-  modalContent: {
-    backgroundColor: BrandColors.surface,
-    borderTopLeftRadius: 24,
-    borderTopRightRadius: 24,
-    paddingBottom: 40,
-    maxHeight: '80%',
-  },
-  modalHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: BrandColors.borderSoft,
-  },
-  modalTitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: BrandColors.textPrimary,
-  },
-  modalBody: {
-    padding: 20,
-  },
-  filterSectionTitle: {
-    fontSize: 16,
-    fontWeight: '700',
-    color: BrandColors.textPrimary,
-    marginBottom: 12,
-    marginTop: 8,
-  },
-  filterOptionsRow: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 10,
-    marginBottom: 16,
-  },
-  filterOptionChip: {
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    borderRadius: 20,
-    backgroundColor: BrandColors.surfaceMuted,
-    borderWidth: 1,
-    borderColor: BrandColors.borderSoft,
-  },
-  filterOptionText: {
-    color: BrandColors.textPrimary,
-    fontSize: 14,
-  },
-  applyButton: {
-    backgroundColor: BrandColors.accent,
-    marginHorizontal: 20,
-    marginTop: 10,
-    paddingVertical: 16,
-    borderRadius: 12,
-    alignItems: 'center',
-  },
-  applyButtonText: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: 'bold',
   },
 });
