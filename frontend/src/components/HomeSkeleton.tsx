@@ -20,9 +20,9 @@ export const GridNextPageSkeleton = ({ isFetchingNextPage }: { isFetchingNextPag
 export const GridSkeleton = () => (
   <SafeAreaView style={styles.skeletonContainer}>
     <View style={styles.headerContainer}>
-      <Skeleton colorMode="dark" width={128} height={128} radius={24} />
-      <Skeleton colorMode="dark" width={96} height={3} radius={999} />
-      <Skeleton colorMode="dark" width={220} height={36} radius={8} />
+      <Skeleton colorMode="light" width={128} height={128} radius={24} />
+      <Skeleton colorMode="light" width={96} height={3} radius={999} />
+      <Skeleton colorMode="light" width={220} height={36} radius={8} />
     </View>
 
     <View style={styles.gridSection}>
@@ -38,10 +38,10 @@ const GridCardSkeleton = () => {
     <View style={styles.gridRow}>
       {skeletonKeys.map((key) => (
         <View key={key} style={styles.gridCard}>
-          <Skeleton colorMode="dark" width="100%" height={94} radius={10} />
-          <Skeleton colorMode="dark" width="80%" height={8} radius={8} />
-          <Skeleton colorMode="dark" width="54%" height={8} radius={8} />
-          <Skeleton colorMode="dark" width="40%" height={14} radius={4} />
+          <Skeleton colorMode="light" width="100%" height={94} radius={10} />
+          <Skeleton colorMode="light" width="80%" height={8} radius={8} />
+          <Skeleton colorMode="light" width="54%" height={8} radius={8} />
+          <Skeleton colorMode="light" width="40%" height={14} radius={4} />
         </View>
       ))}
     </View>

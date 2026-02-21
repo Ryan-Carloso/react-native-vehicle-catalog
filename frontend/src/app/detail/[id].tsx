@@ -63,22 +63,22 @@ export default function VehicleDetailsScreen() {
 const VehicleDetailsSkeleton = () => (
   <ScrollView contentContainerStyle={styles.skeletonContent}>
     <View style={styles.skeletonHeader}>
-      <Skeleton colorMode="dark" width={42} height={42} radius={21} />
-      <Skeleton colorMode="dark" width={120} height={44} radius={8} />
-      <Skeleton colorMode="dark" width={42} height={42} radius={21} />
+      <Skeleton colorMode="light" width={42} height={42} radius={21} />
+      <Skeleton colorMode="light" width={120} height={44} radius={8} />
+      <Skeleton colorMode="light" width={42} height={42} radius={21} />
     </View>
 
-    <Skeleton colorMode="dark" width="100%" height={220} radius={10} />
+    <Skeleton colorMode="light" width="100%" height={220} radius={10} />
 
     <View style={styles.skeletonCard}>
       <View style={styles.skeletonTitle}>
-        <Skeleton colorMode="dark" width="64%" height={28} radius={6} />
+        <Skeleton colorMode="light" width="64%" height={28} radius={6} />
       </View>
 
       {Array.from({ length: 7 }, (_value: unknown, index: number) => (
         <View key={`vehicle-details-skeleton-row-${index}`} style={styles.skeletonRow}>
-          <Skeleton colorMode="dark" width="25%" height={18} radius={6} />
-          <Skeleton colorMode="dark" width="45%" height={18} radius={6} />
+          <Skeleton colorMode="light" width="25%" height={18} radius={6} />
+          <Skeleton colorMode="light" width="45%" height={18} radius={6} />
         </View>
       ))}
     </View>
