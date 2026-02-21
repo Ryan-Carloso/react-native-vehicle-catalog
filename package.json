@@ -9,9 +9,7 @@
   ],
   "scripts": {
     "preinstall": "npx -y only-allow pnpm",
-    "dev:ios": "pnpm --filter frontend ios",
-    "dev:android": "pnpm --filter frontend android",
-    "dev:web": "pnpm --filter frontend web",
+    "dev:frontend": "pnpm --filter frontend start",
     "dev:backend": "pnpm --filter backend start",
     "lint": "pnpm --filter frontend lint",
     "lint:fix": "pnpm --filter frontend lint:fix",

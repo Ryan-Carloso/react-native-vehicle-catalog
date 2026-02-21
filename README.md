@@ -26,7 +26,7 @@ to start run:
 
 ```bash
 pnpm run dev:backend
-pnpm run dev:web
+pnpm run dev:frontend
 ```
 
 ## Quality
@@ -41,7 +41,3 @@ pnpm run format
 ## API
 
 Base URL: `http://localhost:3001`
-
-Endpoint:
-
-- `GET /vehicles`
