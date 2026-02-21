@@ -1,8 +1,8 @@
 const config = {
-  name: 'mobile',
-  slug: 'mobile',
+  name: 'Gear Shift',
+  slug: 'gearshift',
   version: '1.0.0',
-  scheme: 'vehicle-catalog',
+  scheme: 'gearshift',
   orientation: 'portrait',
   icon: './assets/icon.png',
   userInterfaceStyle: 'light',
