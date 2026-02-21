@@ -4,17 +4,17 @@
   "version": "1.0.0",
   "packageManager": "pnpm@10.27.0",
   "workspaces": [
-    "mobile",
+    "frontend",
     "backend"
   ],
   "scripts": {
     "preinstall": "npx -y only-allow pnpm",
-    "dev:ios": "pnpm --filter mobile ios",
-    "dev:android": "pnpm --filter mobile android",
-    "dev:web": "pnpm --filter mobile web",
+    "dev:ios": "pnpm --filter frontend ios",
+    "dev:android": "pnpm --filter frontend android",
+    "dev:web": "pnpm --filter frontend web",
     "dev:backend": "pnpm --filter backend start",
-    "lint": "pnpm --filter mobile lint",
-    "lint:fix": "pnpm --filter mobile lint:fix",
+    "lint": "pnpm --filter frontend lint",
+    "lint:fix": "pnpm --filter frontend lint:fix",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

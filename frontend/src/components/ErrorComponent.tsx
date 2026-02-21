@@ -25,7 +25,10 @@ export const ErrorComponent = ({
       <SafeAreaView style={styles.container}>
         <View style={styles.center}>
           <Text style={styles.devTitle}>Development Error</Text>
-          <Text style={styles.devText}>Please confirm if you run pnpm dev:backend</Text>
+          <Text style={styles.devText}>
+            Please ensure you have configured the .env file following .env.example and README.md,
+            and that the backend is running via pnpm dev:backend
+          </Text>
           {onRetry && (
             <TouchableOpacity style={styles.button} onPress={onRetry}>
               <Text style={styles.buttonText}>Try Again</Text>
