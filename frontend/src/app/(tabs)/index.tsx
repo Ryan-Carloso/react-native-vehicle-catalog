@@ -2,6 +2,7 @@ import { FlashList } from '@shopify/flash-list';
 import type { ListRenderItemInfo } from '@shopify/flash-list';
 import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { useRouter } from 'expo-router';
+import { LinearGradient } from 'expo-linear-gradient';
 import { useState } from 'react';
 
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
@@ -70,37 +71,47 @@ export default function HomeScreen() {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <FilterModal visible={isFilterModalVisible} onClose={() => setIsFilterModalVisible(false)} />
-      <View style={styles.content}>
-        <FlashList
-          data={data?.vehicles ?? []}
-          keyExtractor={(item: TVehicle): string => item.id}
-          numColumns={2}
-          estimatedItemSize={220}
-          renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
-            <VehicleListItem vehicle={item} onPress={() => openVehicle(item.id)} />
-          )}
-          ListHeaderComponent={HomeFeedHeader}
-          ListEmptyComponent={HomeEmptyState}
-          onEndReached={() => {
-            if (hasNextPage && !isFetchingNextPage) {
-              void fetchNextPage();
-            }
-          }}
-          onEndReachedThreshold={0.6}
-          ListFooterComponent={<GridNextPageSkeleton isFetchingNextPage={isFetchingNextPage} />}
-          contentContainerStyle={styles.listContent}
+    <LinearGradient
+      colors={['#232326', '#141416', '#0a0a0b']}
+      locations={[0, 0.45, 1]}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 0, y: 1 }}
+      style={{ flex: 1 }}
+    >
+      <SafeAreaView style={styles.container}>
+        <FilterModal
+          visible={isFilterModalVisible}
+          onClose={() => setIsFilterModalVisible(false)}
         />
-      </View>
-    </SafeAreaView>
+        <View style={styles.content}>
+          <FlashList
+            data={data?.vehicles ?? []}
+            keyExtractor={(item: TVehicle): string => item.id}
+            numColumns={2}
+            estimatedItemSize={220}
+            renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
+              <VehicleListItem vehicle={item} onPress={() => openVehicle(item.id)} />
+            )}
+            ListHeaderComponent={HomeFeedHeader}
+            ListEmptyComponent={HomeEmptyState}
+            onEndReached={() => {
+              if (hasNextPage && !isFetchingNextPage) {
+                void fetchNextPage();
+              }
+            }}
+            onEndReachedThreshold={0.6}
+            ListFooterComponent={<GridNextPageSkeleton isFetchingNextPage={isFetchingNextPage} />}
+            contentContainerStyle={styles.listContent}
+          />
+        </View>
+      </SafeAreaView>
+    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: BrandColors.background,
   },
   content: {
     flex: 1,
@@ -111,7 +122,14 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
     marginBottom: 10,
     gap: 14,
-    backgroundColor: BrandColors.backgroundElevated,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.22)',
+    backgroundColor: 'rgba(15,18,22,0.82)',
+    shadowColor: BrandColors.shadow,
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.35,
+    shadowRadius: 16,
+    elevation: 10,
   },
   headerTopRow: {
     flexDirection: 'row',
@@ -140,7 +158,9 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: BrandColors.background,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.2)',
+    backgroundColor: 'rgba(8,10,12,0.88)',
     paddingHorizontal: 12,
     height: 48,
   },
@@ -155,7 +175,9 @@ const styles = StyleSheet.create({
   filterButton: {
     width: 48,
     height: 48,
-    backgroundColor: BrandColors.background,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.2)',
+    backgroundColor: 'rgba(8,10,12,0.88)',
     justifyContent: 'center',
     alignItems: 'center',
   },

@@ -40,7 +40,7 @@ export default function MyBidsScreen() {
         numColumns={2}
         estimatedItemSize={220}
         renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
-          <VehicleListItem vehicle={item} variant="grid" onPress={() => openVehicle(item.id)} />
+          <VehicleListItem vehicle={item} onPress={() => openVehicle(item.id)} />
         )}
         ListHeaderComponent={<Text style={styles.title}>My Bids</Text>}
         ListEmptyComponent={HomeEmptyState}

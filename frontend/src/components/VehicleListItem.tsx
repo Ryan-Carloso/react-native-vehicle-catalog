@@ -1,5 +1,6 @@
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { LinearGradient } from 'expo-linear-gradient';
 
 import type { TVehicle } from '@shared/types';
 import { BrandColors } from '@/src/theme/BrandColors';
@@ -20,7 +21,22 @@ export function VehicleListItem({ vehicle, onPress }: TVehicleListItemProps) {
   //---------------
   return (
     <Pressable onPress={onPress} style={styles.gridCard}>
-      <Image source={{ uri: vehicle.image }} style={styles.gridImage} resizeMode="cover" />
+      <LinearGradient
+        colors={['rgba(255,255,255,0.09)', 'rgba(255,255,255,0.02)', 'rgba(0,0,0,0.26)']}
+        locations={[0, 0.15, 1]}
+        style={StyleSheet.absoluteFill}
+        pointerEvents="none"
+      />
+
+      <View style={styles.gridImageFrame}>
+        <Image source={{ uri: vehicle.image }} style={styles.gridImage} resizeMode="cover" />
+        <LinearGradient
+          colors={['rgba(0,0,0,0.0)', 'rgba(0,0,0,0.4)']}
+          locations={[0.6, 1]}
+          style={StyleSheet.absoluteFill}
+          pointerEvents="none"
+        />
+      </View>
 
       <Text style={styles.gridTitle} numberOfLines={1}>
         {vehicle.make} {vehicle.model}
@@ -55,12 +71,23 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
     marginBottom: 10,
     padding: 8,
-    backgroundColor: BrandColors.surfaceStrong,
+    borderWidth: 1,
+    borderColor: BrandColors.backgroundElevated,
+    overflow: 'hidden',
+    shadowColor: BrandColors.shadow,
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.3,
+    shadowRadius: 14,
+    elevation: 8,
+  },
+  gridImageFrame: {
+    borderWidth: 1,
+    borderColor: BrandColors.borderSoft,
+    overflow: 'hidden',
   },
   gridImage: {
     width: '100%',
     height: 94,
-    backgroundColor: BrandColors.surfaceMuted,
   },
   gridTitle: {
     marginTop: 8,
@@ -90,9 +117,13 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
   },
   gridFavoriteBadgeActive: {
+    borderWidth: 1,
+    borderColor: BrandColors.borderSoft,
     backgroundColor: BrandColors.backgroundElevated,
   },
   gridFavoriteBadgeInactive: {
+    borderWidth: 1,
+    borderColor: BrandColors.border,
     backgroundColor: BrandColors.surfaceMuted,
   },
   gridFavoriteIcon: {
