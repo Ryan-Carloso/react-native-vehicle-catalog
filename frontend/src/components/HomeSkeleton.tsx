@@ -25,33 +25,10 @@ export const GridSkeleton = () => (
       <Skeleton colorMode="dark" width={220} height={36} radius={8} />
     </View>
 
-    <HomeFeaturedCardSkeleton />
-
     <View style={styles.gridSection}>
       <GridCardSkeleton />
     </View>
   </SafeAreaView>
-);
-
-const HomeFeaturedCardSkeleton = () => (
-  <View style={styles.featuredCard}>
-    <Skeleton colorMode="dark" width="100%" height={228} radius={16} />
-
-    <View style={styles.featuredMetaRow}>
-      <Skeleton colorMode="dark" width={140} height={30} radius={8} />
-      <Skeleton colorMode="dark" width={100} height={30} radius={8} />
-    </View>
-
-    <View style={styles.featuredInfoRow}>
-      <Skeleton colorMode="dark" width={130} height={26} radius={8} />
-      <Skeleton colorMode="dark" width={170} height={44} radius={10} />
-    </View>
-
-    <View style={styles.featuredInfoRow}>
-      <Skeleton colorMode="dark" width={150} height={34} radius={8} />
-      <Skeleton colorMode="dark" width={70} height={26} radius={8} />
-    </View>
-  </View>
 );
 
 const GridCardSkeleton = () => {
@@ -82,26 +59,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingTop: 6,
     gap: 12,
-  },
-  featuredCard: {
-    marginTop: 14,
-    padding: 12,
-    borderRadius: 24,
-    borderWidth: 1,
-    borderColor: BrandColors.border,
-    backgroundColor: BrandColors.surfaceStrong,
-  },
-  featuredMetaRow: {
-    marginTop: 12,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  featuredInfoRow: {
-    marginTop: 10,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
   },
   gridSection: {
     marginTop: 10,

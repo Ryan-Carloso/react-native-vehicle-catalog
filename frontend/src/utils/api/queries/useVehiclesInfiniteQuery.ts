@@ -15,7 +15,6 @@ type TVehiclesInfiniteQueryData = InfiniteData<TVehiclesPage, number>;
 
 type TVehiclesInfiniteSelectedData = TVehiclesInfiniteQueryData & {
   vehicles: TVehicle[];
-  featuredVehicle: TVehicle | null;
   totalItems: number;
 };
 
@@ -98,7 +97,6 @@ export function useVehiclesInfiniteQuery(
       return {
         ...data,
         vehicles,
-        featuredVehicle: vehicles[0] ?? null,
         totalItems: data.pages[0]?.items ?? 0,
       };
     },

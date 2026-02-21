@@ -36,21 +36,11 @@ export default function HomeScreen() {
   // Keeps feed sections consistent
   //---------------
   const HomeFeedHeader = () => {
-    const featuredVehicle = data?.featuredVehicle ?? null;
-
     return (
       <View style={styles.heroContainer}>
         <Image source={require('@/assets/icon.png')} style={styles.heroIcon} />
         <View style={styles.heroDivider} />
         <Text style={styles.heroTitle}>JOIN THE HUNT</Text>
-
-        {featuredVehicle && (
-          <VehicleListItem
-            vehicle={featuredVehicle}
-            variant="featured"
-            onPress={() => openVehicle(featuredVehicle.id)}
-          />
-        )}
       </View>
     );
   };
@@ -92,6 +82,7 @@ const styles = StyleSheet.create({
   },
   heroContainer: {
     alignItems: 'stretch',
+    marginBottom: 12,
   },
   heroCard: {
     borderRadius: 28,

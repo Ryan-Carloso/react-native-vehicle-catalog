@@ -5,7 +5,7 @@ import type { TVehicle } from '@shared/types';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { formatCurrency, formatMileage, formatAuctionCountdown } from '@/src/utils/formatters';
 
-type TVehicleListItemVariant = 'default' | 'featured' | 'grid';
+type TVehicleListItemVariant = 'default' | 'grid';
 
 type TVehicleListItemProps = {
   vehicle: TVehicle;
@@ -51,35 +51,6 @@ export function VehicleListItem({ vehicle, onPress, variant = 'default' }: TVehi
         </View>
 
         <Text style={styles.gridPrice}>{bidLabel}</Text>
-      </Pressable>
-    );
-  }
-
-  //---------------
-  // Main featured card with strong hierarchy
-  // Used at top of Home feed
-  //---------------
-  if (variant === 'featured') {
-    return (
-      <Pressable onPress={onPress} style={styles.featuredCard}>
-        <Image source={{ uri: vehicle.image }} style={styles.featuredImage} resizeMode="cover" />
-
-        <View style={styles.featuredMetaRow}>
-          <Text style={styles.featuredFlash}>FLASH AUCTION</Text>
-          <Text style={styles.featuredTime}>{formatAuctionCountdown(vehicle.auctionDateTime)}</Text>
-        </View>
-
-        <View style={styles.featuredInfoRow}>
-          <Text style={styles.featuredBidLabel}>Current bid</Text>
-          <Text style={styles.featuredBidValue}>{bidLabel}</Text>
-        </View>
-
-        <View style={styles.featuredInfoRow}>
-          <Text style={styles.featuredName} numberOfLines={1}>
-            {vehicle.make} {vehicle.model}
-          </Text>
-          <Text style={styles.featuredBids}>{mileageLabel}</Text>
-        </View>
       </Pressable>
     );
   }
@@ -211,66 +182,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '700',
   },
-  featuredCard: {
-    marginHorizontal: 16,
-    padding: 12,
-    borderRadius: 24,
-    marginBottom: 12,
-    borderWidth: 1,
-    borderColor: BrandColors.border,
-    backgroundColor: '#10172b',
-  },
-  featuredImage: {
-    width: '100%',
-    height: 228,
-    borderRadius: 16,
-    backgroundColor: BrandColors.surfaceMuted,
-  },
-  featuredMetaRow: {
-    marginTop: 12,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  featuredFlash: {
-    color: BrandColors.accentGlow,
-    fontSize: 16,
-    fontWeight: '800',
-  },
-  featuredTime: {
-    color: BrandColors.textSecondary,
-    fontSize: 16,
-    fontWeight: '700',
-  },
-  featuredInfoRow: {
-    marginTop: 8,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  featuredBidLabel: {
-    color: BrandColors.textMuted,
-    fontSize: 14,
-    fontWeight: '600',
-    textTransform: 'uppercase',
-  },
-  featuredBidValue: {
-    color: BrandColors.textPrimary,
-    fontSize: 32,
-    fontWeight: '900',
-  },
-  featuredName: {
-    color: BrandColors.textPrimary,
-    fontSize: 16,
-    fontWeight: '700',
-    maxWidth: '68%',
-  },
-  featuredBids: {
-    color: BrandColors.textMuted,
-    fontSize: 13,
-    fontWeight: '700',
-  },
-
   gridCard: {
     flex: 1,
     marginHorizontal: 5,
