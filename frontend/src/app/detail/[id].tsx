@@ -1,15 +1,14 @@
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Skeleton } from 'moti/skeleton';
 
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { AppScreenHeader } from '@/src/components/AppScreenHeader';
 import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { VehicleDetailsItem } from '@/src/components/VehicleDetailsItem';
-import { VehicleHeroImage } from '@/src/components/VehicleHeroImage';
 import { useVehicleDetailQuery } from '@/src/utils/api/queries/useVehicleDetailQuery';
 import { BrandColors } from '@/src/theme/BrandColors';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 type TVehicleRouteParams = {
   id?: string;
@@ -40,9 +39,13 @@ export default function VehicleDetailsScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.content}>
-        <AppScreenHeader onBackPress={() => router.back()} />
-        <VehicleHeroImage imageUrl={data.image} />
-
+        <Pressable onPress={() => router.back()} style={styles.backButton}>
+          <Ionicons name="arrow-back" size={24} color={BrandColors.textPrimary} />
+        </Pressable>
+        <Text style={styles.title}>
+          {data.year} {data.make} {data.model}
+        </Text>
+        <Image source={{ uri: data.image }} style={styles.image} resizeMode="cover" />
         <VehicleDetailsItem vehicle={data} />
 
         <Pressable style={styles.bidButton}>
@@ -90,6 +93,31 @@ const styles = StyleSheet.create({
   content: {
     padding: 16,
     gap: 14,
+  },
+  backButton: {
+    width: 42,
+    height: 42,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  image: {
+    width: '100%',
+    height: 210,
+    borderRadius: 14,
+    backgroundColor: BrandColors.surfaceMuted,
+    borderWidth: 1,
+    borderColor: BrandColors.border,
+  },
+  header: {
+    flexDirection: 'row',
+    paddingTop: 4,
+  },
+  title: {
+    color: BrandColors.textPrimary,
+    fontSize: 36,
+    lineHeight: 40,
+    fontWeight: '900',
+    letterSpacing: 0.3,
   },
   center: {
     flex: 1,

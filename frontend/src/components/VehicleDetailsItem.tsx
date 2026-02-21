@@ -16,8 +16,6 @@ export function VehicleDetailsItem({ vehicle }: TVehicleDetailsItemProps) {
 
   return (
     <View style={styles.card}>
-      <VehicleMainTitle vehicle={vehicle} />
-
       <View style={styles.miniSpecsRow}>
         <VehicleMiniSpec label="MAKE" value={vehicle.make} />
         <VehicleMiniSpec label="FUEL" value={vehicle.fuel} />
@@ -50,16 +48,6 @@ export function VehicleDetailsItem({ vehicle }: TVehicleDetailsItemProps) {
     </View>
   );
 }
-
-//---------------
-// Vehicle name as main title
-// Keeps first visual block prominent
-//---------------
-const VehicleMainTitle = ({ vehicle }: TVehicleDetailsItemProps) => (
-  <Text style={styles.title}>
-    {vehicle.year} {vehicle.make} {vehicle.model}
-  </Text>
-);
 
 type TVehicleMiniSpecProps = {
   label: string;
@@ -138,13 +126,7 @@ const styles = StyleSheet.create({
     backgroundColor: BrandColors.surface,
     gap: 12,
   },
-  title: {
-    color: BrandColors.textPrimary,
-    fontSize: 36,
-    lineHeight: 40,
-    fontWeight: '900',
-    letterSpacing: 0.3,
-  },
+
   miniSpecsRow: {
     flexDirection: 'row',
     gap: 10,
