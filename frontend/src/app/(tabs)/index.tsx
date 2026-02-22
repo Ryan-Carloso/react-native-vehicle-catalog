@@ -1,21 +1,23 @@
-import { FlashList } from '@shopify/flash-list';
-import type { ListRenderItemInfo } from '@shopify/flash-list';
-import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { useRouter } from 'expo-router';
+import { LinearGradient } from 'expo-linear-gradient';
+import { useState } from 'react';
 
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { HomeEmptyState } from '@/src/components/EmptyState';
-import type { TVehicle } from '@shared/types';
-import { VehicleListItem } from '@/src/components/VehicleListItem';
-import { GridNextPageSkeleton, GridSkeleton } from '@/src/components/HomeSkeleton';
+import { FilterModal } from '@/src/components/FilterModal';
+import { ErrorComponent } from '@/src/components/ErrorComponent';
+import { VehicleList } from '@/src/components/VehicleList';
+import { GridSkeleton } from '@/src/components/GridSkeleton';
 import { AppRoutes } from '@/src/utils/const';
 import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries/useVehiclesInfiniteQuery';
 import { BrandColors } from '@/src/theme/BrandColors';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { StatusBar } from 'expo-status-bar';
 
 export default function HomeScreen() {
   const router = useRouter();
+  const [isFilterModalVisible, setIsFilterModalVisible] = useState(false);
   const { data, isLoading, isError, isFetchingNextPage, fetchNextPage, hasNextPage, refetch } =
     useVehiclesInfiniteQuery();
 
@@ -24,7 +26,7 @@ export default function HomeScreen() {
   };
 
   if (isLoading) {
-    return <GridSkeleton />;
+    return <GridSkeleton isHomePage />;
   }
 
   if (isError) {
@@ -36,147 +38,142 @@ export default function HomeScreen() {
   // Keeps feed sections consistent
   //---------------
   const HomeFeedHeader = () => {
-    const featuredVehicle = data?.featuredVehicle ?? null;
-
     return (
       <View style={styles.heroContainer}>
-        <Image source={require('@/assets/icon.png')} style={styles.heroIcon} />
-        <View style={styles.heroDivider} />
-        <Text style={styles.heroTitle}>JOIN THE HUNT</Text>
+        <View style={styles.headerTopRow}>
+          <View style={styles.logoRow}>
+            <FontAwesome name="gear" size={24} color={BrandColors.textPrimary} />
+            <Text style={styles.heroTitle}>GEAR SHIFT</Text>
+          </View>
+        </View>
 
-        {featuredVehicle && (
-          <VehicleListItem
-            vehicle={featuredVehicle}
-            variant="featured"
-            onPress={() => openVehicle(featuredVehicle.id)}
-          />
-        )}
+        <View style={styles.searchContainer}>
+          <View style={styles.searchBar}>
+            <FontAwesome name="search" size={20} color={BrandColors.textMuted} />
+            <TextInput
+              placeholder="Search vehicles..."
+              placeholderTextColor={BrandColors.textMuted}
+              style={styles.searchInputField}
+            />
+          </View>
+          <TouchableOpacity
+            style={styles.filterButton}
+            onPress={() => setIsFilterModalVisible(true)}
+          >
+            <FontAwesome name="filter" size={20} color={BrandColors.textPrimary} />
+          </TouchableOpacity>
+        </View>
       </View>
     );
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.content}>
-        <FlashList
-          data={data?.vehicles ?? []}
-          keyExtractor={(item: TVehicle): string => item.id}
-          numColumns={2}
-          estimatedItemSize={220}
-          renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
-            <VehicleListItem vehicle={item} variant="grid" onPress={() => openVehicle(item.id)} />
-          )}
-          ListHeaderComponent={HomeFeedHeader}
-          ListEmptyComponent={HomeEmptyState}
-          onEndReached={() => {
-            if (hasNextPage && !isFetchingNextPage) {
-              void fetchNextPage();
-            }
-          }}
-          onEndReachedThreshold={0.6}
-          ListFooterComponent={<GridNextPageSkeleton isFetchingNextPage={isFetchingNextPage} />}
-          contentContainerStyle={styles.listContent}
+    <LinearGradient
+      colors={['#232326', '#141416', '#0a0a0b']}
+      locations={[0, 0.45, 1]}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 0, y: 1 }}
+      style={{ flex: 1 }}
+    >
+      <SafeAreaView style={styles.container}>
+        <FilterModal
+          visible={isFilterModalVisible}
+          onClose={() => setIsFilterModalVisible(false)}
         />
-      </View>
-    </SafeAreaView>
+        <View style={styles.content}>
+          <VehicleList
+            data={data?.vehicles ?? []}
+            onVehiclePress={openVehicle}
+            ListHeaderComponent={HomeFeedHeader}
+            onEndReached={() => {
+              if (hasNextPage && !isFetchingNextPage) {
+                void fetchNextPage();
+              }
+            }}
+            isFetchingNextPage={isFetchingNextPage}
+            contentContainerStyle={styles.listContent}
+          />
+        </View>
+      </SafeAreaView>
+    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: BrandColors.background,
   },
   content: {
     flex: 1,
   },
   heroContainer: {
-    alignItems: 'stretch',
-  },
-  heroCard: {
-    borderRadius: 28,
+    paddingHorizontal: 16,
+    paddingTop: 10,
+    paddingBottom: 20,
+    marginBottom: 10,
+    gap: 14,
     borderWidth: 1,
-    borderColor: BrandColors.borderSoft,
-    paddingHorizontal: 24,
-    paddingVertical: 22,
+    borderColor: BrandColors.border,
+    backgroundColor: BrandColors.background,
+    shadowColor: BrandColors.shadow,
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.35,
+    shadowRadius: 16,
+    elevation: 10,
+  },
+  headerTopRow: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
     alignItems: 'center',
-    gap: 12,
   },
-  heroIcon: {
-    width: 128,
-    height: 128,
-    alignSelf: 'center',
-  },
-  heroDivider: {
-    width: 96,
-    height: 3,
-    marginBottom: 6,
-    borderRadius: 999,
-    backgroundColor: BrandColors.accent,
-    alignSelf: 'center',
+  logoRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
   },
   heroTitle: {
     color: BrandColors.textPrimary,
-    fontSize: 20,
+    fontSize: 34,
+    lineHeight: 36,
     fontWeight: '900',
-    letterSpacing: 1.1,
+    letterSpacing: 0,
     textTransform: 'uppercase',
-    alignSelf: 'center',
+    fontFamily: 'Courier',
   },
-  center: {
+  searchContainer: {
+    flexDirection: 'row',
+    gap: 10,
+  },
+  searchBar: {
     flex: 1,
+    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.2)',
+    backgroundColor: 'rgba(8,10,12,0.88)',
+    paddingHorizontal: 12,
+    height: 48,
   },
-  filterListContent: {
-    paddingHorizontal: 16,
-    paddingTop: 14,
-    paddingBottom: 14,
-  },
-  filterSeparator: {
-    width: 10,
+  searchInputField: {
+    flex: 1,
+    marginLeft: 10,
+    color: BrandColors.textPrimary,
+    fontSize: 16,
+    fontFamily: 'Courier',
+    fontWeight: '700',
   },
   filterButton: {
+    width: 48,
+    height: 48,
     borderWidth: 1,
-    borderColor: BrandColors.borderSoft,
-    paddingHorizontal: 14,
-    paddingVertical: 9,
-    borderRadius: 999,
-    backgroundColor: BrandColors.surfaceStrong,
-  },
-  filterButtonActive: {
-    backgroundColor: BrandColors.accent,
-    borderColor: BrandColors.accent,
-  },
-  filterText: {
-    color: BrandColors.textPrimary,
-    fontSize: 14,
-    fontWeight: '600',
-  },
-  filterTextActive: {
-    color: BrandColors.surface,
-  },
-  spotlightListContent: {
-    paddingHorizontal: 16,
-    paddingTop: 14,
-    paddingBottom: 4,
-  },
-  spotlightSeparator: {
-    width: 10,
+    borderColor: 'rgba(255,255,255,0.2)',
+    backgroundColor: 'rgba(8,10,12,0.88)',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   listContent: {
     paddingHorizontal: 16,
     paddingTop: 10,
     paddingBottom: 24,
-  },
-  bottomInfo: {
-    paddingHorizontal: 16,
-    paddingBottom: 8,
-  },
-  bottomInfoText: {
-    color: BrandColors.textMuted,
-    fontSize: 12,
-    fontWeight: '600',
-    textAlign: 'center',
   },
 });

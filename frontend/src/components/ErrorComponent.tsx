@@ -3,10 +3,10 @@ import { Linking, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 
 import { BrandColors } from '@/src/theme/BrandColors';
 import { API_BASE_URL } from '../utils/const';
 
-interface ErrorComponentProps {
+type TErrorComponentProps = {
   message?: string;
   onRetry?: () => void;
-}
+};
 
 export const ErrorComponent = ({
   /**
@@ -15,7 +15,7 @@ export const ErrorComponent = ({
    */
   message = 'An error occurred. Please try again.',
   onRetry,
-}: ErrorComponentProps) => {
+}: TErrorComponentProps) => {
   const handleContactSupport = () => {
     // NOTE: mockup email, in prod replace with real support email
     Linking.openURL('mailto:support@vehiclecatalog.com');
@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: BrandColors.background,
   },
   titleContainer: {

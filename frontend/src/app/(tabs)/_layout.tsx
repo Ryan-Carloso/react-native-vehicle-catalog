@@ -11,9 +11,6 @@ export default function TabsLayout() {
         headerShown: false,
         tabBarStyle: {
           backgroundColor: BrandColors.surfaceStrong,
-          borderTopColor: BrandColors.border,
-          borderTopWidth: 1,
-          height: 84,
         },
         tabBarActiveTintColor: BrandColors.warning,
         tabBarInactiveTintColor: BrandColors.textMuted,

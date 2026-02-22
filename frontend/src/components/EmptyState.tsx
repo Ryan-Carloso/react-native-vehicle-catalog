@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { BrandColors } from '@/src/theme/BrandColors';
 
-export const HomeEmptyState = () => (
+export const EmptyState = () => (
   <View style={styles.emptyState}>
     <Text style={styles.emptyStateTitle}>No vehicles found</Text>
     <Text style={styles.emptyStateText}>Try another make filter.</Text>
