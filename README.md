@@ -5,29 +5,73 @@ Basic npm workspace with:
 - `frontend`: Expo React Native app
 - `backend`: `json-server` API
 
+## Prerequisites
+
+- Node.js (v18+ recommended)
+- pnpm: `npm install -g pnpm`
+- Expo Go app (for physical device testing)
+- iOS: macOS + Xcode
+- Android: Android Studio + SDK
+
 ## Configuration
 
-1. Navigate to the `frontend` directory.
-2. Create a `.env` file by copying `.env.example`:
+1. Install dependencies (from root directory):
+   ```bash
+   pnpm install
+   ```
+2. Create a `.env` file in the frontend directory:
    ```bash
    cp frontend/.env.example frontend/.env
    ```
-3. Update `EXPO_PUBLIC_API_BASE_URL` in `.env` if you are testing on a physical device or Android emulator (use your machine's IP address instead of localhost).
+3. Update `EXPO_PUBLIC_API_BASE_URL` in `frontend/.env`:
+   ```bash
+   EXPO_PUBLIC_API_BASE_URL=http://localhost:3001
+   ```
+
+### Physical Device / Android Emulator
+
+Use your machine's IP address instead of `localhost`:
+
+- macOS: `ipconfig getifaddr en0`
+- Linux: `hostname -I`
+- Windows: `ipconfig`
+- Android emulator: `10.0.2.2`
 
 ## Run
 
-Install dependencies:
-
-```bash
-pnpm install
-```
-
-to start run:
+Start both services in separate terminals:
 
 ```bash
 pnpm run dev:backend
+# and
 pnpm run dev:frontend
 ```
+
+Select platform:
+
+- Android: `a`
+- iOS: `i`
+- Web: `w`
+
+## Project Structure
+
+- `frontend/` - Expo React Native app
+- `backend/` - json-server API with `db.json`
+- `shared/` - Shared types and utilities
+
+## Troubleshooting
+
+**Port 3001 occupied?**
+Change port in `backend/package.json` and update `EXPO_PUBLIC_API_BASE_URL`.
+
+**Frontend can't connect to backend?**
+
+- Check if backend is running
+- Verify `EXPO_PUBLIC_API_BASE_URL` matches backend URL
+- For physical devices, use your machine's IP address
+
+**Metro bundler issues?**
+Clear cache: `pnpm --filter frontend start -c`
 
 ## Quality
 
@@ -37,7 +81,3 @@ pnpm run lint:fix
 pnpm run format:check
 pnpm run format
 ```
-
-## API
-
-Base URL: `http://localhost:3001`
