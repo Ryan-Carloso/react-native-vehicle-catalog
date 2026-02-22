@@ -40,7 +40,6 @@ export default function HomeScreen() {
   const HomeFeedHeader = () => {
     return (
       <View style={styles.heroContainer}>
-        <StatusBar style="light" />
         <View style={styles.headerTopRow}>
           <View style={styles.logoRow}>
             <FontAwesome name="gear" size={24} color={BrandColors.textPrimary} />

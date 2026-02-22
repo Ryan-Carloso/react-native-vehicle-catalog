@@ -13,7 +13,7 @@ export default function RootLayout() {
         <Stack.Screen name={AppRoutes.TABS} options={{ headerShown: false }} />
         <Stack.Screen name={AppRoutes.DETAIL} options={{ headerShown: false }} />
       </Stack>
-      <StatusBar style="dark" />
+      <StatusBar style="light" />
     </QueryClientProvider>
   );
 }

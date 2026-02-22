@@ -31,7 +31,6 @@ export default function MyBidsScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="light" />
       <VehicleList
         data={data?.vehicles ?? []}
         onVehiclePress={openVehicle}
