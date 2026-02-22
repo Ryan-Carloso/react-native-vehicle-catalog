@@ -6,6 +6,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { EmptyState } from '@/src/components/EmptyState';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { formatCurrency } from '@/src/utils/formatters';
+import { useToggleFavorite } from '@/src/hooks/useToggleFavorite';
 import type { TVehicle } from '@shared/types';
 import { SingleGridCardSkeleton } from './skeletons/SingleGridCardSkeleton';
 import { nanoid } from 'nanoid/non-secure';
@@ -56,12 +57,14 @@ export const VehicleList = ({
   );
 };
 
-//---------------
-// Local component for vehicle list item
-//---------------
 const VehicleListItem = ({ vehicle, onPress }: TVehicleListItemProps) => {
+  const toggleFavoriteMutation = useToggleFavorite();
   const bidLabel: string = formatCurrency(vehicle.startingBid);
   const favoriteIconName: 'star' | 'star-outline' = vehicle.favourite ? 'star' : 'star-outline';
+
+  const handleFavoritePress = (): void => {
+    toggleFavoriteMutation.mutate({ vehicleId: vehicle.id, currentFavorite: vehicle.favourite });
+  };
 
   return (
     <Pressable onPress={onPress} style={styles.gridCard}>
@@ -80,14 +83,14 @@ const VehicleListItem = ({ vehicle, onPress }: TVehicleListItemProps) => {
           style={StyleSheet.absoluteFill}
           pointerEvents="none"
         />
-        <View style={[styles.gridFavoriteBadge]}>
+        <Pressable style={[styles.gridFavoriteBadge]} onPress={handleFavoritePress} hitSlop={8}>
           <Ionicons
             name={favoriteIconName}
             size={18}
             style={styles.gridFavoriteIcon}
             color={vehicle.favourite ? BrandColors.accent : BrandColors.textSecondary}
           />
-        </View>
+        </Pressable>
       </View>
 
       <Text style={styles.gridTitle} numberOfLines={1}>

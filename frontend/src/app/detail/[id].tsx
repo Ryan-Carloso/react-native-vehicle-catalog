@@ -11,6 +11,7 @@ import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { VehicleDetailsItem } from '@/src/components/VehicleDetailsItem';
 import { useGridDimensions } from '@/src/constants/grid';
 import { BrandColors } from '@/src/theme/BrandColors';
+import { useToggleFavorite } from '@/src/hooks/useToggleFavorite';
 import { useVehicleDetailQuery } from '@/src/utils/api/queries/useVehicleDetailQuery';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { StatusBar } from 'expo-status-bar';
@@ -24,6 +25,7 @@ export default function VehicleDetailsScreen() {
   const vehicleId: string = typeof id === 'string' ? id : '';
   const { isLoading, isError, data, refetch } = useVehicleDetailQuery(vehicleId);
   const { isLargeScreen } = useGridDimensions();
+  const toggleFavoriteMutation = useToggleFavorite();
 
   if (!vehicleId) {
     return <ErrorComponent message="Invalid vehicle ID." />;
@@ -42,6 +44,10 @@ export default function VehicleDetailsScreen() {
   const detailsSectionStyle = [styles.detailsSection, isLargeScreen && styles.detailsSectionLarge];
   const contentContainerStyle = [styles.content, isLargeScreen && styles.contentLarge];
 
+  const handleFavoriteToggle = (): void => {
+    toggleFavoriteMutation.mutate({ vehicleId, currentFavorite: data.favourite });
+  };
+
   return (
     <LinearGradient
       colors={[BrandColors.background, BrandColors.heroEnd]}
@@ -55,7 +61,7 @@ export default function VehicleDetailsScreen() {
           <View style={imageSectionStyle}>
             <View style={styles.imageContainer}>
               <Image source={{ uri: data.image }} style={styles.image} resizeMode="cover" />
-              <Pressable style={styles.favoriteBadge}>
+              <Pressable style={styles.favoriteBadge} onPress={handleFavoriteToggle}>
                 <Ionicons
                   name={data.favourite ? 'star' : 'star-outline'}
                   size={24}

@@ -75,6 +75,8 @@ async function fetchVehiclesPage(
   return apiPage;
 }
 
+export { buildVehiclesInfiniteQueryKey };
+
 export function useVehiclesInfiniteQuery(
   filterType: EVehiclesFilterType = EVehiclesFilterType.ALL,
 ) {
