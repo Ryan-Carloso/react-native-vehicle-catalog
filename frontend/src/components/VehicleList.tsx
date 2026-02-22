@@ -1,5 +1,5 @@
 import { ContentStyle, FlashList, ListRenderItemInfo } from '@shopify/flash-list';
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -10,9 +10,7 @@ import type { TVehicle } from '@shared/types';
 import { SingleGridCardSkeleton } from './SingleGridCardSkeleton';
 import { nanoid } from 'nanoid/non-secure';
 
-// Grid layout configuration
-const GRID_COLUMNS = 2;
-const GRID_ITEM_HEIGHT = 220;
+const GRID_ITEM_HEIGHT = 450;
 const LOAD_MORE_THRESHOLD = 0.6;
 
 type TVehicleListProps = {
@@ -37,11 +35,15 @@ export function VehicleList({
   onVehiclePress,
   contentContainerStyle,
 }: TVehicleListProps) {
+  const { width } = useWindowDimensions();
+  const numColumns = Math.max(2, Math.floor(width / GRID_ITEM_HEIGHT));
+
   return (
     <FlashList
       data={data}
       keyExtractor={(item: TVehicle) => item.id}
-      numColumns={GRID_COLUMNS}
+      numColumns={numColumns}
+      key={numColumns}
       estimatedItemSize={GRID_ITEM_HEIGHT}
       renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
         <VehicleListItem vehicle={item} onPress={() => onVehiclePress(item.id)} />
@@ -146,25 +148,25 @@ const styles = StyleSheet.create({
   },
   gridImage: {
     width: '100%',
-    height: 94,
+    aspectRatio: 1.5,
   },
   gridTitle: {
     marginTop: 8,
     color: BrandColors.textPrimary,
-    fontSize: 14,
+    fontSize: 18,
     fontWeight: '700',
   },
   gridMeta: {
     marginTop: 2,
     color: BrandColors.textMuted,
-    fontSize: 11,
+    fontSize: 14,
     fontWeight: '600',
     textTransform: 'uppercase',
   },
   gridPrice: {
     marginTop: 8,
     color: BrandColors.accentGlow,
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: '800',
   },
   gridFavoriteBadge: {
