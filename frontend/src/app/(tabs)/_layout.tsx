@@ -1,15 +1,13 @@
 import { Tabs } from 'expo-router';
 import { Drawer } from 'expo-router/drawer';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { useWindowDimensions } from 'react-native';
 
 import { BrandColors } from '@/src/theme/BrandColors';
 import { SCREENS } from '@/src/utils/const';
+import { useGridDimensions } from '@/src/constants/grid';
 
 const TabsLayout = () => {
-  const { width } = useWindowDimensions();
-
-  const isLargeScreen = width >= 1024;
+  const { isLargeScreen } = useGridDimensions();
 
   if (isLargeScreen) {
     return (
