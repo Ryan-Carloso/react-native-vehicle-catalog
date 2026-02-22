@@ -1,10 +1,58 @@
 import { Tabs } from 'expo-router';
+import { Drawer } from 'expo-router/drawer';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 import { BrandColors } from '@/src/theme/BrandColors';
-import { AppRoutes } from '@/src/utils/const';
+import { SCREENS } from '@/src/utils/const';
+import { useGridDimensions } from '@/src/constants/grid';
 
-export default function TabsLayout() {
+const TabsLayout = () => {
+  const { isLargeScreen } = useGridDimensions();
+
+  if (isLargeScreen) {
+    return (
+      <Drawer
+        screenOptions={{
+          drawerType: 'permanent',
+          drawerStyle: {
+            backgroundColor: BrandColors.surfaceStrong,
+            width: 320,
+            borderRightWidth: 1,
+            borderRightColor: BrandColors.border,
+          },
+          drawerInactiveTintColor: BrandColors.textMuted,
+          drawerActiveTintColor: BrandColors.warning,
+          drawerActiveBackgroundColor: 'rgba(234, 219, 47, 0.15)',
+          drawerItemStyle: {
+            borderRadius: 12,
+            paddingVertical: 12,
+            paddingHorizontal: 12,
+            marginBottom: 8,
+          },
+          drawerLabelStyle: {
+            fontSize: 18,
+            fontWeight: '600',
+            fontFamily: 'Courier',
+          },
+          headerShown: false,
+        }}
+      >
+        {SCREENS.map((screen) => (
+          <Drawer.Screen
+            key={screen.name}
+            name={screen.name}
+            options={{
+              title: screen.title,
+              drawerIcon: ({ color, size }) => (
+                <Ionicons name={screen.iconName} size={size} color={color} />
+              ),
+            }}
+          />
+        ))}
+      </Drawer>
+    );
+  }
+
   return (
     <Tabs
       screenOptions={{
@@ -21,33 +69,20 @@ export default function TabsLayout() {
         },
       }}
     >
-      <Tabs.Screen
-        name={AppRoutes.HOME}
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home-outline" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name={AppRoutes.FAVORITES}
-        options={{
-          title: 'Favorites',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="heart-outline" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name={AppRoutes.MY_BIDS}
-        options={{
-          title: 'My Bids',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="bookmark-outline" size={size} color={color} />
-          ),
-        }}
-      />
+      {SCREENS.map((screen) => (
+        <Tabs.Screen
+          key={screen.name}
+          name={screen.name}
+          options={{
+            title: screen.title,
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name={screen.iconName} size={size} color={color} />
+            ),
+          }}
+        />
+      ))}
     </Tabs>
   );
-}
+};
+
+export default TabsLayout;

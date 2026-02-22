@@ -8,7 +8,7 @@ type TVehicleDetailsItemProps = {
   vehicle: TVehicle;
 };
 
-export function VehicleDetailsItem({ vehicle }: TVehicleDetailsItemProps) {
+export const VehicleDetailsItem = ({ vehicle }: TVehicleDetailsItemProps) => {
   const bidLabel: string = formatCurrency(vehicle.startingBid);
   const mileageLabel: string = formatMileage(vehicle.mileage);
   const auctionDateLabel: string = formatAuctionDate(vehicle.auctionDateTime);
@@ -38,7 +38,7 @@ export function VehicleDetailsItem({ vehicle }: TVehicleDetailsItemProps) {
       </View>
     </View>
   );
-}
+};
 
 type TVehicleMiniSpecProps = {
   label: string;

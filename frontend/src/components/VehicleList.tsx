@@ -7,13 +7,10 @@ import { EmptyState } from '@/src/components/EmptyState';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { formatCurrency } from '@/src/utils/formatters';
 import type { TVehicle } from '@shared/types';
-import { SingleGridCardSkeleton } from './SingleGridCardSkeleton';
+import { SingleGridCardSkeleton } from './skeletons/SingleGridCardSkeleton';
 import { nanoid } from 'nanoid/non-secure';
 
-// Grid layout configuration
-const GRID_COLUMNS = 2;
-const GRID_ITEM_HEIGHT = 220;
-const LOAD_MORE_THRESHOLD = 0.6;
+import { GRID_ITEM_HEIGHT, LOAD_MORE_THRESHOLD, useGridDimensions } from '@/src/constants/grid';
 
 type TVehicleListProps = {
   data: TVehicle[];
@@ -29,19 +26,22 @@ type TVehicleListItemProps = {
   onPress: () => void;
 };
 
-export function VehicleList({
+export const VehicleList = ({
   data,
   onEndReached,
   isFetchingNextPage,
   ListHeaderComponent,
   onVehiclePress,
   contentContainerStyle,
-}: TVehicleListProps) {
+}: TVehicleListProps) => {
+  const { NUMBER_COLUMNS } = useGridDimensions();
+
   return (
     <FlashList
       data={data}
       keyExtractor={(item: TVehicle) => item.id}
-      numColumns={GRID_COLUMNS}
+      numColumns={NUMBER_COLUMNS}
+      key={NUMBER_COLUMNS}
       estimatedItemSize={GRID_ITEM_HEIGHT}
       renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
         <VehicleListItem vehicle={item} onPress={() => onVehiclePress(item.id)} />
@@ -54,7 +54,7 @@ export function VehicleList({
       contentContainerStyle={contentContainerStyle}
     />
   );
-}
+};
 
 //---------------
 // Local component for vehicle list item
@@ -66,8 +66,8 @@ const VehicleListItem = ({ vehicle, onPress }: TVehicleListItemProps) => {
   return (
     <Pressable onPress={onPress} style={styles.gridCard}>
       <LinearGradient
-        colors={['rgba(255,255,255,0.09)', 'rgba(255,255,255,0.02)', 'rgba(0,0,0,0.26)']}
-        locations={[0, 0.15, 1]}
+        colors={BrandColors.cardGradient}
+        locations={BrandColors.cardGradientLocations}
         style={StyleSheet.absoluteFill}
         pointerEvents="none"
       />
@@ -104,14 +104,17 @@ const VehicleListItem = ({ vehicle, onPress }: TVehicleListItemProps) => {
 };
 
 const GridNextPageSkeleton = () => {
+  const { NUMBER_COLUMNS } = useGridDimensions();
   const rowKeys = Array.from({ length: 3 }, () => nanoid());
+  const columns = Array.from({ length: NUMBER_COLUMNS }, (_, i) => i);
 
   return (
     <View style={styles.nextPageLoading}>
       {rowKeys.map((rowKey) => (
         <View key={rowKey} style={styles.gridRow}>
-          <SingleGridCardSkeleton />
-          <SingleGridCardSkeleton />
+          {columns.map((colIndex) => (
+            <SingleGridCardSkeleton key={colIndex} />
+          ))}
         </View>
       ))}
     </View>
@@ -146,25 +149,25 @@ const styles = StyleSheet.create({
   },
   gridImage: {
     width: '100%',
-    height: 94,
+    aspectRatio: 1.5,
   },
   gridTitle: {
     marginTop: 8,
     color: BrandColors.textPrimary,
-    fontSize: 14,
+    fontSize: 18,
     fontWeight: '700',
   },
   gridMeta: {
     marginTop: 2,
     color: BrandColors.textMuted,
-    fontSize: 11,
+    fontSize: 14,
     fontWeight: '600',
     textTransform: 'uppercase',
   },
   gridPrice: {
     marginTop: 8,
     color: BrandColors.accentGlow,
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: '800',
   },
   gridFavoriteBadge: {

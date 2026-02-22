@@ -24,7 +24,7 @@
     "expo-status-bar": "~2.2.3",
     "moti": "^0.30.0",
     "nanoid": "^5.1.6",
-    "pretty-format": "^30.2.0",
+    "pretty-format": "~29.7.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-native": "0.79.6",
