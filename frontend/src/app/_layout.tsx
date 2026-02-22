@@ -6,7 +6,7 @@ import { AppRoutes } from '@/src/utils/const';
 
 const queryClient: QueryClient = new QueryClient();
 
-export default function RootLayout() {
+const RootLayout = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <Stack>
@@ -16,4 +16,6 @@ export default function RootLayout() {
       <StatusBar style="light" />
     </QueryClientProvider>
   );
-}
+};
+
+export default RootLayout;

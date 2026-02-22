@@ -1,12 +1,13 @@
 import { Skeleton } from 'moti/skeleton';
 
-import { StyleSheet, View, useWindowDimensions } from 'react-native';
+import { FlatList, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { nanoid } from 'nanoid/non-secure';
 import { LinearGradient } from 'expo-linear-gradient';
 import { SingleGridCardSkeleton } from './SingleGridCardSkeleton';
-import { calculateNumColumns } from '../../constants/grid';
 import { BrandColors, SKELETON_START, SKELETON_END } from '@/src/theme/BrandColors';
+import { useMemo } from 'react';
+import { useGridDimensions } from '@/src/constants/grid';
 
 const SkeletonHeader = ({ isHomePage }: { isHomePage?: boolean }) => {
   if (!isHomePage) return null;
@@ -19,9 +20,12 @@ const SkeletonHeader = ({ isHomePage }: { isHomePage?: boolean }) => {
 };
 
 export const GridSkeleton = ({ isHomePage }: { isHomePage?: boolean }) => {
-  const { width } = useWindowDimensions();
-  const numColumns = calculateNumColumns(width);
-  const skeletons = Array.from({ length: numColumns * 3 }, () => nanoid());
+  const { NUMBER_COLUMNS } = useGridDimensions();
+
+  const data = useMemo(
+    () => Array.from({ length: NUMBER_COLUMNS * 3 }, () => nanoid()),
+    [NUMBER_COLUMNS],
+  );
 
   return (
     <LinearGradient
@@ -31,30 +35,34 @@ export const GridSkeleton = ({ isHomePage }: { isHomePage?: boolean }) => {
       end={SKELETON_END}
       style={{ flex: 1 }}
     >
-      <SafeAreaView style={styles.skeletonContainer}>
-        <SkeletonHeader isHomePage={isHomePage} />
-        <View style={styles.gridContainer}>
-          {skeletons.map(() => (
-            <SingleGridCardSkeleton />
-          ))}
-        </View>
+      <SafeAreaView style={styles.container}>
+        <FlatList
+          data={data}
+          key={NUMBER_COLUMNS}
+          numColumns={NUMBER_COLUMNS}
+          renderItem={() => <SingleGridCardSkeleton />}
+          keyExtractor={(item) => item}
+          ListHeaderComponent={<SkeletonHeader isHomePage={isHomePage} />}
+          contentContainerStyle={styles.contentContainer}
+          showsVerticalScrollIndicator={false}
+          scrollEnabled={false}
+        />
       </SafeAreaView>
     </LinearGradient>
   );
 };
 
 const styles = StyleSheet.create({
-  skeletonContainer: {
-    marginTop: 10,
-    gap: 4,
-    paddingHorizontal: 8,
+  container: {
+    flex: 1,
+  },
+  contentContainer: {
+    paddingHorizontal: 16,
+    paddingTop: 10,
+    paddingBottom: 24,
   },
   headerContainer: {
     paddingHorizontal: 4,
-    marginBottom: 6,
-  },
-  gridContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    marginBottom: 16,
   },
 });

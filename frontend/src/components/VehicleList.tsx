@@ -1,5 +1,5 @@
 import { ContentStyle, FlashList, ListRenderItemInfo } from '@shopify/flash-list';
-import { Image, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -10,7 +10,7 @@ import type { TVehicle } from '@shared/types';
 import { SingleGridCardSkeleton } from './skeletons/SingleGridCardSkeleton';
 import { nanoid } from 'nanoid/non-secure';
 
-import { GRID_ITEM_HEIGHT, calculateNumColumns, LOAD_MORE_THRESHOLD } from '../constants/grid';
+import { GRID_ITEM_HEIGHT, LOAD_MORE_THRESHOLD, useGridDimensions } from '@/src/constants/grid';
 
 type TVehicleListProps = {
   data: TVehicle[];
@@ -26,24 +26,22 @@ type TVehicleListItemProps = {
   onPress: () => void;
 };
 
-export function VehicleList({
+export const VehicleList = ({
   data,
   onEndReached,
   isFetchingNextPage,
   ListHeaderComponent,
   onVehiclePress,
   contentContainerStyle,
-}: TVehicleListProps) {
-  const { width } = useWindowDimensions();
-  const numColumns = calculateNumColumns(width);
-  const cardWidth = width / numColumns;
+}: TVehicleListProps) => {
+  const { NUMBER_COLUMNS } = useGridDimensions();
 
   return (
     <FlashList
       data={data}
       keyExtractor={(item: TVehicle) => item.id}
-      numColumns={numColumns}
-      key={numColumns}
+      numColumns={NUMBER_COLUMNS}
+      key={NUMBER_COLUMNS}
       estimatedItemSize={GRID_ITEM_HEIGHT}
       renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
         <VehicleListItem vehicle={item} onPress={() => onVehiclePress(item.id)} />
@@ -56,7 +54,7 @@ export function VehicleList({
       contentContainerStyle={contentContainerStyle}
     />
   );
-}
+};
 
 //---------------
 // Local component for vehicle list item
@@ -106,14 +104,17 @@ const VehicleListItem = ({ vehicle, onPress }: TVehicleListItemProps) => {
 };
 
 const GridNextPageSkeleton = () => {
+  const { NUMBER_COLUMNS } = useGridDimensions();
   const rowKeys = Array.from({ length: 3 }, () => nanoid());
+  const columns = Array.from({ length: NUMBER_COLUMNS }, (_, i) => i);
 
   return (
     <View style={styles.nextPageLoading}>
       {rowKeys.map((rowKey) => (
         <View key={rowKey} style={styles.gridRow}>
-          <SingleGridCardSkeleton />
-          <SingleGridCardSkeleton />
+          {columns.map((colIndex) => (
+            <SingleGridCardSkeleton key={colIndex} />
+          ))}
         </View>
       ))}
     </View>

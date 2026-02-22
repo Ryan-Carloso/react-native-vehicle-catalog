@@ -14,7 +14,7 @@ import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries/useVehiclesInf
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { BrandColors, SKELETON_START, SKELETON_END } from '@/src/theme/BrandColors';
 
-export default function HomeScreen() {
+export const HomeScreen = () => {
   const router = useRouter();
   const [isFilterModalVisible, setIsFilterModalVisible] = useState(false);
   const { data, isLoading, isError, isFetchingNextPage, fetchNextPage, hasNextPage, refetch } =
@@ -96,7 +96,7 @@ export default function HomeScreen() {
       </SafeAreaView>
     </LinearGradient>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -176,3 +176,5 @@ const styles = StyleSheet.create({
     paddingBottom: 24,
   },
 });
+
+export default HomeScreen;

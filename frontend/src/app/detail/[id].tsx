@@ -17,7 +17,7 @@ type TVehicleRouteParams = {
   id?: string;
 };
 
-export default function VehicleDetailsScreen() {
+const VehicleDetailsScreen = () => {
   const { id }: TVehicleRouteParams = useLocalSearchParams<TVehicleRouteParams>();
   const vehicleId: string = typeof id === 'string' ? id : '';
   const { isLoading, isError, data, refetch } = useVehicleDetailQuery(vehicleId);
@@ -56,7 +56,7 @@ export default function VehicleDetailsScreen() {
       </ScrollView>
     </View>
   );
-}
+};
 
 const Header = ({ data }: { data: TVehicle }) => {
   const router = useRouter();
@@ -282,3 +282,5 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
+
+export default VehicleDetailsScreen;

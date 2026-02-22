@@ -1,6 +1,4 @@
 import { useRouter } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-
 import { StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -12,7 +10,7 @@ import { EVehiclesFilterType } from '@/src/utils/api/const';
 import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries/useVehiclesInfiniteQuery';
 import { AppRoutes } from '@/src/utils/const';
 
-export default function MyBidsScreen() {
+const MyBidsScreen = () => {
   const router = useRouter();
   const { data, isLoading, isError, isFetchingNextPage, fetchNextPage, hasNextPage, refetch } =
     useVehiclesInfiniteQuery(EVehiclesFilterType.MY_BIDS);
@@ -45,7 +43,7 @@ export default function MyBidsScreen() {
       />
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -64,3 +62,5 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
 });
+
+export default MyBidsScreen;

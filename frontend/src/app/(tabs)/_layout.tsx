@@ -6,7 +6,7 @@ import { useWindowDimensions } from 'react-native';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { SCREENS } from '@/src/utils/const';
 
-export default function TabsLayout() {
+const TabsLayout = () => {
   const { width } = useWindowDimensions();
 
   const isLargeScreen = width >= 1024;
@@ -85,4 +85,6 @@ export default function TabsLayout() {
       ))}
     </Tabs>
   );
-}
+};
+
+export default TabsLayout;

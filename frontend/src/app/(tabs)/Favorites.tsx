@@ -11,7 +11,7 @@ import { EVehiclesFilterType } from '@/src/utils/api/const';
 import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries/useVehiclesInfiniteQuery';
 import { AppRoutes } from '@/src/utils/const';
 
-export default function FavoritesScreen() {
+const FavoritesScreen = () => {
   const router = useRouter();
   const { data, isLoading, isError, isFetchingNextPage, fetchNextPage, hasNextPage, refetch } =
     useVehiclesInfiniteQuery(EVehiclesFilterType.MY_FAVORITES);
@@ -44,7 +44,7 @@ export default function FavoritesScreen() {
       />
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -63,3 +63,5 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
 });
+
+export default FavoritesScreen;
