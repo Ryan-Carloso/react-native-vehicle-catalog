@@ -4,6 +4,8 @@ import { Skeleton } from 'moti/skeleton';
 import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import type { TVehicle } from '@shared/types';
+
 import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { VehicleDetailsItem } from '@/src/components/VehicleDetailsItem';
 import { useVehicleDetailQuery } from '@/src/utils/api/queries/useVehicleDetailQuery';
@@ -36,15 +38,8 @@ export default function VehicleDetailsScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="light" />
+      <Header data={data} />
       <ScrollView contentContainerStyle={styles.content}>
-        <View style={styles.header}>
-          <Pressable onPress={() => router.back()} style={styles.backButton}>
-            <Ionicons name="arrow-back" size={24} color={BrandColors.textPrimary} />
-          </Pressable>
-          <Text style={styles.title}>
-            {data.year} {data.make} {data.model}
-          </Text>
-        </View>
         <View style={styles.imageContainer}>
           <Image source={{ uri: data.image }} style={styles.image} resizeMode="cover" />
           <Pressable style={[styles.favoriteBadge]}>
@@ -63,6 +58,20 @@ export default function VehicleDetailsScreen() {
     </SafeAreaView>
   );
 }
+
+const Header = ({ data }: { data: TVehicle }) => {
+  const router = useRouter();
+  return (
+    <View style={styles.header}>
+      <Pressable onPress={() => router.back()} style={styles.backButton}>
+        <Ionicons name="arrow-back" size={24} color={BrandColors.textPrimary} />
+      </Pressable>
+      <Text style={styles.title}>
+        {data.year} {data.make} {data.model}
+      </Text>
+    </View>
+  );
+};
 
 //---------------
 // VehicleDetailsSkeleton

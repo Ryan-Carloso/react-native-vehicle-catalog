@@ -15,19 +15,19 @@ const GRID_COLUMNS = 2;
 const GRID_ITEM_HEIGHT = 220;
 const LOAD_MORE_THRESHOLD = 0.6;
 
-interface VehicleListProps {
+type TVehicleListProps = {
   data: TVehicle[];
   onEndReached: () => void;
   isFetchingNextPage: boolean;
   ListHeaderComponent?: React.ComponentType<Record<string, never>> | React.ReactElement | null;
   onVehiclePress: (id: string) => void;
   contentContainerStyle?: ContentStyle;
-}
+};
 
-interface VehicleListItemProps {
+type TVehicleListItemProps = {
   vehicle: TVehicle;
   onPress: () => void;
-}
+};
 
 export function VehicleList({
   data,
@@ -36,7 +36,7 @@ export function VehicleList({
   ListHeaderComponent,
   onVehiclePress,
   contentContainerStyle,
-}: VehicleListProps) {
+}: TVehicleListProps) {
   return (
     <FlashList
       data={data}
@@ -59,7 +59,7 @@ export function VehicleList({
 //---------------
 // Local component for vehicle list item
 //---------------
-const VehicleListItem = ({ vehicle, onPress }: VehicleListItemProps) => {
+const VehicleListItem = ({ vehicle, onPress }: TVehicleListItemProps) => {
   const bidLabel: string = formatCurrency(vehicle.startingBid);
   const favoriteIconName: 'star' | 'star-outline' = vehicle.favourite ? 'star' : 'star-outline';
 

@@ -3,12 +3,12 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { FILTER_MAKES, FILTER_YEARS, FILTER_PRICES } from '@/src/utils/const';
 
-interface FilterModalProps {
+type TFilterModalProps = {
   visible: boolean;
   onClose: () => void;
-}
+};
 
-export const FilterModal = ({ visible, onClose }: FilterModalProps) => {
+export const FilterModal = ({ visible, onClose }: TFilterModalProps) => {
   return (
     <Modal animationType="slide" transparent={true} visible={visible} onRequestClose={onClose}>
       <View style={styles.modalOverlay}>
