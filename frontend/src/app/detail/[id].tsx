@@ -18,7 +18,6 @@ type TVehicleRouteParams = {
 };
 
 export default function VehicleDetailsScreen() {
-  const router = useRouter();
   const { id }: TVehicleRouteParams = useLocalSearchParams<TVehicleRouteParams>();
   const vehicleId: string = typeof id === 'string' ? id : '';
   const { isLoading, isError, data, refetch } = useVehicleDetailQuery(vehicleId);
@@ -36,8 +35,8 @@ export default function VehicleDetailsScreen() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar style="light" />
+    <View style={styles.container}>
+      <StatusBar style="dark" />
       <Header data={data} />
       <ScrollView contentContainerStyle={styles.content}>
         <View style={styles.imageContainer}>
@@ -55,21 +54,24 @@ export default function VehicleDetailsScreen() {
         </Pressable>
         <VehicleDetailsItem vehicle={data} />
       </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 }
 
 const Header = ({ data }: { data: TVehicle }) => {
   const router = useRouter();
+
   return (
-    <View style={styles.header}>
-      <Pressable onPress={() => router.back()} style={styles.backButton}>
-        <Ionicons name="arrow-back" size={24} color={BrandColors.textPrimary} />
-      </Pressable>
-      <Text style={styles.title}>
-        {data.year} {data.make} {data.model}
-      </Text>
-    </View>
+    <SafeAreaView edges={['top']} style={styles.headerSafeArea}>
+      <View style={styles.header}>
+        <Pressable onPress={() => router.back()} style={styles.backButton}>
+          <Ionicons name="arrow-back" size={24} color={BrandColors.background} />
+        </Pressable>
+        <Text style={styles.title}>
+          {data.year} {data.make} {data.model}
+        </Text>
+      </View>
+    </SafeAreaView>
   );
 };
 
@@ -77,20 +79,12 @@ const Header = ({ data }: { data: TVehicle }) => {
 // VehicleDetailsSkeleton
 //---------------
 const VehicleDetailsSkeleton = () => (
-  <SafeAreaView style={styles.container}>
-    <StatusBar style="light" />
+  <View style={styles.container}>
+    <StatusBar style="dark" />
+    <Skeleton colorMode="light" width="100%" height={100} radius={0} />
     <ScrollView contentContainerStyle={styles.content}>
-      <View style={styles.header}>
-        <View style={styles.backButton}>
-          <Skeleton colorMode="light" width={30} height={30} radius={0} />
-        </View>
-        <View style={styles.skeletonTitleWrap}>
-          <Skeleton colorMode="light" width="80%" height={30} radius={0} />
-        </View>
-      </View>
-
       <View style={styles.imageContainer}>
-        <Skeleton colorMode="light" width="100%" height={210} radius={0} />
+        <Skeleton colorMode="light" width="100%" height={250} radius={0} />
       </View>
 
       <View style={styles.skeletonBidButton}>
@@ -140,7 +134,7 @@ const VehicleDetailsSkeleton = () => (
         </View>
       </View>
     </ScrollView>
-  </SafeAreaView>
+  </View>
 );
 
 const styles = StyleSheet.create({
@@ -152,19 +146,14 @@ const styles = StyleSheet.create({
     padding: 16,
     gap: 16,
   },
-  backButton: {
-    width: 48,
-    height: 48,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: BrandColors.background,
-  },
   imageContainer: {
     position: 'relative',
+    overflow: 'hidden',
+    marginBottom: 8,
   },
   image: {
     width: '100%',
-    height: 210,
+    height: 250,
     backgroundColor: BrandColors.surfaceMuted,
   },
   favoriteBadge: {
@@ -176,22 +165,33 @@ const styles = StyleSheet.create({
     width: 32,
     height: 32,
   },
+  headerSafeArea: {
+    backgroundColor: '#fff',
+    zIndex: 1,
+  },
   header: {
     flexDirection: 'row',
-    paddingTop: 4,
-    maxWidth: '90%',
     alignItems: 'center',
-    gap: 16,
+    backgroundColor: '#fff',
+    borderBottomWidth: 4,
+    borderColor: '#000',
     paddingHorizontal: 16,
-    marginBottom: 16,
+    paddingBottom: 16,
+  },
+  backButton: {
+    borderWidth: 3,
+    borderColor: '#000',
+    padding: 4,
+    backgroundColor: '#fff',
   },
   title: {
-    color: BrandColors.textPrimary,
-    fontSize: 24,
+    flex: 1,
+    color: '#000',
+    fontSize: 20,
     fontWeight: '900',
-    margin: 'auto',
+    textAlign: 'center',
     textTransform: 'uppercase',
-    fontFamily: 'Courier',
+    marginRight: 46,
   },
   center: {
     flex: 1,
@@ -199,7 +199,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   bidButton: {
-    padding: 12,
+    padding: 16,
     marginTop: 10,
     backgroundColor: BrandColors.textPrimary,
     alignItems: 'center',
@@ -207,12 +207,10 @@ const styles = StyleSheet.create({
   },
   bidButtonText: {
     color: BrandColors.background,
-    fontSize: 30,
-    lineHeight: 34,
-    fontWeight: '900',
-    letterSpacing: 0,
+    fontSize: 20,
+    fontWeight: '800',
+    letterSpacing: 1,
     textTransform: 'uppercase',
-    fontFamily: 'Courier',
   },
   skeletonCard: {
     borderWidth: 1,
