@@ -8,12 +8,11 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { FilterModal } from '@/src/components/FilterModal';
 import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { VehicleList } from '@/src/components/VehicleList';
-import { GridSkeleton } from '@/src/components/GridSkeleton';
+import { GridSkeleton } from '@/src/components/skeletons/GridSkeleton';
 import { AppRoutes } from '@/src/utils/const';
 import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries/useVehiclesInfiniteQuery';
-import { BrandColors } from '@/src/theme/BrandColors';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { StatusBar } from 'expo-status-bar';
+import { BrandColors, SKELETON_START, SKELETON_END } from '@/src/theme/BrandColors';
 
 export default function HomeScreen() {
   const router = useRouter();
@@ -69,10 +68,10 @@ export default function HomeScreen() {
 
   return (
     <LinearGradient
-      colors={['#232326', '#141416', '#0a0a0b']}
-      locations={[0, 0.45, 1]}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 0, y: 1 }}
+      colors={BrandColors.backgroundGradient}
+      locations={BrandColors.backgroundGradientLocations}
+      start={SKELETON_START}
+      end={SKELETON_END}
       style={{ flex: 1 }}
     >
       <SafeAreaView style={styles.container}>

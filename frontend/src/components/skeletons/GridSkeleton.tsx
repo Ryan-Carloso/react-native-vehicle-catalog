@@ -1,10 +1,12 @@
 import { Skeleton } from 'moti/skeleton';
 
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, useWindowDimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { nanoid } from 'nanoid/non-secure';
 import { LinearGradient } from 'expo-linear-gradient';
 import { SingleGridCardSkeleton } from './SingleGridCardSkeleton';
+import { calculateNumColumns } from '../../constants/grid';
+import { BrandColors, SKELETON_START, SKELETON_END } from '@/src/theme/BrandColors';
 
 const SkeletonHeader = ({ isHomePage }: { isHomePage?: boolean }) => {
   if (!isHomePage) return null;
@@ -17,24 +19,25 @@ const SkeletonHeader = ({ isHomePage }: { isHomePage?: boolean }) => {
 };
 
 export const GridSkeleton = ({ isHomePage }: { isHomePage?: boolean }) => {
-  const rowKeys = Array.from({ length: 3 }, () => nanoid());
+  const { width } = useWindowDimensions();
+  const numColumns = calculateNumColumns(width);
+  const skeletons = Array.from({ length: numColumns * 3 }, () => nanoid());
 
   return (
     <LinearGradient
-      colors={['#232326', '#141416', '#0a0a0b']}
-      locations={[0, 0.45, 1]}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 0, y: 1 }}
+      colors={BrandColors.backgroundGradient}
+      locations={BrandColors.backgroundGradientLocations}
+      start={SKELETON_START}
+      end={SKELETON_END}
       style={{ flex: 1 }}
     >
       <SafeAreaView style={styles.skeletonContainer}>
         <SkeletonHeader isHomePage={isHomePage} />
-        {rowKeys.map((rowKey) => (
-          <View key={rowKey} style={styles.gridRow}>
+        <View style={styles.gridContainer}>
+          {skeletons.map(() => (
             <SingleGridCardSkeleton />
-            <SingleGridCardSkeleton />
-          </View>
-        ))}
+          ))}
+        </View>
       </SafeAreaView>
     </LinearGradient>
   );
@@ -50,7 +53,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4,
     marginBottom: 6,
   },
-  gridRow: {
+  gridContainer: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
   },
 });

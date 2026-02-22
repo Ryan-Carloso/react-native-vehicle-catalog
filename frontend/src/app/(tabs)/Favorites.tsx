@@ -4,7 +4,7 @@ import { StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ErrorComponent } from '@/src/components/ErrorComponent';
-import { GridSkeleton } from '@/src/components/GridSkeleton';
+import { GridSkeleton } from '@/src/components/skeletons/GridSkeleton';
 import { VehicleList } from '@/src/components/VehicleList';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { EVehiclesFilterType } from '@/src/utils/api/const';

@@ -7,11 +7,10 @@ import { EmptyState } from '@/src/components/EmptyState';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { formatCurrency } from '@/src/utils/formatters';
 import type { TVehicle } from '@shared/types';
-import { SingleGridCardSkeleton } from './SingleGridCardSkeleton';
+import { SingleGridCardSkeleton } from './skeletons/SingleGridCardSkeleton';
 import { nanoid } from 'nanoid/non-secure';
 
-const GRID_ITEM_HEIGHT = 450;
-const LOAD_MORE_THRESHOLD = 0.6;
+import { GRID_ITEM_HEIGHT, calculateNumColumns, LOAD_MORE_THRESHOLD } from '../constants/grid';
 
 type TVehicleListProps = {
   data: TVehicle[];
@@ -36,7 +35,8 @@ export function VehicleList({
   contentContainerStyle,
 }: TVehicleListProps) {
   const { width } = useWindowDimensions();
-  const numColumns = Math.max(2, Math.floor(width / GRID_ITEM_HEIGHT));
+  const numColumns = calculateNumColumns(width);
+  const cardWidth = width / numColumns;
 
   return (
     <FlashList
@@ -68,8 +68,8 @@ const VehicleListItem = ({ vehicle, onPress }: TVehicleListItemProps) => {
   return (
     <Pressable onPress={onPress} style={styles.gridCard}>
       <LinearGradient
-        colors={['rgba(255,255,255,0.09)', 'rgba(255,255,255,0.02)', 'rgba(0,0,0,0.26)']}
-        locations={[0, 0.15, 1]}
+        colors={BrandColors.cardGradient}
+        locations={BrandColors.cardGradientLocations}
         style={StyleSheet.absoluteFill}
         pointerEvents="none"
       />
