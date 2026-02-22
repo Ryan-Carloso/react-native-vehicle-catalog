@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 
 import type { TVehicle } from '@shared/types';
-import { API_BASE_URL, FAKE_PAGE_DELAY_MS } from '@/src/utils/const';
+import { API_BASE_URL } from '@/src/utils/const';
 import { delay } from '@/src/utils/api/mockup-delay';
 
 const VEHICLE_DETAIL_QUERY_KEY = (
@@ -21,7 +21,7 @@ async function fetchVehicleDetailById(vehicleId: string): Promise<TVehicle> {
 
   const payload: TVehicle = await response.json();
 
-  await delay(FAKE_PAGE_DELAY_MS);
+  await delay();
 
   return payload;
 }

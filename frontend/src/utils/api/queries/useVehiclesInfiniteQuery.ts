@@ -9,7 +9,7 @@ import {
 } from '@/src/utils/api/const';
 import { delay } from '@/src/utils/api/mockup-delay';
 import { TVehiclesInfiniteQueryKey, TVehiclesPage } from '@/src/utils/api/types';
-import { API_BASE_URL, FAKE_PAGE_DELAY_MS } from '@/src/utils/const';
+import { API_BASE_URL } from '@/src/utils/const';
 
 type TVehiclesInfiniteQueryData = InfiniteData<TVehiclesPage, number>;
 
@@ -70,7 +70,7 @@ async function fetchVehiclesPage(
 
   const apiPage: TVehiclesPage = await response.json();
 
-  await delay(FAKE_PAGE_DELAY_MS);
+  await delay();
 
   return apiPage;
 }
