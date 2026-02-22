@@ -9,6 +9,7 @@ import { VehicleDetailsItem } from '@/src/components/VehicleDetailsItem';
 import { useVehicleDetailQuery } from '@/src/utils/api/queries/useVehicleDetailQuery';
 import { BrandColors } from '@/src/theme/BrandColors';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { StatusBar } from 'expo-status-bar';
 
 type TVehicleRouteParams = {
   id?: string;
@@ -25,11 +26,7 @@ export default function VehicleDetailsScreen() {
   }
 
   if (isLoading) {
-    return (
-      <SafeAreaView style={styles.container}>
-        <VehicleDetailsSkeleton />
-      </SafeAreaView>
-    );
+    return <VehicleDetailsSkeleton />;
   }
 
   if (isError || !data) {
@@ -38,51 +35,103 @@ export default function VehicleDetailsScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar style="light" />
       <ScrollView contentContainerStyle={styles.content}>
-        <Pressable onPress={() => router.back()} style={styles.backButton}>
-          <Ionicons name="arrow-back" size={24} color={BrandColors.textPrimary} />
-        </Pressable>
-        <Text style={styles.title}>
-          {data.year} {data.make} {data.model}
-        </Text>
-        <Image source={{ uri: data.image }} style={styles.image} resizeMode="cover" />
-        <VehicleDetailsItem vehicle={data} />
-
+        <View style={styles.header}>
+          <Pressable onPress={() => router.back()} style={styles.backButton}>
+            <Ionicons name="arrow-back" size={24} color={BrandColors.textPrimary} />
+          </Pressable>
+          <Text style={styles.title}>
+            {data.year} {data.make} {data.model}
+          </Text>
+        </View>
+        <View style={styles.imageContainer}>
+          <Image source={{ uri: data.image }} style={styles.image} resizeMode="cover" />
+          <Pressable style={[styles.favoriteBadge]}>
+            <Ionicons
+              name={data.favourite ? 'star' : 'star-outline'}
+              size={24}
+              color={data.favourite ? BrandColors.warning : BrandColors.textSecondary}
+            />
+          </Pressable>
+        </View>
         <Pressable style={styles.bidButton}>
           <Text style={styles.bidButtonText}>PLACE BID</Text>
         </Pressable>
+        <VehicleDetailsItem vehicle={data} />
       </ScrollView>
     </SafeAreaView>
   );
 }
 
 //---------------
-// Loading placeholders for detail page
-// Mirrors final composition without data hooks
+// VehicleDetailsSkeleton
 //---------------
 const VehicleDetailsSkeleton = () => (
-  <ScrollView contentContainerStyle={styles.skeletonContent}>
-    <View style={styles.skeletonHeader}>
-      <Skeleton colorMode="light" width={48} height={48} radius={0} />
-      <Skeleton colorMode="light" width={140} height={44} radius={0} />
-      <Skeleton colorMode="light" width={48} height={48} radius={0} />
-    </View>
-
-    <Skeleton colorMode="light" width="100%" height={220} radius={0} />
-
-    <View style={styles.skeletonCard}>
-      <View style={styles.skeletonTitle}>
-        <Skeleton colorMode="light" width="64%" height={28} radius={0} />
+  <SafeAreaView style={styles.container}>
+    <StatusBar style="light" />
+    <ScrollView contentContainerStyle={styles.content}>
+      <View style={styles.header}>
+        <View style={styles.backButton}>
+          <Skeleton colorMode="light" width={30} height={30} radius={0} />
+        </View>
+        <View style={styles.skeletonTitleWrap}>
+          <Skeleton colorMode="light" width="80%" height={30} radius={0} />
+        </View>
       </View>
 
-      {Array.from({ length: 7 }, (_value: unknown, index: number) => (
-        <View key={`vehicle-details-skeleton-row-${index}`} style={styles.skeletonRow}>
-          <Skeleton colorMode="light" width="25%" height={18} radius={0} />
-          <Skeleton colorMode="light" width="45%" height={18} radius={0} />
+      <View style={styles.imageContainer}>
+        <Skeleton colorMode="light" width="100%" height={210} radius={0} />
+      </View>
+
+      <View style={styles.skeletonBidButton}>
+        <Skeleton colorMode="light" width="100%" height={58} radius={0} />
+      </View>
+
+      <View style={styles.skeletonCard}>
+        <View style={styles.skeletonMiniSpecsRow}>
+          {Array.from({ length: 3 }).map((_, index: number) => (
+            <View key={`mini-spec-${index}`} style={styles.skeletonMiniSpecPill}>
+              <Skeleton colorMode="light" width="40%" height={12} radius={0} />
+              <Skeleton colorMode="light" width="70%" height={16} radius={0} />
+            </View>
+          ))}
         </View>
-      ))}
-    </View>
-  </ScrollView>
+
+        <View style={styles.skeletonBidRow}>
+          <Skeleton colorMode="light" width="54%" height={25} radius={0} />
+          <View style={styles.skeletonPriceWrap}>
+            <Skeleton colorMode="light" width="60%" height={25} radius={0} />
+          </View>
+        </View>
+
+        <View style={styles.skeletonMetaCard}>
+          <View style={styles.skeletonRow}>
+            <Skeleton colorMode="light" width="58%" height={17} radius={0} />
+            <Skeleton colorMode="light" width="60%" height={17} radius={0} />
+          </View>
+        </View>
+
+        <View style={styles.skeletonVerifyCard}>
+          {Array.from({ length: 4 }).map((_, index: number) => (
+            <View key={`verify-${index}`} style={styles.skeletonVerifyRow}>
+              <View style={styles.verifyDot}>
+                <Skeleton colorMode="light" width={16} height={16} radius={0} />
+              </View>
+              <View style={styles.skeletonVerifyTextWrap}>
+                <Skeleton
+                  colorMode="light"
+                  width={index === 2 ? '64%' : index === 3 ? '78%' : '72%'}
+                  height={17}
+                  radius={0}
+                />
+              </View>
+            </View>
+          ))}
+        </View>
+      </View>
+    </ScrollView>
+  </SafeAreaView>
 );
 
 const styles = StyleSheet.create({
@@ -101,21 +150,37 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: BrandColors.background,
   },
+  imageContainer: {
+    position: 'relative',
+  },
   image: {
     width: '100%',
     height: 210,
     backgroundColor: BrandColors.surfaceMuted,
   },
+  favoriteBadge: {
+    position: 'absolute',
+    bottom: 12,
+    right: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 32,
+    height: 32,
+  },
   header: {
     flexDirection: 'row',
     paddingTop: 4,
+    maxWidth: '90%',
+    alignItems: 'center',
+    gap: 16,
+    paddingHorizontal: 16,
+    marginBottom: 16,
   },
   title: {
     color: BrandColors.textPrimary,
-    fontSize: 38,
-    lineHeight: 42,
+    fontSize: 24,
     fontWeight: '900',
-    letterSpacing: 0,
+    margin: 'auto',
     textTransform: 'uppercase',
     fontFamily: 'Courier',
   },
@@ -125,7 +190,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   bidButton: {
-    paddingVertical: 12,
+    padding: 12,
+    marginTop: 10,
     backgroundColor: BrandColors.textPrimary,
     alignItems: 'center',
     justifyContent: 'center',
@@ -139,26 +205,73 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     fontFamily: 'Courier',
   },
-  skeletonContent: {
-    padding: 16,
-    gap: 14,
-  },
-  skeletonHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
   skeletonCard: {
+    borderWidth: 1,
+    borderColor: BrandColors.border,
     padding: 14,
     backgroundColor: BrandColors.surface,
     gap: 12,
   },
-  skeletonTitle: {
-    marginBottom: 2,
+  skeletonTitleWrap: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  skeletonBidButton: {
+    marginTop: 10,
   },
   skeletonRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    gap: 16,
+    alignItems: 'center',
+  },
+  skeletonMiniSpecsRow: {
+    flexDirection: 'row',
+    gap: 10,
+  },
+  skeletonMiniSpecPill: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: BrandColors.border,
+    backgroundColor: BrandColors.surfaceStrong,
+    paddingVertical: 8,
+    paddingHorizontal: 10,
+    gap: 4,
+  },
+  skeletonMetaCard: {
+    borderWidth: 1,
+    borderColor: BrandColors.border,
+    padding: 10,
+    backgroundColor: BrandColors.surfaceStrong,
+    gap: 8,
+  },
+  skeletonVerifyCard: {
+    borderWidth: 1,
+    borderColor: BrandColors.border,
+    backgroundColor: BrandColors.surfaceStrong,
+    padding: 12,
+    gap: 10,
+  },
+  skeletonVerifyRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  skeletonBidRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  skeletonPriceWrap: {
+    flex: 1,
+    alignItems: 'flex-end',
+  },
+  verifyDot: {
+    width: 16,
+    height: 16,
+    backgroundColor: BrandColors.success,
+  },
+  skeletonVerifyTextWrap: {
+    flex: 1,
   },
 });

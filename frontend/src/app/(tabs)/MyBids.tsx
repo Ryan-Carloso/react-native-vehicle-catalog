@@ -7,13 +7,14 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { HomeEmptyState } from '@/src/components/EmptyState';
 import { ErrorComponent } from '@/src/components/ErrorComponent';
-import { GridNextPageSkeleton, GridSkeleton } from '@/src/components/HomeSkeleton';
+import { GridSkeleton, GridNextPageSkeleton } from '@/src/components/GridSkeleton';
 import { VehicleListItem } from '@/src/components/VehicleListItem';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { EVehiclesFilterType } from '@/src/utils/api/const';
 import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries/useVehiclesInfiniteQuery';
 import { AppRoutes } from '@/src/utils/const';
 import type { TVehicle } from '@shared/types';
+import { StatusBar } from 'expo-status-bar';
 
 export default function MyBidsScreen() {
   const router = useRouter();
@@ -34,6 +35,7 @@ export default function MyBidsScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar style="light" />
       <FlashList
         data={data?.vehicles ?? []}
         keyExtractor={(item: TVehicle): string => item.id}
@@ -50,7 +52,7 @@ export default function MyBidsScreen() {
           }
         }}
         onEndReachedThreshold={0.6}
-        ListFooterComponent={<GridNextPageSkeleton isFetchingNextPage={isFetchingNextPage} />}
+        ListFooterComponent={isFetchingNextPage ? <GridNextPageSkeleton /> : null}
         contentContainerStyle={styles.listContent}
       />
     </SafeAreaView>

@@ -36,6 +36,14 @@ export function VehicleListItem({ vehicle, onPress }: TVehicleListItemProps) {
           style={StyleSheet.absoluteFill}
           pointerEvents="none"
         />
+        <View style={[styles.gridFavoriteBadge]}>
+          <Ionicons
+            name={favoriteIconName}
+            size={18}
+            style={styles.gridFavoriteIcon}
+            color={vehicle.favourite ? BrandColors.accent : BrandColors.textSecondary}
+          />
+        </View>
       </View>
 
       <Text style={styles.gridTitle} numberOfLines={1}>
@@ -45,20 +53,6 @@ export function VehicleListItem({ vehicle, onPress }: TVehicleListItemProps) {
       <Text style={styles.gridMeta} numberOfLines={1}>
         {vehicle.year} - {vehicle.fuel}
       </Text>
-
-      <View
-        style={[
-          styles.gridFavoriteBadge,
-          vehicle.favourite ? styles.gridFavoriteBadgeActive : styles.gridFavoriteBadgeInactive,
-        ]}
-      >
-        <Ionicons
-          name={favoriteIconName}
-          size={12}
-          style={styles.gridFavoriteIcon}
-          color={vehicle.favourite ? BrandColors.warning : BrandColors.textSecondary}
-        />
-      </View>
 
       <Text style={styles.gridPrice}>{bidLabel}</Text>
     </Pressable>
@@ -109,22 +103,11 @@ const styles = StyleSheet.create({
     fontWeight: '800',
   },
   gridFavoriteBadge: {
-    marginTop: 8,
+    position: 'absolute',
+    bottom: 12,
+    right: 12,
     alignItems: 'center',
     justifyContent: 'center',
-    width: 28,
-    height: 28,
-    alignSelf: 'flex-start',
-  },
-  gridFavoriteBadgeActive: {
-    borderWidth: 1,
-    borderColor: BrandColors.borderSoft,
-    backgroundColor: BrandColors.backgroundElevated,
-  },
-  gridFavoriteBadgeInactive: {
-    borderWidth: 1,
-    borderColor: BrandColors.border,
-    backgroundColor: BrandColors.surfaceMuted,
   },
   gridFavoriteIcon: {
     marginTop: -1,

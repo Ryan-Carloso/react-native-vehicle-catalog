@@ -12,11 +12,12 @@ import { FilterModal } from '@/src/components/FilterModal';
 import { HomeEmptyState } from '@/src/components/EmptyState';
 import type { TVehicle } from '@shared/types';
 import { VehicleListItem } from '@/src/components/VehicleListItem';
-import { GridNextPageSkeleton, GridSkeleton } from '@/src/components/HomeSkeleton';
+import { GridSkeleton, GridNextPageSkeleton } from '@/src/components/GridSkeleton';
 import { AppRoutes } from '@/src/utils/const';
 import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries/useVehiclesInfiniteQuery';
 import { BrandColors } from '@/src/theme/BrandColors';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { StatusBar } from 'expo-status-bar';
 
 export default function HomeScreen() {
   const router = useRouter();
@@ -29,7 +30,7 @@ export default function HomeScreen() {
   };
 
   if (isLoading) {
-    return <GridSkeleton />;
+    return <GridSkeleton isHomePage />;
   }
 
   if (isError) {
@@ -43,6 +44,7 @@ export default function HomeScreen() {
   const HomeFeedHeader = () => {
     return (
       <View style={styles.heroContainer}>
+        <StatusBar style="light" />
         <View style={styles.headerTopRow}>
           <View style={styles.logoRow}>
             <FontAwesome name="gear" size={24} color={BrandColors.textPrimary} />
@@ -100,7 +102,7 @@ export default function HomeScreen() {
               }
             }}
             onEndReachedThreshold={0.6}
-            ListFooterComponent={<GridNextPageSkeleton isFetchingNextPage={isFetchingNextPage} />}
+            ListFooterComponent={isFetchingNextPage ? <GridNextPageSkeleton /> : null}
             contentContainerStyle={styles.listContent}
           />
         </View>
@@ -123,8 +125,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     gap: 14,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.22)',
-    backgroundColor: 'rgba(15,18,22,0.82)',
+    borderColor: BrandColors.border,
+    backgroundColor: BrandColors.background,
     shadowColor: BrandColors.shadow,
     shadowOffset: { width: 0, height: 10 },
     shadowOpacity: 0.35,

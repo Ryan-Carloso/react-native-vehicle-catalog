@@ -1,5 +1,4 @@
 import { StyleSheet, Text, View } from 'react-native';
-import Ionicons from '@expo/vector-icons/Ionicons';
 
 import type { TVehicle } from '@shared/types';
 import { BrandColors } from '@/src/theme/BrandColors';
@@ -22,20 +21,6 @@ export function VehicleDetailsItem({ vehicle }: TVehicleDetailsItemProps) {
         <VehicleMiniSpec label="ENGINE" value={vehicle.engineSize} />
       </View>
 
-      <View style={styles.sectionHeader}>
-        <Text style={styles.sectionHeaderTitle}>VIN DECODED SPECS</Text>
-        <View style={styles.infoBadge}>
-          <Text style={styles.infoBadgeText}>i</Text>
-        </View>
-      </View>
-
-      <View style={styles.verifyCard}>
-        <VehicleVerifyRow text="FRAME INTEGRITY: Verified" />
-        <VehicleVerifyRow text="PAINT METRIC: Verified" />
-        <VehicleVerifyRow text="SERVICE HISTORY: Original" />
-        <VehicleVerifyRow text="FULL RECORDS: Available" />
-      </View>
-
       <View style={styles.bidRow}>
         <Text style={styles.bidRowText}>MILEAGE {mileageLabel}</Text>
         <Text style={styles.bidRowText}>{bidLabel}</Text>
@@ -43,7 +28,13 @@ export function VehicleDetailsItem({ vehicle }: TVehicleDetailsItemProps) {
 
       <View style={styles.metaCard}>
         <VehicleMetaRow label="Auction date" value={auctionDateLabel} />
-        <VehicleMetaFavoriteRow favorite={vehicle.favourite} />
+      </View>
+
+      <View style={styles.verifyCard}>
+        <VehicleVerifyRow text="Lorem ipsum dolor sit amet" />
+        <VehicleVerifyRow text="consectetur adipiscing elit." />
+        <VehicleVerifyRow text="Sed do eiusmod tempor incididunt" />
+        <VehicleVerifyRow text="ut labore et dolore magna aliqua." />
       </View>
     </View>
   );
@@ -85,10 +76,6 @@ type TVehicleMetaRowProps = {
   value: string;
 };
 
-type TVehicleMetaFavoriteRowProps = {
-  favorite: boolean;
-};
-
 //---------------
 // Bottom metadata row
 // Organizes operational info lines
@@ -102,26 +89,10 @@ const VehicleMetaRow = ({ label, value }: TVehicleMetaRowProps) => {
   );
 };
 
-//---------------
-// Favorite row with icon-only status
-// Keeps state legible without extra text
-//---------------
-const VehicleMetaFavoriteRow = ({ favorite }: TVehicleMetaFavoriteRowProps) => (
-  <View style={styles.metaRow}>
-    <Text style={styles.metaLabel}>Favorite</Text>
-    <Ionicons
-      name={favorite ? 'star' : 'star-outline'}
-      size={16}
-      color={favorite ? BrandColors.warning : BrandColors.textMuted}
-    />
-  </View>
-);
-
 const styles = StyleSheet.create({
   card: {
     borderWidth: 1,
     borderColor: BrandColors.border,
-    borderRadius: 16,
     padding: 14,
     backgroundColor: BrandColors.surface,
     gap: 12,
@@ -133,7 +104,6 @@ const styles = StyleSheet.create({
   },
   miniSpecPill: {
     flex: 1,
-    borderRadius: 10,
     borderWidth: 1,
     borderColor: BrandColors.border,
     backgroundColor: BrandColors.surfaceStrong,
@@ -153,36 +123,8 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     textTransform: 'capitalize',
   },
-  sectionHeader: {
-    borderRadius: 12,
-    backgroundColor: '#51545b',
-    paddingVertical: 10,
-    paddingHorizontal: 12,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  sectionHeaderTitle: {
-    color: BrandColors.textPrimary,
-    fontSize: 18,
-    fontWeight: '700',
-    letterSpacing: 0.5,
-  },
-  infoBadge: {
-    width: 24,
-    height: 24,
-    borderRadius: 999,
-    backgroundColor: BrandColors.textPrimary,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  infoBadgeText: {
-    color: BrandColors.surface,
-    fontSize: 13,
-    fontWeight: '800',
-  },
+
   verifyCard: {
-    borderRadius: 12,
     borderWidth: 1,
     borderColor: BrandColors.border,
     backgroundColor: BrandColors.surfaceStrong,
@@ -197,7 +139,6 @@ const styles = StyleSheet.create({
   verifyDot: {
     width: 16,
     height: 16,
-    borderRadius: 999,
     backgroundColor: BrandColors.success,
   },
   verifyText: {
@@ -218,7 +159,6 @@ const styles = StyleSheet.create({
   metaCard: {
     borderWidth: 1,
     borderColor: BrandColors.border,
-    borderRadius: 12,
     backgroundColor: BrandColors.surfaceStrong,
     padding: 10,
     gap: 8,
