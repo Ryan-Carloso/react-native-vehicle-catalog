@@ -2,7 +2,18 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Skeleton } from 'moti/skeleton';
 
-import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import {
+  Image,
+  KeyboardAvoidingView,
+  Modal,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+  Platform,
+} from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import type { TVehicle } from '@shared/types';
@@ -12,9 +23,12 @@ import { VehicleDetailsItem } from '@/src/components/VehicleDetailsItem';
 import { useGridDimensions } from '@/src/constants/grid';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { useToggleFavorite } from '@/src/hooks/useToggleFavorite';
+import { usePlaceBid } from '@/src/hooks/usePlaceBid';
 import { useVehicleDetailQuery } from '@/src/utils/api/queries/useVehicleDetailQuery';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { StatusBar } from 'expo-status-bar';
+import { useState } from 'react';
+import { formatCurrency } from '@/src/utils/formatters';
 
 type TVehicleRouteParams = {
   id?: string;
@@ -26,6 +40,10 @@ export default function VehicleDetailsScreen() {
   const { isLoading, isError, data, refetch } = useVehicleDetailQuery(vehicleId);
   const { isLargeScreen } = useGridDimensions();
   const toggleFavoriteMutation = useToggleFavorite();
+  const placeBidMutation = usePlaceBid();
+  const [showBidModal, setShowBidModal] = useState(false);
+  const [bidAmount, setBidAmount] = useState('');
+  const [bidError, setBidError] = useState('');
 
   if (!vehicleId) {
     return <ErrorComponent message="Invalid vehicle ID." />;
@@ -44,8 +62,46 @@ export default function VehicleDetailsScreen() {
   const detailsSectionStyle = [styles.detailsSection, isLargeScreen && styles.detailsSectionLarge];
   const contentContainerStyle = [styles.content, isLargeScreen && styles.contentLarge];
 
+  const isAuctionEnded = data.isAuctionEnded;
+  console.log('isAuctionEnded', isAuctionEnded);
+  const minimumBid: number = data.currentBid + 100;
+
   const handleFavoriteToggle = (): void => {
     toggleFavoriteMutation.mutate({ vehicleId, currentFavorite: data.favourite });
+  };
+
+  const handlePlaceBid = (): void => {
+    const bid: number = Number(bidAmount);
+
+    if (isNaN(bid)) {
+      setBidError('Please enter a valid number');
+      return;
+    }
+
+    if (bid < minimumBid) {
+      setBidError(`Bid must be at least ${formatCurrency(minimumBid)}`);
+      return;
+    }
+
+    placeBidMutation.mutate(
+      { vehicleId, bidAmount: bid, currentHasBid: data.hasBid },
+      {
+        onSuccess: () => {
+          setShowBidModal(false);
+          setBidAmount('');
+          setBidError('');
+        },
+        onError: () => {
+          setBidError('Failed to place bid. Please try again.');
+        },
+      },
+    );
+  };
+
+  const handleCloseModal = (): void => {
+    setShowBidModal(false);
+    setBidAmount('');
+    setBidError('');
   };
 
   return (
@@ -73,17 +129,121 @@ export default function VehicleDetailsScreen() {
 
           <View style={detailsSectionStyle}>
             <View style={styles.detailsPanel}>
-              <Pressable style={styles.bidButton}>
-                <Text style={styles.bidButtonText}>PLACE BID</Text>
+              <Pressable
+                style={[styles.bidButton, isAuctionEnded && styles.bidButtonDisabled]}
+                onPress={() => !isAuctionEnded && setShowBidModal(true)}
+                disabled={isAuctionEnded}
+              >
+                <Text style={styles.bidButtonText}>
+                  {isAuctionEnded ? 'AUCTION ENDED' : 'PLACE BID'}
+                </Text>
               </Pressable>
               <VehicleDetailsItem vehicle={data} />
             </View>
           </View>
         </View>
       </ScrollView>
+      <PlaceBidModal
+        visible={showBidModal}
+        onClose={handleCloseModal}
+        currentBid={data.currentBid}
+        minimumBid={minimumBid}
+        bidAmount={bidAmount}
+        setBidAmount={setBidAmount}
+        bidError={bidError}
+        onPlaceBid={handlePlaceBid}
+        isLoading={placeBidMutation.isPending}
+      />
     </LinearGradient>
   );
 }
+
+type TPlaceBidModalProps = {
+  visible: boolean;
+  onClose: () => void;
+  currentBid: number;
+  minimumBid: number;
+  bidAmount: string;
+  setBidAmount: (value: string) => void;
+  bidError: string;
+  onPlaceBid: () => void;
+  isLoading: boolean;
+};
+
+const PlaceBidModal = ({
+  visible,
+  onClose,
+  currentBid,
+  minimumBid,
+  bidAmount,
+  setBidAmount,
+  bidError,
+  onPlaceBid,
+  isLoading,
+}: TPlaceBidModalProps) => {
+  const insets = useSafeAreaInsets();
+
+  return (
+    <Modal animationType="slide" transparent={true} visible={visible} onRequestClose={onClose}>
+      <KeyboardAvoidingView
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        style={styles.modalKeyboardAvoidingView}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={[styles.modalContent, { paddingBottom: insets.bottom }]}>
+            <View style={styles.modalHeader}>
+              <Text style={styles.modalTitle}>Place Your Bid</Text>
+              <Pressable onPress={onClose} style={styles.modalCloseButton}>
+                <Ionicons name="close" size={24} color={BrandColors.textPrimary} />
+              </Pressable>
+            </View>
+
+            <View style={styles.modalBody}>
+              <View style={styles.bidInfoRow}>
+                <View style={styles.bidInfoItem}>
+                  <Text style={styles.bidInfoLabel}>Current Bid</Text>
+                  <Text style={styles.bidInfoValue}>{formatCurrency(currentBid)}</Text>
+                </View>
+                <View style={styles.bidInfoDivider} />
+                <View style={styles.bidInfoItem}>
+                  <Text style={styles.bidInfoLabel}>Minimum Bid</Text>
+                  <Text style={styles.bidInfoValue}>{formatCurrency(minimumBid)}</Text>
+                </View>
+              </View>
+
+              <View style={styles.inputWrapper}>
+                <Text style={styles.inputLabel}>Your Bid Amount</Text>
+                <View style={styles.inputContainer}>
+                  <Text style={styles.currencySymbol}>£</Text>
+                  <TextInput
+                    style={styles.input}
+                    value={bidAmount}
+                    onChangeText={setBidAmount}
+                    placeholder={`${minimumBid}`}
+                    keyboardType="numeric"
+                    autoFocus
+                    editable={!isLoading}
+                  />
+                </View>
+                {bidError ? <Text style={styles.errorText}>{bidError}</Text> : null}
+              </View>
+            </View>
+
+            <Pressable
+              style={[styles.submitButton, isLoading && styles.submitButtonDisabled]}
+              onPress={onPlaceBid}
+              disabled={isLoading}
+            >
+              <Text style={styles.submitButtonText}>
+                {isLoading ? 'PLACING BID...' : 'CONFIRM BID'}
+              </Text>
+            </Pressable>
+          </View>
+        </View>
+      </KeyboardAvoidingView>
+    </Modal>
+  );
+};
 
 const VehicleDetailsHeader = ({ data }: { data: TVehicle }) => {
   const router = useRouter();
@@ -389,6 +549,127 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 6, height: 6 },
     shadowOpacity: 0.45,
     shadowRadius: 12,
+  },
+  bidButtonDisabled: {
+    backgroundColor: BrandColors.textMuted,
+    borderColor: BrandColors.border,
+  },
+  modalKeyboardAvoidingView: {
+    flex: 1,
+    justifyContent: 'flex-end',
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: BrandColors.overlayVignette,
+    justifyContent: 'flex-end',
+  },
+  modalContent: {
+    backgroundColor: BrandColors.surface,
+    paddingTop: 20,
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    marginBottom: 16,
+  },
+  modalTitle: {
+    fontSize: 20,
+    fontWeight: '900',
+    color: BrandColors.textPrimary,
+    textTransform: 'uppercase',
+    fontFamily: 'Courier',
+  },
+  modalCloseButton: {
+    padding: 4,
+  },
+  modalBody: {
+    paddingHorizontal: 20,
+    marginBottom: 20,
+  },
+  bidInfoRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: BrandColors.border,
+    backgroundColor: BrandColors.surfaceStrong,
+    padding: 16,
+    marginBottom: 16,
+  },
+  bidInfoItem: {
+    flex: 1,
+  },
+  bidInfoLabel: {
+    color: BrandColors.textSecondary,
+    fontSize: 12,
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    marginBottom: 4,
+  },
+  bidInfoValue: {
+    color: BrandColors.textPrimary,
+    fontSize: 20,
+    fontWeight: '800',
+  },
+  bidInfoDivider: {
+    width: 1,
+    backgroundColor: BrandColors.border,
+    marginHorizontal: 16,
+  },
+  inputWrapper: {
+    marginBottom: 16,
+  },
+  inputLabel: {
+    color: BrandColors.textPrimary,
+    fontSize: 14,
+    fontWeight: '700',
+    textTransform: 'uppercase',
+    marginBottom: 8,
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 2,
+    borderColor: BrandColors.border,
+    backgroundColor: BrandColors.backgroundElevated,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+  },
+  currencySymbol: {
+    color: BrandColors.textPrimary,
+    fontSize: 18,
+    fontWeight: '800',
+    marginRight: 8,
+  },
+  input: {
+    flex: 1,
+    color: BrandColors.textPrimary,
+    fontSize: 18,
+    fontWeight: '700',
+    padding: 0,
+  },
+  errorText: {
+    color: BrandColors.danger,
+    fontSize: 13,
+    fontWeight: '600',
+    marginTop: 8,
+  },
+  submitButton: {
+    backgroundColor: BrandColors.textPrimary,
+    marginHorizontal: 20,
+    paddingVertical: 16,
+    alignItems: 'center',
+  },
+  submitButtonDisabled: {
+    backgroundColor: BrandColors.textMuted,
+  },
+  submitButtonText: {
+    color: BrandColors.background,
+    fontSize: 16,
+    fontWeight: '900',
+    textTransform: 'uppercase',
+    fontFamily: 'Courier',
   },
   bidButtonText: {
     color: BrandColors.background,

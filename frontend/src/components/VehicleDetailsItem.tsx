@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Platform } from 'react-native';
 
 import type { TVehicle } from '@shared/types';
 import { BrandColors } from '@/src/theme/BrandColors';
@@ -9,9 +9,11 @@ type TVehicleDetailsItemProps = {
 };
 
 export const VehicleDetailsItem = ({ vehicle }: TVehicleDetailsItemProps) => {
-  const bidLabel: string = formatCurrency(vehicle.startingBid);
+  const currentBid: string = formatCurrency(vehicle.currentBid);
+  const startingBid: string = formatCurrency(vehicle.startingBid);
   const mileageLabel: string = formatMileage(vehicle.mileage);
   const auctionDateLabel: string = formatAuctionDate(vehicle.auctionDateTime);
+  const isAuctionEnded = vehicle.isAuctionEnded;
 
   return (
     <View style={styles.card}>
@@ -20,16 +22,38 @@ export const VehicleDetailsItem = ({ vehicle }: TVehicleDetailsItemProps) => {
         <VehicleMiniSpec label="FUEL" value={vehicle.fuel} />
         <VehicleMiniSpec label="ENGINE" value={vehicle.engineSize} />
       </View>
-
-      <View style={styles.bidRow}>
-        <Text style={styles.bidRowText}>MILEAGE {mileageLabel}</Text>
-        <Text style={styles.bidRowText}>{bidLabel}</Text>
+      <View style={styles.specsContainer}>
+        <View style={styles.specRow}>
+          <Text style={styles.specLabel}>MILEAGE</Text>
+          <Text style={styles.specValue}>{mileageLabel}</Text>
+        </View>
+        <View style={styles.specDivider} />
+        <View style={styles.specRow}>
+          <Text style={styles.specLabel}>STARTING BID</Text>
+          <Text style={styles.specValue}>{startingBid}</Text>
+        </View>
+        <View style={styles.specDivider} />
+        <View style={styles.specRow}>
+          <Text style={styles.specLabel}>{isAuctionEnded ? 'FINISH BID' : 'CURRENT BID'}</Text>
+          <Text style={styles.specValue}>{currentBid}</Text>
+        </View>
       </View>
-
-      <View style={styles.metaCard}>
-        <VehicleMetaRow label="Auction date" value={auctionDateLabel} />
-      </View>
-
+      (
+      {!isAuctionEnded && (
+        <View style={styles.metaCard}>
+          <View style={styles.metaRow}>
+            <Text style={styles.metaLabel}>Auction date</Text>
+            <Text style={styles.metaValue}>{auctionDateLabel}</Text>
+          </View>
+        </View>
+      )}
+      ) (
+      {isAuctionEnded && (
+        <View style={styles.metaCard}>
+          <Text style={styles.metaLabel}>Auction already ended</Text>
+        </View>
+      )}
+      )
       <View style={styles.verifyCard}>
         <VehicleVerifyRow text="Lorem ipsum dolor sit amet" />
         <VehicleVerifyRow text="consectetur adipiscing elit." />
@@ -70,25 +94,6 @@ const VehicleVerifyRow = ({ text }: TVehicleVerifyRowProps) => (
     <Text style={styles.verifyText}>{text}</Text>
   </View>
 );
-
-type TVehicleMetaRowProps = {
-  label: string;
-  value: string;
-};
-
-//---------------
-// Bottom metadata row
-// Organizes operational info lines
-//---------------
-const VehicleMetaRow = ({ label, value }: TVehicleMetaRowProps) => {
-  return (
-    <View style={styles.metaRow}>
-      <Text style={styles.metaLabel}>{label}</Text>
-      <Text style={styles.metaValue}>{value}</Text>
-    </View>
-  );
-};
-
 const styles = StyleSheet.create({
   card: {
     borderWidth: 1,
@@ -146,15 +151,37 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '700',
   },
-  bidRow: {
+  specsContainer: {
+    borderWidth: 2,
+    borderColor: BrandColors.borderSoft,
+    backgroundColor: BrandColors.backgroundElevated,
+    marginVertical: 4,
+  },
+  specRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 14,
   },
-  bidRowText: {
+  specDivider: {
+    height: 2,
+    backgroundColor: BrandColors.borderSoft,
+    width: '100%',
+  },
+  specLabel: {
+    fontFamily: Platform.select({ ios: 'Courier', android: 'monospace' }),
+    fontSize: 13,
+    fontWeight: '700',
+    color: BrandColors.textSecondary,
+    textTransform: 'uppercase',
+    letterSpacing: 1,
+  },
+  specValue: {
+    fontFamily: Platform.select({ ios: 'Courier', android: 'monospace' }),
+    fontSize: 16,
+    fontWeight: '700',
     color: BrandColors.textPrimary,
-    fontSize: 20,
-    fontWeight: '800',
   },
   metaCard: {
     borderWidth: 1,

@@ -1,3 +1,4 @@
+import { BrandColors } from '@/src/theme/BrandColors';
 import { Skeleton } from 'moti/skeleton';
 
 import { StyleSheet, View } from 'react-native';
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 8,
     borderWidth: 1,
-    borderColor: '#2A2A2D',
+    borderColor: BrandColors.border,
     marginTop: 10,
   },
   imagePlaceholder: {
