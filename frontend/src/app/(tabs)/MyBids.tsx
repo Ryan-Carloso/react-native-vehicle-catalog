@@ -1,20 +1,16 @@
-import { FlashList } from '@shopify/flash-list';
-import type { ListRenderItemInfo } from '@shopify/flash-list';
 import { useRouter } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 
 import { StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { HomeEmptyState } from '@/src/components/EmptyState';
 import { ErrorComponent } from '@/src/components/ErrorComponent';
-import { GridSkeleton, GridNextPageSkeleton } from '@/src/components/GridSkeleton';
-import { VehicleListItem } from '@/src/components/VehicleListItem';
+import { GridSkeleton } from '@/src/components/GridSkeleton';
+import { VehicleList } from '@/src/components/VehicleList';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { EVehiclesFilterType } from '@/src/utils/api/const';
 import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries/useVehiclesInfiniteQuery';
 import { AppRoutes } from '@/src/utils/const';
-import type { TVehicle } from '@shared/types';
-import { StatusBar } from 'expo-status-bar';
 
 export default function MyBidsScreen() {
   const router = useRouter();
@@ -36,23 +32,16 @@ export default function MyBidsScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="light" />
-      <FlashList
+      <VehicleList
         data={data?.vehicles ?? []}
-        keyExtractor={(item: TVehicle): string => item.id}
-        numColumns={2}
-        estimatedItemSize={220}
-        renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
-          <VehicleListItem vehicle={item} onPress={() => openVehicle(item.id)} />
-        )}
+        onVehiclePress={openVehicle}
         ListHeaderComponent={<Text style={styles.title}>My Bids</Text>}
-        ListEmptyComponent={HomeEmptyState}
         onEndReached={() => {
           if (hasNextPage && !isFetchingNextPage) {
             void fetchNextPage();
           }
         }}
-        onEndReachedThreshold={0.6}
-        ListFooterComponent={isFetchingNextPage ? <GridNextPageSkeleton /> : null}
+        isFetchingNextPage={isFetchingNextPage}
         contentContainerStyle={styles.listContent}
       />
     </SafeAreaView>

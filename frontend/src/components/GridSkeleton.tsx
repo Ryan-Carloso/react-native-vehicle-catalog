@@ -4,15 +4,7 @@ import { StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { nanoid } from 'nanoid/non-secure';
 import { LinearGradient } from 'expo-linear-gradient';
-
-const SingleGridCardSkeleton = () => (
-  <View style={styles.gridCard}>
-    <Skeleton colorMode="light" width="100%" height={100} radius={0} />
-    <Skeleton colorMode="light" width="80%" height={8} radius={0} />
-    <Skeleton colorMode="light" width="54%" height={8} radius={0} />
-    <Skeleton colorMode="light" width="40%" height={14} radius={0} />
-  </View>
-);
+import { SingleGridCardSkeleton } from './SingleGridCardSkeleton';
 
 const SkeletonHeader = ({ isHomePage }: { isHomePage?: boolean }) => {
   if (!isHomePage) return null;
@@ -48,21 +40,6 @@ export const GridSkeleton = ({ isHomePage }: { isHomePage?: boolean }) => {
   );
 };
 
-export const GridNextPageSkeleton = () => {
-  const rowKeys = Array.from({ length: 3 }, () => nanoid());
-
-  return (
-    <View style={styles.nextPageLoading}>
-      {rowKeys.map((rowKey) => (
-        <View key={rowKey} style={styles.gridRow}>
-          <SingleGridCardSkeleton />
-          <SingleGridCardSkeleton />
-        </View>
-      ))}
-    </View>
-  );
-};
-
 const styles = StyleSheet.create({
   skeletonContainer: {
     marginTop: 10,
@@ -73,18 +50,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4,
     marginBottom: 6,
   },
-  nextPageLoading: {
-    paddingVertical: 14,
-  },
   gridRow: {
     flexDirection: 'row',
-  },
-  gridCard: {
-    gap: 12,
-    flex: 1,
-    marginHorizontal: 5,
-    marginBottom: 10,
-    padding: 8,
-    borderRadius: 0,
   },
 });

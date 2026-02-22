@@ -1,24 +1,68 @@
+import { ContentStyle, FlashList, ListRenderItemInfo } from '@shopify/flash-list';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { LinearGradient } from 'expo-linear-gradient';
 
-import type { TVehicle } from '@shared/types';
+import { EmptyState } from '@/src/components/EmptyState';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { formatCurrency } from '@/src/utils/formatters';
+import type { TVehicle } from '@shared/types';
+import { SingleGridCardSkeleton } from './SingleGridCardSkeleton';
+import { nanoid } from 'nanoid/non-secure';
 
-type TVehicleListItemProps = {
+// Grid layout configuration
+const GRID_COLUMNS = 2;
+const GRID_ITEM_HEIGHT = 220;
+const LOAD_MORE_THRESHOLD = 0.6;
+
+interface VehicleListProps {
+  data: TVehicle[];
+  onEndReached: () => void;
+  isFetchingNextPage: boolean;
+  ListHeaderComponent?: React.ComponentType<Record<string, never>> | React.ReactElement | null;
+  onVehiclePress: (id: string) => void;
+  contentContainerStyle?: ContentStyle;
+}
+
+interface VehicleListItemProps {
   vehicle: TVehicle;
   onPress: () => void;
-};
+}
 
-export function VehicleListItem({ vehicle, onPress }: TVehicleListItemProps) {
+export function VehicleList({
+  data,
+  onEndReached,
+  isFetchingNextPage,
+  ListHeaderComponent,
+  onVehiclePress,
+  contentContainerStyle,
+}: VehicleListProps) {
+  return (
+    <FlashList
+      data={data}
+      keyExtractor={(item: TVehicle) => item.id}
+      numColumns={GRID_COLUMNS}
+      estimatedItemSize={GRID_ITEM_HEIGHT}
+      renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
+        <VehicleListItem vehicle={item} onPress={() => onVehiclePress(item.id)} />
+      )}
+      ListHeaderComponent={ListHeaderComponent}
+      ListEmptyComponent={EmptyState}
+      onEndReached={onEndReached}
+      onEndReachedThreshold={LOAD_MORE_THRESHOLD}
+      ListFooterComponent={isFetchingNextPage ? <GridNextPageSkeleton /> : null}
+      contentContainerStyle={contentContainerStyle}
+    />
+  );
+}
+
+//---------------
+// Local component for vehicle list item
+//---------------
+const VehicleListItem = ({ vehicle, onPress }: VehicleListItemProps) => {
   const bidLabel: string = formatCurrency(vehicle.startingBid);
   const favoriteIconName: 'star' | 'star-outline' = vehicle.favourite ? 'star' : 'star-outline';
 
-  //---------------
-  // Default full card used in list contexts
-  // Preserves existing behavior and layout
-  //---------------
   return (
     <Pressable onPress={onPress} style={styles.gridCard}>
       <LinearGradient
@@ -57,7 +101,22 @@ export function VehicleListItem({ vehicle, onPress }: TVehicleListItemProps) {
       <Text style={styles.gridPrice}>{bidLabel}</Text>
     </Pressable>
   );
-}
+};
+
+const GridNextPageSkeleton = () => {
+  const rowKeys = Array.from({ length: 3 }, () => nanoid());
+
+  return (
+    <View style={styles.nextPageLoading}>
+      {rowKeys.map((rowKey) => (
+        <View key={rowKey} style={styles.gridRow}>
+          <SingleGridCardSkeleton />
+          <SingleGridCardSkeleton />
+        </View>
+      ))}
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   gridCard: {
@@ -73,6 +132,12 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 14,
     elevation: 8,
+  },
+  nextPageLoading: {
+    paddingVertical: 14,
+  },
+  gridRow: {
+    flexDirection: 'row',
   },
   gridImageFrame: {
     borderWidth: 1,

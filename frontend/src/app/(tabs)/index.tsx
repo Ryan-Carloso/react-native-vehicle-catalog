@@ -1,6 +1,3 @@
-import { FlashList } from '@shopify/flash-list';
-import type { ListRenderItemInfo } from '@shopify/flash-list';
-import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useState } from 'react';
@@ -9,10 +6,9 @@ import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-nativ
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { FilterModal } from '@/src/components/FilterModal';
-import { HomeEmptyState } from '@/src/components/EmptyState';
-import type { TVehicle } from '@shared/types';
-import { VehicleListItem } from '@/src/components/VehicleListItem';
-import { GridSkeleton, GridNextPageSkeleton } from '@/src/components/GridSkeleton';
+import { ErrorComponent } from '@/src/components/ErrorComponent';
+import { VehicleList } from '@/src/components/VehicleList';
+import { GridSkeleton } from '@/src/components/GridSkeleton';
 import { AppRoutes } from '@/src/utils/const';
 import { useVehiclesInfiniteQuery } from '@/src/utils/api/queries/useVehiclesInfiniteQuery';
 import { BrandColors } from '@/src/theme/BrandColors';
@@ -86,23 +82,16 @@ export default function HomeScreen() {
           onClose={() => setIsFilterModalVisible(false)}
         />
         <View style={styles.content}>
-          <FlashList
+          <VehicleList
             data={data?.vehicles ?? []}
-            keyExtractor={(item: TVehicle): string => item.id}
-            numColumns={2}
-            estimatedItemSize={220}
-            renderItem={({ item }: ListRenderItemInfo<TVehicle>) => (
-              <VehicleListItem vehicle={item} onPress={() => openVehicle(item.id)} />
-            )}
+            onVehiclePress={openVehicle}
             ListHeaderComponent={HomeFeedHeader}
-            ListEmptyComponent={HomeEmptyState}
             onEndReached={() => {
               if (hasNextPage && !isFetchingNextPage) {
                 void fetchNextPage();
               }
             }}
-            onEndReachedThreshold={0.6}
-            ListFooterComponent={isFetchingNextPage ? <GridNextPageSkeleton /> : null}
+            isFetchingNextPage={isFetchingNextPage}
             contentContainerStyle={styles.listContent}
           />
         </View>
