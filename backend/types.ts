@@ -21,6 +21,8 @@ export type TVehicle = {
   mileage: number;
   auctionDateTime: string;
   startingBid: number;
+  currentBid: number;
   favourite: boolean;
   hasBid: boolean;
+  isAuctionEnded: boolean;
 };

@@ -14,6 +14,9 @@
   "dependencies": {
     "@babel/runtime": "^7.28.6",
     "@expo/metro-runtime": "~5.0.5",
+    "@lottiefiles/dotlottie-react": "^0.13.5",
+    "@react-native-async-storage/async-storage": "^2.1.2",
+    "@react-navigation/drawer": "^7.8.1",
     "@shopify/flash-list": "1.7.6",
     "@tanstack/react-query": "^5.90.21",
     "expo": "~53.0.27",
@@ -22,6 +25,7 @@
     "expo-linking": "~7.1.7",
     "expo-router": "~5.1.11",
     "expo-status-bar": "~2.2.3",
+    "lottie-react-native": "^7.2.2",
     "moti": "^0.30.0",
     "nanoid": "^5.1.6",
     "pretty-format": "~29.7.0",
@@ -33,7 +37,8 @@
     "react-native-safe-area-context": "5.4.0",
     "react-native-screens": "~4.11.1",
     "react-native-web": "^0.20.0",
-    "whatwg-fetch": "^3.6.20"
+    "whatwg-fetch": "^3.6.20",
+    "zustand": "^5.0.11"
   },
   "devDependencies": {
     "@types/react": "~19.0.14",

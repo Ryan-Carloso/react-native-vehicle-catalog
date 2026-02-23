@@ -4,7 +4,7 @@ import type { TVehicle } from '@shared/types';
 import { API_BASE_URL } from '@/src/utils/const';
 import { delay } from '@/src/utils/api/mockup-delay';
 
-const VEHICLE_DETAIL_QUERY_KEY = (
+export const VEHICLE_DETAIL_QUERY_KEY = (
   vehicleId: string,
 ): readonly ['vehicle', 'detail', { id: string }] => ['vehicle', 'detail', { id: vehicleId }];
 

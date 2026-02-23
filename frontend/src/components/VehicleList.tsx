@@ -1,14 +1,17 @@
 import { ContentStyle, FlashList, ListRenderItemInfo } from '@shopify/flash-list';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { EmptyState } from '@/src/components/EmptyState';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { formatCurrency } from '@/src/utils/formatters';
+import { useToggleFavorite } from '@/src/hooks/useToggleFavorite';
 import type { TVehicle } from '@shared/types';
 import { SingleGridCardSkeleton } from './skeletons/SingleGridCardSkeleton';
 import { nanoid } from 'nanoid/non-secure';
+import { LottieModal } from './LottieModal';
 
 import { GRID_ITEM_HEIGHT, LOAD_MORE_THRESHOLD, useGridDimensions } from '@/src/constants/grid';
 
@@ -56,12 +59,18 @@ export const VehicleList = ({
   );
 };
 
-//---------------
-// Local component for vehicle list item
-//---------------
 const VehicleListItem = ({ vehicle, onPress }: TVehicleListItemProps) => {
-  const bidLabel: string = formatCurrency(vehicle.startingBid);
+  const toggleFavoriteMutation = useToggleFavorite();
+  const [showFavoriteAnimation, setShowFavoriteAnimation] = useState(false);
+  const bidLabel: string = formatCurrency(vehicle.currentBid);
   const favoriteIconName: 'star' | 'star-outline' = vehicle.favourite ? 'star' : 'star-outline';
+
+  const handleFavoritePress = (): void => {
+    if (!vehicle.favourite) {
+      setShowFavoriteAnimation(true);
+    }
+    toggleFavoriteMutation.mutate({ vehicleId: vehicle.id, currentFavorite: vehicle.favourite });
+  };
 
   return (
     <Pressable onPress={onPress} style={styles.gridCard}>
@@ -80,14 +89,14 @@ const VehicleListItem = ({ vehicle, onPress }: TVehicleListItemProps) => {
           style={StyleSheet.absoluteFill}
           pointerEvents="none"
         />
-        <View style={[styles.gridFavoriteBadge]}>
+        <Pressable style={[styles.gridFavoriteBadge]} onPress={handleFavoritePress} hitSlop={8}>
           <Ionicons
             name={favoriteIconName}
             size={18}
             style={styles.gridFavoriteIcon}
             color={vehicle.favourite ? BrandColors.accent : BrandColors.textSecondary}
           />
-        </View>
+        </Pressable>
       </View>
 
       <Text style={styles.gridTitle} numberOfLines={1}>
@@ -99,6 +108,13 @@ const VehicleListItem = ({ vehicle, onPress }: TVehicleListItemProps) => {
       </Text>
 
       <Text style={styles.gridPrice}>{bidLabel}</Text>
+
+      <LottieModal
+        visible={showFavoriteAnimation}
+        lottieSource={require('@/assets/lottie/starblast.json')}
+        onClose={() => setShowFavoriteAnimation(false)}
+        size={400}
+      />
     </Pressable>
   );
 };

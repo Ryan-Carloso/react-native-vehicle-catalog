@@ -26,6 +26,5 @@ export const SCREENS: ScreenConfig[] = [
   { name: AppRoutes.MY_BIDS, title: 'My Bids', iconName: 'bookmark-outline' },
 ];
 
-export const FILTER_MAKES = ['Toyota', 'BMW', 'Ford', 'Honda'];
-export const FILTER_YEARS = ['2024', '2023', '2022', 'Old timers'];
-export const FILTER_PRICES = ['$0 - $10k', '$10k - $30k', '$30k+'];
+export const FILTER_YEARS = ['2024', '2023', '2022'];
+export const FILTER_PRICES = ['0 - 10k', '10k - 20k', '20k +'];

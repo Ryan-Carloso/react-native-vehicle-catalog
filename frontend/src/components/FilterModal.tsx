@@ -1,7 +1,12 @@
 import { Modal, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { useEffect, useState } from 'react';
 import { BrandColors } from '@/src/theme/BrandColors';
-import { FILTER_MAKES, FILTER_YEARS, FILTER_PRICES } from '@/src/utils/const';
+import { FILTER_YEARS, FILTER_PRICES } from '@/src/utils/const';
+import { VEHICLE_MAKE_FILTER_OPTIONS } from '@shared/types';
+import { useSearchStore } from '@/src/stores/searchStore';
+import { useShallow } from 'zustand/shallow';
+import type { TVehicleMakeFilter } from '@shared/types';
 
 type TFilterModalProps = {
   visible: boolean;
@@ -9,6 +14,53 @@ type TFilterModalProps = {
 };
 
 export const FilterModal = ({ visible, onClose }: TFilterModalProps) => {
+  const [tempMake, setTempMake] = useState<TVehicleMakeFilter>('All');
+  const [tempYear, setTempYear] = useState('');
+  const [tempPriceRange, setTempPriceRange] = useState('');
+
+  const {
+    selectedMake,
+    selectedYear,
+    selectedPriceRange,
+    setMakeFilter,
+    setYearFilter,
+    setPriceFilter,
+  } = useSearchStore(
+    useShallow((state) => ({
+      selectedMake: state.selectedMake,
+      selectedYear: state.selectedYear,
+      selectedPriceRange: state.selectedPriceRange,
+      setMakeFilter: state.setMakeFilter,
+      setYearFilter: state.setYearFilter,
+      setPriceFilter: state.setPriceFilter,
+    })),
+  );
+
+  const { clearFiltersOnly } = useSearchStore.getState();
+
+  useEffect(() => {
+    if (visible) {
+      setTempMake(selectedMake);
+      setTempYear(selectedYear);
+      setTempPriceRange(selectedPriceRange);
+    }
+  }, [visible, selectedMake, selectedYear, selectedPriceRange]);
+
+  const handleApplyFilters = (): void => {
+    setMakeFilter(tempMake);
+    setYearFilter(tempYear);
+    setPriceFilter(tempPriceRange);
+    onClose();
+  };
+
+  const handleClearFilters = (): void => {
+    clearFiltersOnly();
+    setTempMake('All');
+    setTempYear('');
+    setTempPriceRange('');
+    onClose();
+  };
+
   return (
     <Modal animationType="slide" transparent={true} visible={visible} onRequestClose={onClose}>
       <View style={styles.modalOverlay}>
@@ -22,9 +74,23 @@ export const FilterModal = ({ visible, onClose }: TFilterModalProps) => {
           <ScrollView style={styles.modalBody}>
             <Text style={styles.filterSectionTitle}>Make</Text>
             <View style={styles.filterOptionsRow}>
-              {FILTER_MAKES.map((make) => (
-                <TouchableOpacity key={make} style={styles.filterOptionChip}>
-                  <Text style={styles.filterOptionText}>{make}</Text>
+              {VEHICLE_MAKE_FILTER_OPTIONS.map((make) => (
+                <TouchableOpacity
+                  key={make}
+                  style={[
+                    styles.filterOptionChip,
+                    tempMake === make && styles.filterOptionChipSelected,
+                  ]}
+                  onPress={() => setTempMake(make)}
+                >
+                  <Text
+                    style={[
+                      styles.filterOptionText,
+                      tempMake === make && styles.filterOptionTextSelected,
+                    ]}
+                  >
+                    {make}
+                  </Text>
                 </TouchableOpacity>
               ))}
             </View>
@@ -32,8 +98,22 @@ export const FilterModal = ({ visible, onClose }: TFilterModalProps) => {
             <Text style={styles.filterSectionTitle}>Year</Text>
             <View style={styles.filterOptionsRow}>
               {FILTER_YEARS.map((year) => (
-                <TouchableOpacity key={year} style={styles.filterOptionChip}>
-                  <Text style={styles.filterOptionText}>{year}</Text>
+                <TouchableOpacity
+                  key={year}
+                  style={[
+                    styles.filterOptionChip,
+                    tempYear === year && styles.filterOptionChipSelected,
+                  ]}
+                  onPress={() => setTempYear(year)}
+                >
+                  <Text
+                    style={[
+                      styles.filterOptionText,
+                      tempYear === year && styles.filterOptionTextSelected,
+                    ]}
+                  >
+                    {year}
+                  </Text>
                 </TouchableOpacity>
               ))}
             </View>
@@ -41,13 +121,30 @@ export const FilterModal = ({ visible, onClose }: TFilterModalProps) => {
             <Text style={styles.filterSectionTitle}>Price Range</Text>
             <View style={styles.filterOptionsRow}>
               {FILTER_PRICES.map((price) => (
-                <TouchableOpacity key={price} style={styles.filterOptionChip}>
-                  <Text style={styles.filterOptionText}>{price}</Text>
+                <TouchableOpacity
+                  key={price}
+                  style={[
+                    styles.filterOptionChip,
+                    tempPriceRange === price && styles.filterOptionChipSelected,
+                  ]}
+                  onPress={() => setTempPriceRange(price)}
+                >
+                  <Text
+                    style={[
+                      styles.filterOptionText,
+                      tempPriceRange === price && styles.filterOptionTextSelected,
+                    ]}
+                  >
+                    {price}
+                  </Text>
                 </TouchableOpacity>
               ))}
             </View>
           </ScrollView>
-          <TouchableOpacity style={styles.applyButton} onPress={onClose}>
+          <TouchableOpacity style={styles.clearButton} onPress={handleClearFilters}>
+            <Text style={styles.clearButtonText}>Clear Filters</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.applyButton} onPress={handleApplyFilters}>
             <Text style={styles.applyButtonText}>Apply Filters</Text>
           </TouchableOpacity>
         </View>
@@ -102,7 +199,13 @@ const styles = StyleSheet.create({
     minWidth: 108,
     paddingHorizontal: 14,
     paddingVertical: 8,
-    backgroundColor: BrandColors.background,
+    backgroundColor: BrandColors.backgroundElevated,
+    borderWidth: 1,
+    borderColor: BrandColors.border,
+  },
+  filterOptionChipSelected: {
+    backgroundColor: BrandColors.textPrimary,
+    borderColor: BrandColors.textPrimary,
   },
   filterOptionText: {
     color: BrandColors.textPrimary,
@@ -111,10 +214,27 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     fontFamily: 'Courier',
   },
+  filterOptionTextSelected: {
+    color: BrandColors.background,
+  },
+  clearButton: {
+    backgroundColor: 'transparent',
+    marginHorizontal: 20,
+    marginTop: 10,
+    paddingVertical: 12,
+    alignItems: 'center',
+  },
+  clearButtonText: {
+    color: BrandColors.textMuted,
+    fontSize: 14,
+    fontWeight: '700',
+    textTransform: 'uppercase',
+    fontFamily: 'Courier',
+  },
   applyButton: {
     backgroundColor: BrandColors.textPrimary,
     marginHorizontal: 20,
-    marginTop: 10,
+    marginTop: 5,
     paddingVertical: 16,
     alignItems: 'center',
   },

@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   buttonText: {
-    color: '#ffffff',
+    color: BrandColors.textPrimary,
     fontSize: 16,
     fontWeight: '600',
   },
