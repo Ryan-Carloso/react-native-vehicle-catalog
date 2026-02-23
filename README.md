@@ -5,6 +5,15 @@ Basic npm workspace with:
 - `frontend`: Expo React Native app
 - `backend`: `json-server` API
 
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/screenshot1.png" width="200" />
+  <img src="screenshots/screenshot2.png" width="200" />
+  <img src="screenshots/screenshot3.png" width="200" />
+  <img src="screenshots/screenshot4.png" width="200" />
+</p>
+
 ## Prerequisites
 
 - Node.js (v18+ recommended)
