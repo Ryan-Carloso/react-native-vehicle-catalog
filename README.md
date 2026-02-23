@@ -1,6 +1,6 @@
 # React Native Vehicle Catalog Workspace
 
-Basic npm workspace with:
+Basic pnpm workspace with:
 
 - `frontend`: Expo React Native app
 - `backend`: `json-server` API
@@ -52,11 +52,11 @@ Start both services in separate terminals:
 
 ```bash
 pnpm run dev:backend
-# and
+# and on another terminal
 pnpm run dev:frontend
 ```
 
-Select platform:
+Select platform by pressing:
 
 - Android: `a`
 - iOS: `i`

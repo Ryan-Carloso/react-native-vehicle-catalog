@@ -13,6 +13,8 @@ config.resolver.nodeModulesPaths = [
 
 config.resolver.sourceExts = [...config.resolver.sourceExts, 'mjs', 'json', 'lottie'];
 
+config.resolver.unstable_conditionNames = ['browser', 'require', 'react-native'];
+
 config.resolver.alias = {
   '@': path.resolve(__dirname, '.'),
   '@/assets': path.resolve(__dirname, 'assets'),
