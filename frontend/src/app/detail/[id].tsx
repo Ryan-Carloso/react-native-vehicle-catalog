@@ -20,6 +20,7 @@ import type { TVehicle } from '@shared/types';
 
 import { ErrorComponent } from '@/src/components/ErrorComponent';
 import { VehicleDetailsItem } from '@/src/components/VehicleDetailsItem';
+import { LottieModal } from '@/src/components/LottieModal';
 import { useGridDimensions } from '@/src/constants/grid';
 import { BrandColors } from '@/src/theme/BrandColors';
 import { useToggleFavorite } from '@/src/hooks/useToggleFavorite';
@@ -42,6 +43,8 @@ export default function VehicleDetailsScreen() {
   const toggleFavoriteMutation = useToggleFavorite();
   const placeBidMutation = usePlaceBid();
   const [showBidModal, setShowBidModal] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [showFavoriteAnimation, setShowFavoriteAnimation] = useState(false);
   const [bidAmount, setBidAmount] = useState('');
   const [bidError, setBidError] = useState('');
 
@@ -63,10 +66,12 @@ export default function VehicleDetailsScreen() {
   const contentContainerStyle = [styles.content, isLargeScreen && styles.contentLarge];
 
   const isAuctionEnded = data.isAuctionEnded;
-  console.log('isAuctionEnded', isAuctionEnded);
   const minimumBid: number = data.currentBid + 100;
 
   const handleFavoriteToggle = (): void => {
+    if (!data.favourite) {
+      setShowFavoriteAnimation(true);
+    }
     toggleFavoriteMutation.mutate({ vehicleId, currentFavorite: data.favourite });
   };
 
@@ -88,6 +93,7 @@ export default function VehicleDetailsScreen() {
       {
         onSuccess: () => {
           setShowBidModal(false);
+          setShowSuccessModal(true);
           setBidAmount('');
           setBidError('');
         },
@@ -153,6 +159,18 @@ export default function VehicleDetailsScreen() {
         bidError={bidError}
         onPlaceBid={handlePlaceBid}
         isLoading={placeBidMutation.isPending}
+      />
+      <LottieModal
+        visible={showSuccessModal}
+        lottieSource={require('@/assets/lottie/Success.json')}
+        onClose={() => setShowSuccessModal(false)}
+        duration={3000}
+      />
+      <LottieModal
+        visible={showFavoriteAnimation}
+        lottieSource={require('@/assets/lottie/starblast.json')}
+        onClose={() => setShowFavoriteAnimation(false)}
+        size={400}
       />
     </LinearGradient>
   );

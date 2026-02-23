@@ -11,7 +11,7 @@ config.resolver.nodeModulesPaths = [
   path.resolve(__dirname, '../../node_modules'),
 ];
 
-config.resolver.sourceExts = [...config.resolver.sourceExts, 'mjs'];
+config.resolver.sourceExts = [...config.resolver.sourceExts, 'mjs', 'json', 'lottie'];
 
 config.resolver.alias = {
   '@': path.resolve(__dirname, '.'),

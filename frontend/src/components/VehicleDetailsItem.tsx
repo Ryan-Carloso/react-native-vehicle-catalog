@@ -38,7 +38,6 @@ export const VehicleDetailsItem = ({ vehicle }: TVehicleDetailsItemProps) => {
           <Text style={styles.specValue}>{currentBid}</Text>
         </View>
       </View>
-      (
       {!isAuctionEnded && (
         <View style={styles.metaCard}>
           <View style={styles.metaRow}>
@@ -47,13 +46,11 @@ export const VehicleDetailsItem = ({ vehicle }: TVehicleDetailsItemProps) => {
           </View>
         </View>
       )}
-      ) (
       {isAuctionEnded && (
         <View style={styles.metaCard}>
           <Text style={styles.metaLabel}>Auction already ended</Text>
         </View>
       )}
-      )
       <View style={styles.verifyCard}>
         <VehicleVerifyRow text="Lorem ipsum dolor sit amet" />
         <VehicleVerifyRow text="consectetur adipiscing elit." />

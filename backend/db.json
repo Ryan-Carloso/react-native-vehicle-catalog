@@ -9,7 +9,7 @@
       "mileage": 743,
       "auctionDateTime": "2024/04/15 09:00:00",
       "startingBid": 17000,
-      "favourite": false,
+      "favourite": true,
       "id": "1",
       "image": "http://localhost:3001/car-mockups/car-example-4.webp",
       "hasBid": true,
@@ -25,7 +25,7 @@
       "mileage": 9084,
       "auctionDateTime": "2027/06/20 09:00:00",
       "startingBid": 15000,
-      "favourite": false,
+      "favourite": true,
       "id": "2",
       "image": "http://localhost:3001/car-mockups/car-example-9.webp",
       "hasBid": true,
@@ -41,11 +41,11 @@
       "mileage": 17293,
       "auctionDateTime": "2027/08/10 09:00:00",
       "startingBid": 15000,
-      "favourite": false,
+      "favourite": true,
       "id": "3",
       "image": "http://localhost:3001/car-mockups/car-example-6.webp",
       "hasBid": true,
-      "currentBid": 15000,
+      "currentBid": 111111111,
       "isAuctionEnded": false
     },
     {
@@ -92,8 +92,8 @@
       "favourite": true,
       "id": "6",
       "image": "http://localhost:3001/car-mockups/car-example-10.webp",
-      "hasBid": false,
-      "currentBid": 16000,
+      "hasBid": true,
+      "currentBid": 18000,
       "isAuctionEnded": false
     },
     {

@@ -1,5 +1,6 @@
 import { ContentStyle, FlashList, ListRenderItemInfo } from '@shopify/flash-list';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -10,6 +11,7 @@ import { useToggleFavorite } from '@/src/hooks/useToggleFavorite';
 import type { TVehicle } from '@shared/types';
 import { SingleGridCardSkeleton } from './skeletons/SingleGridCardSkeleton';
 import { nanoid } from 'nanoid/non-secure';
+import { LottieModal } from './LottieModal';
 
 import { GRID_ITEM_HEIGHT, LOAD_MORE_THRESHOLD, useGridDimensions } from '@/src/constants/grid';
 
@@ -59,10 +61,14 @@ export const VehicleList = ({
 
 const VehicleListItem = ({ vehicle, onPress }: TVehicleListItemProps) => {
   const toggleFavoriteMutation = useToggleFavorite();
-  const bidLabel: string = formatCurrency(vehicle.startingBid);
+  const [showFavoriteAnimation, setShowFavoriteAnimation] = useState(false);
+  const bidLabel: string = formatCurrency(vehicle.currentBid);
   const favoriteIconName: 'star' | 'star-outline' = vehicle.favourite ? 'star' : 'star-outline';
 
   const handleFavoritePress = (): void => {
+    if (!vehicle.favourite) {
+      setShowFavoriteAnimation(true);
+    }
     toggleFavoriteMutation.mutate({ vehicleId: vehicle.id, currentFavorite: vehicle.favourite });
   };
 
@@ -102,6 +108,13 @@ const VehicleListItem = ({ vehicle, onPress }: TVehicleListItemProps) => {
       </Text>
 
       <Text style={styles.gridPrice}>{bidLabel}</Text>
+
+      <LottieModal
+        visible={showFavoriteAnimation}
+        lottieSource={require('@/assets/lottie/starblast.json')}
+        onClose={() => setShowFavoriteAnimation(false)}
+        size={400}
+      />
     </Pressable>
   );
 };
